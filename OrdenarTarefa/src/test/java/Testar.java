@@ -1,6 +1,5 @@
 
 import org.junit.jupiter.api.Test;
-import org.junit.jupiter.;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 

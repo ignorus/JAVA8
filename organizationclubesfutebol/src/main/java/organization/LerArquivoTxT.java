@@ -13,6 +13,7 @@ public class LerArquivoTxT implements LerArquivo {
             System.out.println("Procurando o arquivo: " + arquivo);
             Scanner scan = new Scanner(arquivo);
             scan.useDelimiter(";");
+            int i = 0;
             while (scan.hasNext()) {
                 times.add(scan.next());
             }
