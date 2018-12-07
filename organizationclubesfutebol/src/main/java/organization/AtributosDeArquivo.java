@@ -20,10 +20,6 @@ public class AtributosDeArquivo {
             this.ordenar = ordenar;
         }
 
-        public void incrementaLista(String texto){
-            this.lista.add(texto);
-        }
-
 
         public AtributosDeArquivo(@NotNull List<String> instrucion) {
             setNome(instrucion.get(0));

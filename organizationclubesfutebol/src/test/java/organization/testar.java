@@ -66,4 +66,7 @@ public class testar {
         assertTrue(arquivoMock.lista.get(0) == null || arquivoMock.lista.get(0) == "");
         System.out.println("Arquivo Vazio");
     }
+
+
+
 }

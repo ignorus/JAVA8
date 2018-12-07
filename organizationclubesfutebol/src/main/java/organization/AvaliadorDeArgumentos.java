@@ -57,14 +57,20 @@ public class AvaliadorDeArgumentos {
                 instrucion.add(orderValue);
                 return instrucion;
             }
-            if (!"".equals(fileFlag) && file.equalsIgnoreCase("-h")){
+            if (!"".equals(fileFlag) && fileFlag.equalsIgnoreCase("-h")){
                 System.out.println("[-f=Nome do Arquivo]");
                 System.out.println("Utilizando este parametro é possivel passar o nome do arquivo" +
                         "à ser ordenado");
                 System.out.println("[-o=Metodo de ordenação]");
                 System.out.println("Com este parametro é possivel determinar se o arquivo será ordenado de forma " +
                         "Crescente ou Decrescente Por padrão o arquivo é ordenado de forma Crescente");
+                instrucion.add("help");
+                return instrucion;
 
+            }
+
+            else {
+                throw new RuntimeException("Argumento Invalido");
             }
 
         }
@@ -72,14 +78,13 @@ public class AvaliadorDeArgumentos {
         if(file == null)
         {
 
-            instrucion.add("teste1");
-            instrucion.add("crescente");
+            System.out.println("Favor informar parametros, para mais informações utilize -h");
             return instrucion;
 
         }
 
-        return instrucion;
 
+        return null;
     }
 
 }
