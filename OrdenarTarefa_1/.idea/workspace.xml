@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e3cea0f0-8f79-4073-a59a-836b8e519d8d" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../organizationclubesfutebol/src/main/java/organization/LerArquivoTxT.java" beforeDir="false" afterPath="$PROJECT_DIR$/../organizationclubesfutebol/src/main/java/organization/LerArquivoTxT.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../organizationclubesfutebol/src/test/java/organization/LerArquivoTxTTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../organizationclubesfutebol/src/test/java/organization/LerArquivoTxTTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../organizationclubesfutebol/src/test/java/organization/OrdenaArquivoAlfabeticoTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../organizationclubesfutebol/src/test/java/organization/OrdenaArquivoAlfabeticoTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../organizationclubesfutebol/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../organizationclubesfutebol/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/../OrdenarTarefa/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -142,7 +140,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="10" y="20" width="1346" height="688" extended-state="1" />
-    <editor active="true" />
     <layout>
       <window_info id="Favorites" side_tool="true" />
       <window_info id="Designer" />
