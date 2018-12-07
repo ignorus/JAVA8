@@ -72,14 +72,14 @@ class LerArquivoTxTTest {
     }
 
     @Test
-    @DisplayName("Arquivo temporario com 5 elementos separados por virgula")
+    @DisplayName("Arquivo temporario com 5 elementos separados por virgula ou ponto e virgula")
     void testaArquivoSeparadoPorVirgula() {
 
         List<String> iniciarMock = new ArrayList<String>();
         try {
             File arquivoTemp = folder.newFile("ArquivoMock1.txt");
             FileWriter escrever = new FileWriter(arquivoTemp);
-            escrever.write("Palmeiras,Corinthias,São Paulo,Santos,Caraguá");
+            escrever.write("Palmeiras,Corinthias;São Paulo,Santos;Caraguá");
             escrever.close();
             iniciarMock.add("arquivo");
             iniciarMock.add("ordenar");
@@ -90,10 +90,14 @@ class LerArquivoTxTTest {
             try
             {
                 leitorMock.lerArquivo(arquivoMock.lista, arquivoMock.nome);
-                assertEquals(1,arquivoMock.lista.size());
-                assertEquals("Palmeiras,Corinthias,São Paulo,Santos,Caraguá", arquivoMock.lista.get(0));
+                assertEquals(5,arquivoMock.lista.size());
+                assertEquals("Palmeiras", arquivoMock.lista.get(0));
+                assertEquals("Corinthias", arquivoMock.lista.get(1));
+                assertEquals("São Paulo", arquivoMock.lista.get(2));
+                assertEquals("Santos", arquivoMock.lista.get(3));
+                assertEquals("Caraguá", arquivoMock.lista.get(4));
                 assertTrue(arquivoTemp.exists());
-                System.out.println("O arquivo temporario existe, mas esta separado por virgula");
+                System.out.println("O arquivo temporario existe, e pode estar separado por ',' ou ';'");
             }
             catch (FileNotFoundException e){
                 System.out.println("Arquivo não existe");
@@ -165,7 +169,7 @@ class LerArquivoTxTTest {
                 leitor.lerArquivo(arquivoMockado.lista,arquivoMockado.nome);
             }
             catch (FileNotFoundException e){
-                System.out.println("Arquivo de outra extensão");
+                System.out.println("Arquivo de não existe, ou contém outra extensão");
             }
         } catch (IOException e) {
             e.printStackTrace();

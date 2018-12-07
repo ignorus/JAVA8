@@ -44,11 +44,12 @@ class OrdenaArquivoAlfabeticoTest {
         OrdenaArquivoAlfabetico ordenador = new OrdenaArquivoAlfabetico();
         ordenador.ordenar(lista);
         assertEquals(5,lista.size());
-        assertEquals("2André",lista.get(1));
-        assertEquals("5Bruna",lista.get(4));
-        assertEquals("4Ricardo",lista.get(3));
-        assertEquals("3Rosa",lista.get(2));
         assertEquals("1Tiago",lista.get(0));
+        assertEquals("2André",lista.get(1));
+        assertEquals("3Rosa",lista.get(2));
+        assertEquals("4Ricardo",lista.get(3));
+        assertEquals("5Bruna",lista.get(4));
+
         System.out.println("Lista ordenada numericamente");
 
     }

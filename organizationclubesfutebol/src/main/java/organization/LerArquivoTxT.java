@@ -14,9 +14,21 @@ public class LerArquivoTxT implements LerArquivo {
             Scanner scan = new Scanner(arquivo);
             scan.useDelimiter(";");
             int i = 0;
+            String verificarVirgula = "";
             while (scan.hasNext()) {
+
                 times.add(scan.next());
+                verificarVirgula = (String) times.get(times.size()-1);
+                String[] reorganizarLista = verificarVirgula.split(",");
+                times.set((times.size()-1),reorganizarLista[0]);
+                for (int z = 1; z<reorganizarLista.length;z++)
+                {
+                        times.add(reorganizarLista[z]);
+
+                }
+                i++;
             }
+
             System.out.println("Arquivo encontrado!");
             scan.close();
 
