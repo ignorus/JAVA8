@@ -67,6 +67,28 @@ public class testar {
         System.out.println("Arquivo Vazio");
     }
 
+    @Test
+    void testCase() {
+
+         assertThrows(IllegalArgumentException.class, () -> {
+            throw new IllegalArgumentException("error message");
+        });
+    }
+
+    @Test
+    @DisplayName("Testa não mostrar arquivo em ordem crescente")
+    void mostrarInvalido() {
+        List<String> listaOrdenada = new ArrayList<String>();
+        listaOrdenada.add("Ana");
+        listaOrdenada.add("Bruno");
+        listaOrdenada.add("Deise");
+        listaOrdenada.add("Eduardo");
+        listaOrdenada.add("Tiago");
+        Assert.assertThrows(NullPointerException.class, () -> {throw new NullPointerException();});
+    }
 
 
 }
+
+
+

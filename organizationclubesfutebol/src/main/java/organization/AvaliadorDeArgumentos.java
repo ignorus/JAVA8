@@ -8,7 +8,7 @@ import java.util.List;
 public class AvaliadorDeArgumentos {
     List <String> instrucion = new ArrayList<String>();
 
-    public List<String> avaliarArgumentos(@NotNull String[] argumentos){
+    public List<String> avaliarArgumentos(@NotNull String[] argumentos) throws RuntimeException{
         String file = null;
         String order = null;
         if(argumentos.length >= 1)
@@ -83,7 +83,7 @@ public class AvaliadorDeArgumentos {
 
         }
 
-//deu
+
         return null;
     }
 

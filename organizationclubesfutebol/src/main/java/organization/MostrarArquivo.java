@@ -7,7 +7,7 @@ public  class MostrarArquivo {
 
         String codigoLocal = "";
 
-    public void Mostrar(List<String> times, String codigo)
+    public void Mostrar(List<String> times, String codigo) throws NullPointerException
     {
         System.out.println(" ");
         if(codigo.equalsIgnoreCase("crescente"))
@@ -33,7 +33,7 @@ public  class MostrarArquivo {
 
         if (!"crescente".equalsIgnoreCase(codigo) && !"decrescente".equalsIgnoreCase(codigo))
         {
-            throw new NullPointerException();
+            throw new NullPointerException("Metodo Invalido");
         }
     }
 }

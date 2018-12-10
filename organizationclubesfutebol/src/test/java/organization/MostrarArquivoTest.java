@@ -7,6 +7,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertThrows;
 
 class MostrarArquivoTest {
 
@@ -21,16 +22,8 @@ class MostrarArquivoTest {
         listaOrdenada.add("Tiago");
         String metodoOrdenar = "CRESCENTE";
         MostrarArquivo exibir = new MostrarArquivo();
-        try {
-            exibir.Mostrar(listaOrdenada, metodoOrdenar);
-            assertEquals("crescente",exibir.codigoLocal);
-            System.out.println("Teste crescente");
-
-        }
-        catch (NullPointerException e)
-        {
-            System.out.println("Metodo de ordenação invalido");
-        }
+        exibir.Mostrar(listaOrdenada, metodoOrdenar);
+        assertEquals("crescente",exibir.codigoLocal);
     }
 
     @Test
@@ -44,15 +37,8 @@ class MostrarArquivoTest {
         listaOrdenada.add("Tiago");
         String metodoOrdenar = "deCRESCENTE";
         MostrarArquivo exibir = new MostrarArquivo();
-        try {
-            exibir.Mostrar(listaOrdenada, metodoOrdenar);
-            assertEquals("decrescente",exibir.codigoLocal);
-            System.out.println("Teste decrescente");
-        }
-        catch (NullPointerException e)
-        {
-            System.out.println("Metodo de ordenação invalido");
-        }
+        exibir.Mostrar(listaOrdenada, metodoOrdenar);
+        assertEquals("decrescente",exibir.codigoLocal);
     }
 
     @Test
@@ -64,15 +50,7 @@ class MostrarArquivoTest {
         listaOrdenada.add("Deise");
         listaOrdenada.add("Eduardo");
         listaOrdenada.add("Tiago");
-        String metodoOrdenar = "deCRESCE";
-        MostrarArquivo exibir = new MostrarArquivo();
-        try {
-            exibir.Mostrar(listaOrdenada, metodoOrdenar);
-        }
-        catch (NullPointerException e)
-        {
-            System.out.println("Metodo de ordenação invalido");
-        }
+        assertThrows(NullPointerException.class, () ->{new MostrarArquivo().Mostrar(listaOrdenada,"ie");});
     }
 
 }

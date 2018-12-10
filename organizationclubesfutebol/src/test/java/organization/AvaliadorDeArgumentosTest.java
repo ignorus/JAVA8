@@ -6,20 +6,18 @@ import org.junit.jupiter.api.Test;
 import java.util.List;
 
 import static org.junit.Assert.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertThrows;
 
 class AvaliadorDeArgumentosTest {
 
+
     @Test
     @DisplayName("Deve Retornar Excessão caso o argumento seja invalido")
-    void avaliarArgumentosInvalidos()
-    {
-        AvaliadorDeArgumentos avaliar = new AvaliadorDeArgumentos();
-        try {
-            avaliar.avaliarArgumentos(new String[]{"-d"});
-        }
-        catch (RuntimeException e){
-            System.out.println(e.getMessage());
-        }
+    void avaliarArgumentosInvalidos(){
+
+        assertThrows(RuntimeException.class, () -> {
+            new AvaliadorDeArgumentos().avaliarArgumentos(new String[]{"-d"});
+        });
 
     }
 
@@ -29,19 +27,8 @@ class AvaliadorDeArgumentosTest {
     {
         AvaliadorDeArgumentos avaliar = new AvaliadorDeArgumentos();
         List<String> lista;
-        try {
-            lista = avaliar.avaliarArgumentos(new String[]{"-f=alo", "-o=crescente"});
-            assertEquals(2,lista.size());
-            assertEquals("alo",lista.get(0));
-            assertEquals("crescente",lista.get(1));
-            System.out.println("2 argumentos foram passados");
-
-
-        }
-        catch (RuntimeException e)
-        {
-            System.out.println(e.getMessage());
-        }
+        lista = avaliar.avaliarArgumentos(new String[]{"-f=alo", "-o=crescente"});
+        assertEquals(2,lista.size());
     }
 
     @Test
@@ -50,16 +37,8 @@ class AvaliadorDeArgumentosTest {
     {
         AvaliadorDeArgumentos avaliar = new AvaliadorDeArgumentos();
         List<String> lista;
-        try {
-            lista = avaliar.avaliarArgumentos(new String[]{});
-            assertEquals(0,lista.size());
-            System.out.println("nenhum argumento foi passados");
-
-        }
-        catch (RuntimeException e)
-        {
-            System.out.println(e.getMessage());
-        }
+        lista = avaliar.avaliarArgumentos(new String[]{});
+        assertEquals(0,lista.size());
     }
 
     @Test
@@ -68,17 +47,9 @@ class AvaliadorDeArgumentosTest {
     {
         AvaliadorDeArgumentos avaliar = new AvaliadorDeArgumentos();
         List<String> lista;
-        try {
-            lista = avaliar.avaliarArgumentos(new String[]{"-h"});
-            assertEquals(1,lista.size());
-            assertEquals("help",lista.get(0));
-            System.out.println("o argumento -h foi passado");
-
-        }
-        catch (RuntimeException e)
-        {
-            System.out.println(e.getMessage());
-        }
+        lista = avaliar.avaliarArgumentos(new String[]{"-h"});
+        assertEquals(1,lista.size());
+        assertEquals("help",lista.get(0));
     }
 
     @Test
@@ -87,18 +58,8 @@ class AvaliadorDeArgumentosTest {
     {
         AvaliadorDeArgumentos avaliar = new AvaliadorDeArgumentos();
         List<String> lista;
-        try {
-            lista = avaliar.avaliarArgumentos(new String[]{"-o=dec"});
-            assertEquals(2,lista.size());
-            assertEquals("dec",lista.get(1));
-            assertEquals("teste1",lista.get(0));
-            System.out.println("o argumento -o foi passado");
-
-        }
-        catch (RuntimeException e)
-        {
-            System.out.println(e.getMessage());
-        }
+        lista = avaliar.avaliarArgumentos(new String[]{"-o=dec"});
+        assertEquals("dec",lista.get(1));
     }
 
     @Test
@@ -107,18 +68,7 @@ class AvaliadorDeArgumentosTest {
     {
         AvaliadorDeArgumentos avaliar = new AvaliadorDeArgumentos();
         List<String> lista;
-        try {
-            lista = avaliar.avaliarArgumentos(new String[]{"-f=file"});
-            assertEquals(2,lista.size());
-            assertEquals("file",lista.get(0));
-            assertEquals("crescente",lista.get(1));
-            System.out.println("o argumento -f foi passado");
-
-        }
-        catch (RuntimeException e)
-        {
-            System.out.println(e.getMessage());
-        }
+        lista = avaliar.avaliarArgumentos(new String[]{"-f=file"});
+        assertEquals("file",lista.get(0));
     }
-
 }
