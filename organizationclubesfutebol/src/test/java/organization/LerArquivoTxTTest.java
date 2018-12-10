@@ -90,7 +90,7 @@ class LerArquivoTxTTest {
     }
 
     @Test
-    @DisplayName("Arquivo que não é existe")
+    @DisplayName("testa Exceção de Arquivo que não é existe")
     public void testaArquivoQueNaoEtxt()  {
         assertThrows(FileNotFoundException.class, () ->{
             new LerArquivoTxT().lerArquivo(new ArrayList<String>(),"Ar");}

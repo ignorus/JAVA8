@@ -12,7 +12,7 @@ class AvaliadorDeArgumentosTest {
 
 
     @Test
-    @DisplayName("Deve Retornar Excessão caso o argumento seja invalido")
+    @DisplayName("Deve Retornar Exceção caso o argumento seja invalido")
     void avaliarArgumentosInvalidos(){
 
         assertThrows(RuntimeException.class, () -> {

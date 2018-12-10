@@ -12,7 +12,7 @@ import static org.junit.jupiter.api.Assertions.assertThrows;
 class MostrarArquivoTest {
 
     @Test
-    @DisplayName("Testa NullPointer exception")
+    @DisplayName("Testa Exceção NullPointer")
     void NPEteste(){
         assertThrows(NullPointerException.class, () -> {new MostrarArquivo().Mostrar(new ArrayList<>(),"Dec");});
     }

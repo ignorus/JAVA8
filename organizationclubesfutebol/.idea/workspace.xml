@@ -3,23 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="1f22aa3a-f0d1-43c4-b156-80fa886cfd48" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/organization/AvaliadorDeArgumentosTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/organization/AvaliadorDeArgumentosTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/organization/LerArquivoTxTTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/organization/LerArquivoTxTTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/organization/MostrarArquivoTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/organization/MostrarArquivoTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/organization/OrganizarEMostrarArquivoTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/organization/OrganizarEMostrarArquivoTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/organization/testar.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/organization/testar.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/organization/AtributosDeArquivo.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/organization/AtributosDeArquivo.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/organization/AvaliadorDeArgumentos.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/organization/AvaliadorDeArgumentos.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/organization/LerArquivo.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/organization/LerArquivo.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/organization/LerArquivoTxT.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/organization/LerArquivoTxT.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/organization/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/organization/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/organization/MostrarArquivo.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/organization/MostrarArquivo.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/organization/OdenaArquivo.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/organization/OdenaArquivo.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/organization/OrdenaArquivoAlfabetico$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/organization/OrdenaArquivoAlfabetico$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/organization/OrdenaArquivoAlfabetico.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/organization/OrdenaArquivoAlfabetico.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/organization/LerArquivoTxTTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/organization/LerArquivoTxTTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/organization/MostrarArquivoTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/organization/MostrarArquivoTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/organization/OrdenaArquivoAlfabeticoTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/organization/OrdenaArquivoAlfabeticoTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/organization/OrganizarEMostrarArquivoTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/organization/OrganizarEMostrarArquivoTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/organization/testar.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/organization/testar.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -39,7 +25,7 @@
     <SUITE FILE_PATH="coverage/organizationclubesfutebol$AvaliadorDeArgumentosTest.ic" NAME="AvaliadorDeArgumentosTest Coverage Results" MODIFIED="1544199918797" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>organization.*</FILTER>
     </SUITE>
-    <SUITE FILE_PATH="coverage/organizationclubesfutebol$test_in_organizationclubesfutebol.ic" NAME="test in organizationclubesfutebol Coverage Results" MODIFIED="1544461979903" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/organizationclubesfutebol$test_in_organizationclubesfutebol.ic" NAME="test in organizationclubesfutebol Coverage Results" MODIFIED="1544466185331" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
     <SUITE FILE_PATH="coverage/organizationclubesfutebol$AvaliadorDeArgumentosTest_avaliarDoisArgumentos.ic" NAME="AvaliadorDeArgumentosTest.avaliarDoisArgumentos Coverage Results" MODIFIED="1544198862852" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>organization.*</FILTER>
     </SUITE>
@@ -48,7 +34,7 @@
     </SUITE>
   </component>
   <component name="CoverageViewManager">
-    <option name="myElementSize" value="172" />
+    <option name="myElementSize" value="174" />
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
@@ -76,8 +62,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/organization/LerArquivoTxTTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="264">
-              <caret line="98" column="5" lean-forward="true" selection-start-line="91" selection-start-column="4" selection-end-line="98" selection-end-column="5" />
+            <state relative-caret-position="220">
+              <caret line="92" column="35" selection-start-line="92" selection-start-column="35" selection-end-line="92" selection-end-column="35" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -88,7 +74,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/organization/OrdenaArquivoAlfabeticoTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="480">
+            <state relative-caret-position="510">
               <caret line="37" column="44" selection-start-line="37" selection-start-column="44" selection-end-line="37" selection-end-column="44" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -97,15 +83,13 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/organization/MostrarArquivoTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="128">
-              <caret line="17" column="5" selection-start-line="17" selection-start-column="5" selection-end-line="17" selection-end-column="5" />
+            <state relative-caret-position="75">
+              <caret line="14" column="43" selection-start-line="14" selection-start-column="43" selection-end-line="14" selection-end-column="43" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#374#375#0" expanded="true" />
-                <element signature="e#482#483#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -132,14 +116,13 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/organization/testar.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="48">
-              <caret line="74" column="36" selection-start-line="74" selection-start-column="36" selection-end-line="74" selection-end-column="36" />
+            <state relative-caret-position="1360">
+              <caret line="80" column="28" lean-forward="true" selection-start-line="80" selection-start-column="28" selection-end-line="80" selection-end-column="28" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#2317#2318#0" expanded="true" />
                 <element signature="e#2416#2417#0" expanded="true" />
               </folding>
             </state>
@@ -149,8 +132,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/organization/AvaliadorDeArgumentosTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1147">
-              <caret line="72" column="5" selection-start-line="72" selection-start-column="5" selection-end-line="72" selection-end-column="5" />
+            <state relative-caret-position="-722">
+              <caret line="14" column="39" selection-start-line="14" selection-start-column="32" selection-end-line="14" selection-end-column="39" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -161,7 +144,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/organization/OrganizarEMostrarArquivoTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="83">
+            <state relative-caret-position="-450">
               <caret line="28" column="5" selection-start-line="28" selection-start-column="5" selection-end-line="28" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -201,12 +184,12 @@
         <option value="$PROJECT_DIR$/src/main/java/organization/AtributosDeArquivo.java" />
         <option value="$PROJECT_DIR$/src/main/java/organization/OrganizarEMostrarArquivo.java" />
         <option value="$PROJECT_DIR$/src/main/java/organization/AvaliadorDeArgumentos.java" />
-        <option value="$PROJECT_DIR$/src/test/java/organization/AvaliadorDeArgumentosTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/organization/OrdenaArquivoAlfabeticoTest.java" />
-        <option value="$PROJECT_DIR$/src/test/java/organization/LerArquivoTxTTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/organization/MostrarArquivo.java" />
-        <option value="$PROJECT_DIR$/src/test/java/organization/testar.java" />
         <option value="$PROJECT_DIR$/src/test/java/organization/OrganizarEMostrarArquivoTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/organization/testar.java" />
+        <option value="$PROJECT_DIR$/src/test/java/organization/AvaliadorDeArgumentosTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/organization/LerArquivoTxTTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/organization/MostrarArquivoTest.java" />
       </list>
     </option>
@@ -267,14 +250,6 @@
               <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
               <item name="main" type="9f88c78c:ScopeViewTreeModel$FileNode" />
               <item name="java" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-            </path>
-            <path>
-              <item name="organizationclubesfutebol" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="organization-clubes-futebol" type="2674bda8:ScopeViewTreeModel$GroupNode" />
-              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="main" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="java" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="organization" type="9f88c78c:ScopeViewTreeModel$FileNode" />
             </path>
             <path>
               <item name="organizationclubesfutebol" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
@@ -346,7 +321,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.testar.testaNullPointer">
+  <component name="RunManager" selected="JUnit.test in organizationclubesfutebol">
     <configuration name="Main" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="organization.Main" />
       <module name="organization-clubes-futebol" />
@@ -559,28 +534,17 @@
       <option name="project" value="LOCAL" />
       <updated>1544463604156</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="AssertThrows tem que ser com Junit 5 api">
+      <created>1544466181814</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1544466181814</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="testar_testaNullPointer - 2018.12.10 at 15h 52m 23s.xml">
-      <configuration name="testar.testaNullPointer" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="testar_testCase - 2018.12.10 at 15h 53m 26s.xml">
-      <configuration name="testar.testCase" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="LerArquivoTxTTest_testaArquivoQueNaoEtxt - 2018.12.10 at 15h 53m 54s.xml">
-      <configuration name="LerArquivoTxTTest.testaArquivoQueNaoEtxt" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="MostrarArquivoTest_testaNullPointer - 2018.12.10 at 15h 54m 21s.xml">
-      <configuration name="MostrarArquivoTest.testaNullPointer" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="AvaliadorDeArgumentosTest_avaliarArgumentosInvalidos - 2018.12.10 at 15h 55m 01s.xml">
-      <configuration name="AvaliadorDeArgumentosTest.avaliarArgumentosInvalidos" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="MostrarArquivoTest_testaNullPointer - 2018.12.10 at 15h 55m 59s.xml">
-      <configuration name="MostrarArquivoTest.testaNullPointer" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="OrganizarEMostrarArquivoTest_testaArquivoQueNaoEtxt - 2018.12.10 at 15h 58m 03s.xml">
       <configuration name="OrganizarEMostrarArquivoTest.testaArquivoQueNaoEtxt" configurationId="JUnit" />
     </history-entry>
@@ -593,12 +557,30 @@
     <history-entry file="MostrarArquivoTest_NPEteste - 2018.12.10 at 16h 06m 00s.xml">
       <configuration name="MostrarArquivoTest.NPEteste" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="MostrarArquivoTest_NPEteste - 2018.12.10 at 16h 19m 10s.xml">
+      <configuration name="MostrarArquivoTest.NPEteste" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="MostrarArquivoTest_NPEteste - 2018.12.10 at 16h 19m 49s.xml">
+      <configuration name="MostrarArquivoTest.NPEteste" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="MostrarArquivoTest_NPEteste - 2018.12.10 at 16h 20m 58s.xml">
+      <configuration name="MostrarArquivoTest.NPEteste" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="testar_testCase - 2018.12.10 at 16h 21m 49s.xml">
+      <configuration name="testar.testCase" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="testar_testaNullPointer - 2018.12.10 at 16h 22m 00s.xml">
+      <configuration name="testar.testaNullPointer" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="test_in_organizationclubesfutebol - 2018.12.10 at 16h 24m 05s.xml">
+      <configuration name="test in organizationclubesfutebol" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.23903178" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.23903178" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -608,7 +590,7 @@
       <window_info id="Favorites" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3289689" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.4871407" visible="true" weight="0.25040916" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4871407" visible="true" weight="0.25040916" />
       <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49394855" weight="0.40425533" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -713,7 +695,8 @@
     <MESSAGE value="subindo o codigo" />
     <MESSAGE value="testando alterações" />
     <MESSAGE value="Refactor testes sem Try/Catch" />
-    <option name="LAST_COMMIT_MESSAGE" value="Refactor testes sem Try/Catch" />
+    <MESSAGE value="AssertThrows tem que ser com Junit 5 api" />
+    <option name="LAST_COMMIT_MESSAGE" value="AssertThrows tem que ser com Junit 5 api" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
@@ -858,28 +841,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/organization/testar.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="48">
-          <caret line="74" column="36" selection-start-line="74" selection-start-column="36" selection-end-line="74" selection-end-column="36" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#2317#2318#0" expanded="true" />
-            <element signature="e#2416#2417#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/organization/AvaliadorDeArgumentosTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1147">
-          <caret line="72" column="5" selection-start-line="72" selection-start-column="5" selection-end-line="72" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/organization/AvaliadorDeArgumentos.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="94">
@@ -897,30 +858,20 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/organization/AvaliadorDeArgumentosTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-722">
+          <caret line="14" column="39" selection-start-line="14" selection-start-column="32" selection-end-line="14" selection-end-column="39" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/organization/LerArquivoTxTTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="98" column="5" lean-forward="true" selection-start-line="91" selection-start-column="4" selection-end-line="98" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/organization/OrganizarEMostrarArquivoTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="83">
-          <caret line="28" column="5" selection-start-line="28" selection-start-column="5" selection-end-line="28" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/organization/OrdenaArquivoAlfabeticoTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="480">
-          <caret line="37" column="44" selection-start-line="37" selection-start-column="44" selection-end-line="37" selection-end-column="44" />
+        <state relative-caret-position="220">
+          <caret line="92" column="35" selection-start-line="92" selection-start-column="35" selection-end-line="92" selection-end-column="35" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -929,12 +880,41 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/organization/MostrarArquivoTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="128">
-          <caret line="17" column="5" selection-start-line="17" selection-start-column="5" selection-end-line="17" selection-end-column="5" />
+        <state relative-caret-position="75">
+          <caret line="14" column="43" selection-start-line="14" selection-start-column="43" selection-end-line="14" selection-end-column="43" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#374#375#0" expanded="true" />
-            <element signature="e#482#483#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/organization/OrdenaArquivoAlfabeticoTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="37" column="44" selection-start-line="37" selection-start-column="44" selection-end-line="37" selection-end-column="44" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/organization/OrganizarEMostrarArquivoTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-450">
+          <caret line="28" column="5" selection-start-line="28" selection-start-column="5" selection-end-line="28" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/organization/testar.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1360">
+          <caret line="80" column="28" lean-forward="true" selection-start-line="80" selection-start-column="28" selection-end-line="80" selection-end-column="28" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#2416#2417#0" expanded="true" />
           </folding>
         </state>
       </provider>
