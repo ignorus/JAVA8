@@ -14,6 +14,7 @@ import java.util.Arrays;
 import java.util.List;
 
 import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.assertThrows;
 import static org.mockito.Mockito.mock;
 
 public class testar {
@@ -76,15 +77,9 @@ public class testar {
     }
 
     @Test
-    @DisplayName("Testa não mostrar arquivo em ordem crescente")
-    void mostrarInvalido() {
-        List<String> listaOrdenada = new ArrayList<String>();
-        listaOrdenada.add("Ana");
-        listaOrdenada.add("Bruno");
-        listaOrdenada.add("Deise");
-        listaOrdenada.add("Eduardo");
-        listaOrdenada.add("Tiago");
-        Assert.assertThrows(NullPointerException.class, () -> {throw new NullPointerException();});
+    @DisplayName("Metodo de ordenação invalido, retorno excessão")
+    void testaNullPointer(){
+        assertThrows(NullPointerException.class, () -> {throw new NullPointerException();});
     }
 
 

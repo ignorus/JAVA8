@@ -7,9 +7,15 @@ import java.util.ArrayList;
 import java.util.List;
 
 import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertThrows;
+import static org.junit.jupiter.api.Assertions.assertThrows;
 
 class MostrarArquivoTest {
+
+    @Test
+    @DisplayName("Testa NullPointer exception")
+    void NPEteste(){
+        assertThrows(NullPointerException.class, () -> {new MostrarArquivo().Mostrar(new ArrayList<>(),"Dec");});
+    }
 
     @Test
     @DisplayName("Testa mostrar arquivo em ordem crescente")
@@ -41,17 +47,7 @@ class MostrarArquivoTest {
         assertEquals("decrescente",exibir.codigoLocal);
     }
 
-    @Test
-    @DisplayName("Testa não mostrar arquivo em ordem crescente")
-    void mostrarInvalido() {
-        List<String> listaOrdenada = new ArrayList<String>();
-        listaOrdenada.add("Ana");
-        listaOrdenada.add("Bruno");
-        listaOrdenada.add("Deise");
-        listaOrdenada.add("Eduardo");
-        listaOrdenada.add("Tiago");
-        assertThrows(NullPointerException.class, () ->{new MostrarArquivo().Mostrar(listaOrdenada,"ie");});
-    }
+
 
 }
 

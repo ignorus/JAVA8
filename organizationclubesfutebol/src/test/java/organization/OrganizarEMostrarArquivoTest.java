@@ -12,7 +12,6 @@ import java.util.ArrayList;
 import java.util.List;
 
 import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertTrue;
 import static org.mockito.Mockito.mock;
 
 class OrganizarEMostrarArquivoTest {
@@ -46,7 +45,6 @@ class OrganizarEMostrarArquivoTest {
         OrganizarEMostrarArquivo testeE2E = new OrganizarEMostrarArquivo();
         MostrarArquivo exibir = new MostrarArquivo();
         testeE2E.ordenarEMostrarArquivo(new LerArquivoTxT(),new OrdenaArquivoAlfabetico(),exibir,atributosMock);
-        assertTrue(arquivoTemp.exists());
         assertEquals("crescente",exibir.codigoLocal);
     }
 
@@ -67,7 +65,6 @@ class OrganizarEMostrarArquivoTest {
         OrganizarEMostrarArquivo testeE2E = new OrganizarEMostrarArquivo();
         MostrarArquivo exibir = new MostrarArquivo();
         testeE2E.ordenarEMostrarArquivo(new LerArquivoTxT(),new OrdenaArquivoAlfabetico(),exibir,atributosMock);
-        assertTrue(arquivoTemp.exists());
         assertEquals("decrescente", exibir.codigoLocal);
     }
 
