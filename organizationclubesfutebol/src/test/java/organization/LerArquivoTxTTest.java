@@ -14,7 +14,6 @@ import java.util.List;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertThrows;
-import static org.mockito.Mockito.mock;
 
 class LerArquivoTxTTest {
 
@@ -31,70 +30,53 @@ class LerArquivoTxTTest {
         }
     }
 
-
     @Test
-    @DisplayName("Arquivo temporario com 5 elementos")
-    void testaArquivoMock()throws IOException {
-
-        List<String> iniciarMock = new ArrayList<String>();
-        File arquivoTemp = folder.newFile("ArquivoMock.txt");
+    @DisplayName("Testa arquivo passado sem extensão")
+    void testaArquivoSemExtensao() throws IOException {
+        File arquivoTemp = folder.newFile("ArquivoTemporario.txt");
         FileWriter escrever = new FileWriter(arquivoTemp);
-        escrever.write("Palmeiras;Corinthias;São Paulo;Santos;Caraguá");
+        escrever.write("alo;ola;asus;samsung");
         escrever.close();
-        iniciarMock.add("arquivo");
-        iniciarMock.add("ordenar");
-        AtributosDeArquivo arquivoMock = mock(new AtributosDeArquivo(iniciarMock).getClass());
-        arquivoMock.nome = String.valueOf(arquivoTemp.getAbsolutePath().replaceAll(".txt",""));
-        arquivoMock.lista = new ArrayList<String>();
-        LerArquivoTxT leitorMock = new LerArquivoTxT();
-        leitorMock.lerArquivo(arquivoMock.lista, arquivoMock.nome);
-        assertEquals(5,arquivoMock.lista.size());
+        List<String> times = new ArrayList();
+        LerArquivoTxT leitorTemp = new LerArquivoTxT();
+        leitorTemp.lerArquivo(times,arquivoTemp.getAbsolutePath().replaceAll(".txt",""));
+        assertEquals(4,times.size());
     }
 
     @Test
-    @DisplayName("Arquivo temporario com 5 elementos separados por virgula ou ponto e virgula")
-    void testaArquivoSeparadoPorVirgula() throws IOException {
-
-        List<String> iniciarMock = new ArrayList<String>();
-        File arquivoTemp = folder.newFile("ArquivoMock1.txt");
-        FileWriter escrever = new FileWriter(arquivoTemp);
-        escrever.write("Palmeiras,Corinthias;São Paulo,Santos;Caraguá");
-        escrever.close();
-        iniciarMock.add("arquivo");
-        iniciarMock.add("ordenar");
-        AtributosDeArquivo arquivoMock = mock(new AtributosDeArquivo(iniciarMock).getClass());
-        arquivoMock.nome = String.valueOf(arquivoTemp.getAbsolutePath().replaceAll(".txt",""));
-        arquivoMock.lista = new ArrayList<String>();
-        LerArquivoTxT leitorMock = new LerArquivoTxT();
-        leitorMock.lerArquivo(arquivoMock.lista, arquivoMock.nome);
-        assertEquals(5,arquivoMock.lista.size());
-    }
-
-    @Test
-    @DisplayName("Arquivo temporario com 5 elementos numericos")
-    void testaArquivoQueContemNumeros() throws IOException {
-
-        List<String> iniciarMock = new ArrayList<String>();
-            File arquivoTemp = folder.newFile("ArquivoMock2.txt");
-            FileWriter escrever = new FileWriter(arquivoTemp);
-            escrever.write("23;53;5 4;9;19");
-            escrever.close();
-            iniciarMock.add("arquivo");
-            iniciarMock.add("ordenar");
-            AtributosDeArquivo arquivoMock = mock(new AtributosDeArquivo(iniciarMock).getClass());
-            arquivoMock.nome = String.valueOf(arquivoTemp.getAbsolutePath().replaceAll(".txt",""));
-            arquivoMock.lista = new ArrayList<String>();
-            LerArquivoTxT leitorMock = new LerArquivoTxT();
-            leitorMock.lerArquivo(arquivoMock.lista, arquivoMock.nome);
-            assertEquals(5,arquivoMock.lista.size());
-    }
-
-    @Test
-    @DisplayName("testa Exceção de Arquivo que não é existe")
-    public void testaArquivoQueNaoEtxt()  {
+    @DisplayName("testa Exceção de Arquivo que não existe")
+    public void testaArquivoInexistente()  {
         assertThrows(FileNotFoundException.class, () ->{
             new LerArquivoTxT().lerArquivo(new ArrayList<String>(),"Ar");}
-            );
+        );
 
     }
+
+
+    @Test
+    @DisplayName("Testa arquivo passado com a extensão TXT")
+    void testaArquivoTXT() throws IOException {
+        File arquivoTemp = folder.newFile("ArquivoTemporario.txt");
+        FileWriter escrever = new FileWriter(arquivoTemp);
+        escrever.write("alo;ola");
+        escrever.close();
+        List<String> times = new ArrayList();
+        LerArquivoTxT leitorTemp = new LerArquivoTxT();
+        leitorTemp.lerArquivo(times,arquivoTemp.getAbsolutePath());
+        assertEquals(2,times.size());
+    }
+
+    @Test
+    @DisplayName("Testa arquivo passado com a extensão JSON")
+    void testaArquivoNaoTXT() throws IOException {
+        File arquivoTemp = folder.newFile("ArquivoTemporario.json");
+        FileWriter escrever = new FileWriter(arquivoTemp);
+        escrever.write("alo;ola");
+        escrever.close();
+        List<String> times = new ArrayList();
+        LerArquivoTxT leitorTemp = new LerArquivoTxT();
+        assertThrows(FileNotFoundException.class,() ->{leitorTemp.lerArquivo(times,arquivoTemp.getAbsolutePath());});
+    }
+
+
 }

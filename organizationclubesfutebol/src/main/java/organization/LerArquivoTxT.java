@@ -9,6 +9,7 @@ public class LerArquivoTxT implements LerArquivo {
 
 
         public  void lerArquivo(List times, String nomeArquivo) throws FileNotFoundException {
+            nomeArquivo = nomeArquivo.replaceAll(".txt","");
             File arquivo = new File(nomeArquivo + ".txt");
             System.out.println("Procurando o arquivo: " + arquivo);
             Scanner scan = new Scanner(arquivo);

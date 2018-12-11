@@ -6,12 +6,14 @@ import org.junit.jupiter.api.Test;
 import org.junit.rules.TemporaryFolder;
 
 import java.io.File;
+import java.io.FileNotFoundException;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
 import static org.junit.Assert.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertThrows;
 import static org.mockito.Mockito.mock;
 
 class OrganizarEMostrarArquivoTest {
@@ -66,6 +68,46 @@ class OrganizarEMostrarArquivoTest {
         MostrarArquivo exibir = new MostrarArquivo();
         testeE2E.ordenarEMostrarArquivo(new LerArquivoTxT(),new OrdenaArquivoAlfabetico(),exibir,atributosMock);
         assertEquals("decrescente", exibir.codigoLocal);
+    }
+
+    @Test
+    @DisplayName("Testa arquivo valido e metodo ordenação invalido")
+    void ordenarEMostrarArquivoMetodoInvalido() throws IOException {
+        List<String> iniciarMock = new ArrayList<String>();
+        iniciarMock.add("ArquivoMock.txt");
+        iniciarMock.add("decrescente");
+        AtributosDeArquivo atributosMock = mock(new AtributosDeArquivo(iniciarMock).getClass());
+        File arquivoTemp = folder.newFile("ArquivoMock.txt");
+        FileWriter escritor = new FileWriter(arquivoTemp);
+        escritor.write("Matheus,Carol;Tiago,Rosa;Toyota;Angelo;Bia,Cesar,Honda,Felipe");
+        escritor.close();
+        atributosMock.nome = arquivoTemp.getAbsolutePath().replaceAll(".txt","");
+        atributosMock.ordenar = "invalido";
+        atributosMock.lista = new ArrayList<String>();
+        OrganizarEMostrarArquivo testeE2E = new OrganizarEMostrarArquivo();
+        MostrarArquivo exibir = new MostrarArquivo();
+        assertThrows(NullPointerException.class,() ->{testeE2E.ordenarEMostrarArquivo(new LerArquivoTxT(),new OrdenaArquivoAlfabetico(),exibir,atributosMock);});
+
+    }
+
+    @Test
+    @DisplayName("Testa arquivo valido e metodo ordenação invalido")
+    void ordenarEMostrarArquivoInexistete() throws IOException {
+        List<String> iniciarMock = new ArrayList<String>();
+        iniciarMock.add("ArquivoMock.txt");
+        iniciarMock.add("decrescente");
+        AtributosDeArquivo atributosMock = mock(new AtributosDeArquivo(iniciarMock).getClass());
+        File arquivoTemp = folder.newFile("ArquivoMock.json");
+        FileWriter escritor = new FileWriter(arquivoTemp);
+        escritor.write("Matheus,Carol;Tiago,Rosa;Toyota;Angelo;Bia,Cesar,Honda,Felipe");
+        escritor.close();
+        atributosMock.nome = arquivoTemp.getAbsolutePath().replaceAll(".txt","");
+        atributosMock.ordenar = "invalido";
+        atributosMock.lista = new ArrayList<String>();
+        OrganizarEMostrarArquivo testeE2E = new OrganizarEMostrarArquivo();
+        MostrarArquivo exibir = new MostrarArquivo();
+        assertThrows(FileNotFoundException.class,() ->{testeE2E.ordenarEMostrarArquivo(new LerArquivoTxT(),new OrdenaArquivoAlfabetico(),exibir,atributosMock);});
+
     }
 
 
