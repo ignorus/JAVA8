@@ -3,8 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="1f22aa3a-f0d1-43c4-b156-80fa886cfd48" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/organization/IntegracaoAvaliadorArgsAtributosArquivo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/organization/IntegracaoAvaliadorArgsAtributosArquivo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/organization/OrdenaArquivoAlfabeticoTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/organization/OrdenaArquivoAlfabeticoTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/organization/OrdenaArquivoAlfabeticoTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/organization/OrdenaArquivoAlfabeticoTest.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -42,7 +40,7 @@
         <entry file="file://$PROJECT_DIR$/src/test/java/organization/LerArquivoTxTTest.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="298">
-              <caret line="73" column="34" lean-forward="true" selection-start-line="73" selection-start-column="34" selection-end-line="73" selection-end-column="34" />
+              <caret line="73" column="34" selection-start-line="73" selection-start-column="34" selection-end-line="73" selection-end-column="34" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -78,7 +76,7 @@
         <entry file="file://$PROJECT_DIR$/src/test/java/organization/IntegracaoAtributosLerArquivoTest.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="-360">
-              <caret line="46" column="49" lean-forward="true" selection-start-line="46" selection-start-column="49" selection-end-line="46" selection-end-column="49" />
+              <caret line="46" column="49" selection-start-line="46" selection-start-column="49" selection-end-line="46" selection-end-column="49" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -225,7 +223,7 @@
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="10" />
     <option name="y" value="20" />
     <option name="width" value="1346" />
@@ -577,7 +575,14 @@
       <option name="project" value="LOCAL" />
       <updated>1544547950569</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Codigo depois do code Review, arrumar alguns testes">
+      <created>1544631951044</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1544631951044</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -613,7 +618,7 @@
     </history-entry>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24659607" />
@@ -733,7 +738,8 @@
     <MESSAGE value="Refactor testes sem Try/Catch" />
     <MESSAGE value="AssertThrows tem que ser com Junit 5 api" />
     <MESSAGE value="Testes unitarios + Testes de Interação" />
-    <option name="LAST_COMMIT_MESSAGE" value="Testes unitarios + Testes de Interação" />
+    <MESSAGE value="Codigo depois do code Review, arrumar alguns testes" />
+    <option name="LAST_COMMIT_MESSAGE" value="Codigo depois do code Review, arrumar alguns testes" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
@@ -943,7 +949,7 @@
     <entry file="file://$PROJECT_DIR$/src/test/java/organization/LerArquivoTxTTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="298">
-          <caret line="73" column="34" lean-forward="true" selection-start-line="73" selection-start-column="34" selection-end-line="73" selection-end-column="34" />
+          <caret line="73" column="34" selection-start-line="73" selection-start-column="34" selection-end-line="73" selection-end-column="34" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -973,7 +979,7 @@
     <entry file="file://$PROJECT_DIR$/src/test/java/organization/IntegracaoAtributosLerArquivoTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-360">
-          <caret line="46" column="49" lean-forward="true" selection-start-line="46" selection-start-column="49" selection-end-line="46" selection-end-column="49" />
+          <caret line="46" column="49" selection-start-line="46" selection-start-column="49" selection-end-line="46" selection-end-column="49" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
