@@ -28,9 +28,9 @@ class OrdenaArquivoAlfabeticoTest {
     @DisplayName("Ordena Alfanumericamente uma lista")
     void testaOrdenarAlfanumerico() {
         List<String> lista = new ArrayList<String>();
-        lista.add("1Tiago");
         lista.add("2André");
         lista.add("3Rosa");
+        lista.add("1Tiago");
         lista.add("4Ricardo");
         lista.add("5Bruna");
         OrdenaArquivoAlfabetico ordenador = new OrdenaArquivoAlfabetico();

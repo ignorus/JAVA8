@@ -9,7 +9,7 @@ import static org.junit.jupiter.api.Assertions.assertThrows;
 public class IntegracaoAvaliadorArgsAtributosArquivo {
 
     @Test
-    @DisplayName("Argumentos -f e -o passados")
+    @DisplayName("Argumentos -f e -o passados") //separar teste de argumentos
     void ArgumentoFOInformado()
     {
 
