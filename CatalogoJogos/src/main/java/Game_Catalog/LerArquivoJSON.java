@@ -12,8 +12,15 @@ public class LerArquivoJSON {
     private JSONObject arquivoEstrturado;
     private JSONParser estruturador;
 
-    public void AbrirArquivoJSON(String path) throws FileNotFoundException {
-        this.arquivo = new FileReader(path);
+    public String AbrirArquivoJSON(String path) {
+        try {
+            this.arquivo = new FileReader(path);
+            return "Sucesso";
+        }
+        catch (FileNotFoundException e){
+            return "Arquivo Invalido";
+        }
+
     }
 
     public JSONObject SepararDadosDoArquivo(Reader leitor) throws IOException, ParseException {
