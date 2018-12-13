@@ -16,12 +16,16 @@ public class LerArquivoJSON {
         this.arquivo = new FileReader(path);
     }
 
-    public void SepararDadosDoArquivo(Reader leitor) throws IOException, ParseException {
-        this.arquivoEstrturado = (JSONObject) this.estruturador.parse(leitor);
+    public JSONObject SepararDadosDoArquivo(Reader leitor) throws IOException, ParseException {
+        return  (JSONObject) this.estruturador.parse(leitor);
     }
 
     public JSONObject getArquivoEstrturado() {
         return arquivoEstrturado;
+    }
+
+    public void setArquivoEstrturado(JSONObject objeto) {
+        this.arquivoEstrturado = objeto ;
     }
 
     public FileReader getArquivo() {
