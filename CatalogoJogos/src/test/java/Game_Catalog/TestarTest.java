@@ -1,7 +1,6 @@
 package Game_Catalog;
 
 import junit.framework.Assert;
-import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
 import org.json.simple.parser.JSONParser;
 import org.json.simple.parser.ParseException;
@@ -11,12 +10,14 @@ import org.junit.jupiter.api.Test;
 import java.io.FileReader;
 import java.io.IOException;
 
-public class LerArquivoJSONTest {
+public class TestarTest {
 
     @Test
-    @DisplayName("Lê arquivo mockado JSON que cotém uma unica chave e valor")
+    @DisplayName("Lê arquivo de teste JSON que cotém uma unica chave e valor")
     void LeUmJSON() throws IOException, ParseException {
-
+        JSONParser parser = new JSONParser();
+        JSONObject arrayJ = (JSONObject) parser.parse(new FileReader("C:/Users/RosaMaria/IdeaProjects/CatalogoJogos/src/files/json.json"));
+        Assert.assertEquals("Tiago",arrayJ.get("nome"));
 
     }
 }

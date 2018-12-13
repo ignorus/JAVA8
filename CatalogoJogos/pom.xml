@@ -31,6 +31,22 @@
             <artifactId>byte-buddy</artifactId>
             <version>1.9.5</version>
         </dependency>
+        <dependency>
+            <groupId>org.json</groupId>
+            <artifactId>json</artifactId>
+            <version>20180813</version>
+        </dependency>
+        <dependency>
+            <groupId>org.kopitubruk.util</groupId>
+            <artifactId>JSONUtil</artifactId>
+            <version>1.10.4</version>
+        </dependency>
+        <dependency>
+            <groupId>com.googlecode.json-simple</groupId>
+            <artifactId>json-simple</artifactId>
+            <version>1.1.1</version>
+        </dependency>
+
 
 
     </dependencies>
