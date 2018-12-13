@@ -16,8 +16,8 @@ public class TestarTest {
     @DisplayName("Lê arquivo de teste JSON que cotém uma unica chave e valor")
     void LeUmJSON() throws IOException, ParseException {
         JSONParser parser = new JSONParser();
-        JSONObject arrayJ = (JSONObject) parser.parse(new FileReader("C:/Users/RosaMaria/IdeaProjects/CatalogoJogos/src/files/json.json"));
-        Assert.assertEquals("Tiago",arrayJ.get("nome"));
+        JSONObject objetoJ = (JSONObject) parser.parse(new FileReader("C:/Users/RosaMaria/IdeaProjects/CatalogoJogos/src/files/json.json"));
+        Assert.assertEquals("Tiago",objetoJ.get("nome"));
 
     }
 }
