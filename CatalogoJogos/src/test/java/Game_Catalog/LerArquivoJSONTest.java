@@ -3,10 +3,9 @@ package Game_Catalog;
 import org.json.simple.JSONObject;
 import org.json.simple.parser.JSONParser;
 import org.json.simple.parser.ParseException;
-import org.junit.jupiter.api.Assertions;
-import org.junit.jupiter.api.BeforeEach;
-import org.junit.jupiter.api.DisplayName;
-import org.junit.jupiter.api.Test;
+import org.junit.Rule;
+import org.junit.jupiter.api.*;
+import org.junit.rules.TemporaryFolder;
 
 import java.io.*;
 
@@ -19,13 +18,17 @@ public class LerArquivoJSONTest {
 
     JSONObject objetoSimples;
     JSONParser parser;
+    String verificarRetorno;
 
+    @Rule TemporaryFolder folder;
 
     @BeforeEach
-    void setUp() {
-        objetoSimples =  new JSONObject();
-        objetoSimples.put("nome","Tiago");
+    void setUp() throws IOException {
+        objetoSimples = new JSONObject();
+        objetoSimples.put("nome", "Tiago");
         parser = new JSONParser();
+        folder = new TemporaryFolder();
+        folder.create();
     }
 
     @Test
@@ -48,11 +51,18 @@ public class LerArquivoJSONTest {
     }
 
     @Test
-    @DisplayName("Dado um arquivo valido, lê-lo")
-    void confirmaLeitura() {
+    @DisplayName("Dado um arquivo mock valido, lê-lo")
+    void confirmaLeituraMock() {
         LerArquivoJSON lerMockado = mock(new LerArquivoJSON().getClass());
         when(lerMockado.AbrirArquivoJSON(anyString())).thenReturn("Sucesso");
         assertEquals("Sucesso",lerMockado.AbrirArquivoJSON("teste.json"));
+    }
+
+    @Test
+    @DisplayName("Dado um arquivo real valido, lê-lo")
+    void confirmaLeitura(){
+        LerArquivoJSON lerArquivo = new LerArquivoJSON();
+        assertEquals("Sucesso", lerArquivo.AbrirArquivoJSON("src/files/json.json"));
     }
 
     @Test
@@ -66,7 +76,20 @@ public class LerArquivoJSONTest {
     @Test
     @DisplayName("Dado um arquivo invalido, reportar erro")
     void negaLeitura() {
-        LerArquivoJSON ler = new LerArquivoJSON();
-        assertEquals("Arquivo Invalido",ler.AbrirArquivoJSON("teste"));
+        LerArquivoJSON lerArquivo = new LerArquivoJSON();
+        assertEquals("Arquivo Invalido",lerArquivo.AbrirArquivoJSON("teste"));
+    }
+
+    @Test
+    @DisplayName("Dado um arquivo temporario valido, estruturá-lo")
+    void estruturaTemporario() throws IOException, ParseException {
+        LerArquivoJSON lerArquivoTemp = new LerArquivoJSON();
+        File arquivoJsonTest = folder.newFile("JSONTemporario.json");
+        FileWriter escritorTest = new FileWriter(arquivoJsonTest);
+        escritorTest.write("{\"nome\":\"Sonic\"}");
+        escritorTest.close();
+        verificarRetorno = lerArquivoTemp.AbrirArquivoJSON((arquivoJsonTest.getAbsolutePath()));
+        objetoSimples = lerArquivoTemp.SepararDadosDoArquivo(lerArquivoTemp.getArquivo());
+        assertEquals("Sonic", objetoSimples.get("nome"));
     }
 }
