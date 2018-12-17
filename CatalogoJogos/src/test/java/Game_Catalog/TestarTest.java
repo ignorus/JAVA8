@@ -11,7 +11,12 @@ import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
 import java.lang.reflect.Array;
+import java.util.ArrayList;
+import java.util.Collection;
 import java.util.List;
+import java.util.Map;
+
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class TestarTest {
 
@@ -21,7 +26,7 @@ public class TestarTest {
         JSONParser parser = new JSONParser();
         FileReader leitor = new FileReader("C:/Users/RosaMaria/IdeaProjects/CatalogoJogos/src/files/json.json");
         JSONObject objetoJ = (JSONObject) parser.parse(leitor);
-        Assertions.assertEquals("Tiago",objetoJ.get("nome"));
+        assertEquals("Tiago",objetoJ.get("nome"));
 
     }
 
@@ -31,7 +36,7 @@ public class TestarTest {
         JSONParser parser = new JSONParser();
         FileReader leitor = new FileReader("C:/Users/RosaMaria/IdeaProjects/CatalogoJogos/src/files/json.json");
         JSONObject objetoJ = (JSONObject) parser.parse(leitor);
-        Assertions.assertEquals("23",objetoJ.get("idade"));
+        assertEquals("23",objetoJ.get("idade"));
 
     }
 
@@ -41,12 +46,16 @@ public class TestarTest {
         JSONParser parser = new JSONParser();
         FileReader leitor = new FileReader("C:/Users/RosaMaria/IdeaProjects/CatalogoJogos/src/files/multiJson.json");
         JSONObject arquivo = (JSONObject) parser.parse(leitor);
-        JSONObject pessoas = (JSONObject) arquivo.get("pessoa");
-        JSONObject nomes = (JSONObject) pessoas.get("nome");
-        System.out.println(arquivo.get("pessoa"));
-        System.out.println(pessoas.get("nome"));
-        System.out.println(pessoas.get("hobbies"));
-        System.out.println(nomes.get("primeironome") + " " + nomes.get("segundonome") + " "+ nomes.get("sobrenome"));
+        assertEquals("Tiago",((JSONObject) ((JSONObject) arquivo.get("pessoa")).get("nome")).get("primeironome"));
+    }
 
+    @Test
+    @DisplayName("Lê arquivo JSON com varios objetos JSON e recupera o valor de uma das chaves filho")
+    void LeUMJSONComVariosObjetosGaranteTamanho() throws IOException, ParseException {
+        JSONParser parser = new JSONParser();
+        FileReader leitor = new FileReader("C:/Users/RosaMaria/IdeaProjects/CatalogoJogos/src/files/multiJson.json");
+        JSONObject arquivo = (JSONObject) parser.parse(leitor);
+        Collection ordenada = ((JSONObject) ((JSONObject) arquivo.get("pessoa")).get("nome")).values();
+        assertEquals(6,ordenada.size());
     }
 }
