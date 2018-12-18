@@ -6,7 +6,7 @@ import java.lang.reflect.Array;
 
 public class SalvarArquivoJSON {
 
-    public String salvarJSON(JSONObject catalogo,String empresa, String plataforma, String jogo, String[] personagens)
+    public String salvarJogoePersonagemJSON(JSONObject catalogo,String empresa, String plataforma, String jogo, String[] personagens)
     {
 
         return "Jogo salvo";

@@ -39,8 +39,8 @@ public class SalvarArquivoJSONTest {
         String plataforma = "Wii";
         String jogo = "MarioKart";
         String [] personagens = new String[]{"Mario","Luigi","Wario","Daisy","Peach"};
-        when(salvarMock.salvarJSON(ler,empresa,plataforma,jogo,personagens)).thenReturn("Jogo salvo");
-        Assertions.assertEquals("Jogo salvo",salvarMock.salvarJSON(ler,empresa,plataforma,jogo,personagens));
+        when(salvarMock.salvarJogoePersonagemJSON(ler,empresa,plataforma,jogo,personagens)).thenReturn("Jogo salvo");
+        Assertions.assertEquals("Jogo salvo",salvarMock.salvarJogoePersonagemJSON(ler,empresa,plataforma,jogo,personagens));
     }
 
     @Test

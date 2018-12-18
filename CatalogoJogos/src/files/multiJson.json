@@ -1,6 +1,1 @@
-{"pessoa":{
-  "nome": {
-    "primeironome": "Tiago","segundonome": "Bugan","sobrenome": "Debs","outronome": "Ana","eoutro": "Ceci","aindaoutro": "Beatriz"
-  },
-  "idade": "23","altura": "1,63","hobbies": ["Tango","Jogos","Conversar"]
-}}
+{"Pessoa":{"Nome":{"Sobrenome":"Debs","PrimeiroNome":"Tiago"},"Hobbies":{"Dança":"Tango","Esporte":"Corrida"}}}
