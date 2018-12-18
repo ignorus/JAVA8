@@ -1,0 +1,7 @@
+{"Empresa":
+  { "Nintendo": {},
+    "Sony": {"PS1": {"Crash Bandicoot": ["Crash","Cortex","Coco","Pura"]},
+             "PS2": {},
+             "PS3": {},
+             "PS4": {}},
+    "Microsoft": {}}}

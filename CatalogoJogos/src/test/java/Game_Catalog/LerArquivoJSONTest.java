@@ -31,14 +31,6 @@ public class LerArquivoJSONTest {
         folder.create();
     }
 
-    @Test
-    @DisplayName("Dado um arquivo valido e estruturado que cotém uma unica chave e valor, garantir que o objeto guardou esta informação")
-    void recuperaUmJSON() {
-
-        LerArquivoJSON lerMockado = mock (new LerArquivoJSON().getClass());
-        when(lerMockado.getArquivoEstrturado()).thenReturn(objetoSimples);
-        assertEquals("Tiago",lerMockado.getArquivoEstrturado().get("nome"));
-    }
 
     @Test
     @DisplayName("Dado arquivo lido, estruturar e retornar valor relativo a uma chave, passado por string")
@@ -91,5 +83,45 @@ public class LerArquivoJSONTest {
         verificarRetorno = lerArquivoTemp.AbrirArquivoJSON((arquivoJsonTest.getAbsolutePath()));
         objetoSimples = lerArquivoTemp.SepararDadosDoArquivo(lerArquivoTemp.getArquivo());
         assertEquals("Sonic", objetoSimples.get("nome"));
+    }
+
+    @Test
+    @DisplayName("Dado um arquivo valido, retornar os nomes das empresas fabricantes")
+    void RetornaFabricantes() throws IOException, ParseException {
+        LerArquivoJSON lerArquivo = new LerArquivoJSON();
+        lerArquivo.AbrirArquivoJSON("src/files/CatalogoJogos.Json");
+        objetoSimples = lerArquivo.SepararDadosDoArquivo(lerArquivo.getArquivo());
+        assertEquals("[Sony, Nintendo, Microsoft]",((JSONObject) objetoSimples.get("Empresa")).keySet().toString());
+    }
+
+    @Test
+    @DisplayName("Dado um arquivo valido, retornar os nomes das plataformas da empresa Sony")
+    void RetornaPlataformasSony() throws IOException, ParseException {
+        LerArquivoJSON lerArquivo = new LerArquivoJSON();
+        lerArquivo.AbrirArquivoJSON("src/files/CatalogoJogos.Json");
+        objetoSimples = lerArquivo.SepararDadosDoArquivo(lerArquivo.getArquivo());
+        objetoSimples = ((JSONObject)((JSONObject) objetoSimples.get("Empresa")).get("Sony"));
+        assertEquals("[PS4, PS3, PS2, PS1]",objetoSimples.keySet().toString());
+    }
+
+    @Test
+    @DisplayName("Retornar jogos de PS1")
+    void RetornaJogos() throws IOException, ParseException {
+        LerArquivoJSON lerArquivo = new LerArquivoJSON();
+        lerArquivo.AbrirArquivoJSON("src/files/CatalogoJogos.Json");
+        objetoSimples = lerArquivo.SepararDadosDoArquivo(lerArquivo.getArquivo());
+        objetoSimples = ((JSONObject)((JSONObject)((JSONObject) objetoSimples.get("Empresa")).get("Sony")).get("PS1"));
+        assertEquals("[Crash Bandicoot]",objetoSimples.keySet().toString());
+    }
+
+    @Test
+    @DisplayName("Retornar personagens de um jogo")
+    void RetornaPersonagens() throws IOException, ParseException {
+        LerArquivoJSON lerArquivo = new LerArquivoJSON();
+        lerArquivo.AbrirArquivoJSON("src/files/CatalogoJogos.Json");
+        objetoSimples = lerArquivo.SepararDadosDoArquivo(lerArquivo.getArquivo());
+        objetoSimples = (((JSONObject)((JSONObject)((JSONObject) objetoSimples.get("Empresa")).get("Sony")
+        ).get("PS1")));
+        assertEquals("[\"Crash\",\"Cortex\",\"Coco\",\"Pura\"]",objetoSimples.get("Crash Bandicoot").toString());
     }
 }

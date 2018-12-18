@@ -3,18 +3,13 @@ package Game_Catalog;
 import org.json.simple.JSONObject;
 import org.json.simple.parser.JSONParser;
 import org.json.simple.parser.ParseException;
-import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
-import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
-import java.lang.reflect.Array;
-import java.util.ArrayList;
 import java.util.Collection;
-import java.util.List;
-import java.util.Map;
+
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
@@ -41,7 +36,7 @@ public class TestarTest {
     }
 
     @Test
-    @DisplayName("Lê arquivo JSON com varios objetos JSON")
+    @DisplayName("Lê arquivo JSON com varios objetos JSON e retorna o valor de um filho")
     void LeUMJSONComVariosObjetos() throws IOException, ParseException {
         JSONParser parser = new JSONParser();
         FileReader leitor = new FileReader("C:/Users/RosaMaria/IdeaProjects/CatalogoJogos/src/files/multiJson.json");
