@@ -25,6 +25,8 @@ public class SalvarArquivoJSONTest {
     JSONObject verificador;
     FileReader ler;
     JSONArray testArray;
+    FileWriter iniciar;
+    String retorno;
 
     @Rule TemporaryFolder folder;
 
@@ -35,9 +37,12 @@ public class SalvarArquivoJSONTest {
         lido = new JSONObject();
         verificador = new JSONObject();
         parser = new JSONParser();
-        salvarMock = mock(new SalvarArquivoJSON("src/files/json.json").getClass());
+        salvarMock = mock(new SalvarArquivoJSON("src/files/multiJson.json").getClass());
         arquivoMock = mock(new LerArquivoJSON().getClass());
         testArray = new JSONArray();
+        iniciar = new FileWriter("src/files/multiJson.json");
+        iniciar.write("{\"Empresa\":{\"Sony\":{\"PS4\":{},\"PS3\":{},\"PS2\":{},\"PS1\":{\"Crash Bandicoot\":[\"Crash\",\"Cortex\",\"Coco\",\"Pura\"]}},\"Nintendo\":{},\"Microsoft\":{}}}");
+        iniciar.close();
 
     }
 
@@ -53,9 +58,24 @@ public class SalvarArquivoJSONTest {
     }
 
     @Test
+    @DisplayName("Salvar um Jogo ja existente")
+    void SalvarJogoExistente() throws IOException, ParseException {
+        ler = new FileReader("src/files/multiJson.json");
+        String empresa = "Sony";
+        String plataforma = "PS1";
+        String jogo = "Crash Bandicoot";
+        String [] personagens = new String[]{};
+        lido = ((JSONObject) parser.parse(ler));
+        ler.close();
+        SalvarArquivoJSON salvar = new SalvarArquivoJSON("src/files/multiJson.json");
+        retorno = salvar.salvarJogoePersonagemJSON(lido,empresa,plataforma,jogo,personagens);
+        assertEquals("Jogo já existe",retorno);
+    }
+
+    @Test
     @DisplayName("Salvar um Jogo e seus Personagens, dado uma Empresa e Plataforma existentes")
     void SalvarPersonagensEJogo() throws IOException, ParseException {
-        ler = new FileReader("src/files/CatalogoJogos.Json");
+        ler = new FileReader("src/files/multiJson.json");
         String empresa = "Sony";
         String plataforma = "PS2";
         String jogo = "Kingdom Hearts II";
@@ -63,9 +83,9 @@ public class SalvarArquivoJSONTest {
                 "Riku","Kairi","Xemnas","Mickey","Mulan"};
         lido = ((JSONObject) parser.parse(ler));
         ler.close();
-        SalvarArquivoJSON salvar = new SalvarArquivoJSON("src/files/CatalogoJogos.Json");
+        SalvarArquivoJSON salvar = new SalvarArquivoJSON("src/files/multiJson.json");
         salvar.salvarJogoePersonagemJSON(lido,empresa,plataforma,jogo,personagens);
-        ler = new FileReader("src/files/CatalogoJogos.Json");
+        ler = new FileReader("src/files/multiJson.json");
         lido = ((JSONObject) parser.parse(ler));
         ler.close();
         verificador = (JSONObject) ((JSONObject) ((JSONObject)lido.get("Empresa")).get(empresa)).get(plataforma);
@@ -76,7 +96,7 @@ public class SalvarArquivoJSONTest {
     @Test
     @DisplayName("Adiciona Jogo com Personagens, plataforma ainda não registrada")
     void AdicionaPlataforma() throws IOException, ParseException {
-        ler = new FileReader("src/files/CatalogoJogos.Json");
+        ler = new FileReader("src/files/multiJson.json");
         String empresa = "Nintendo";
         String plataforma = "Wii";
         String jogo = "Super Mario Galaxy";
@@ -84,9 +104,9 @@ public class SalvarArquivoJSONTest {
                 "Lumas","Toads"};
         lido = ((JSONObject) parser.parse(ler));
         ler.close();
-        SalvarArquivoJSON salvar = new SalvarArquivoJSON("src/files/CatalogoJogos.Json");
+        SalvarArquivoJSON salvar = new SalvarArquivoJSON("src/files/multiJson.json");
         salvar.salvarJogoePersonagemJSON(lido,empresa,plataforma,jogo,personagens);
-        ler = new FileReader("src/files/CatalogoJogos.Json");
+        ler = new FileReader("src/files/multiJson.json");
         lido = ((JSONObject) parser.parse(ler));
         ler.close();
         verificador = (JSONObject) ((JSONObject)lido.get("Empresa")).get(empresa);
@@ -96,16 +116,16 @@ public class SalvarArquivoJSONTest {
     @Test
     @DisplayName("Adiciona Jogo com Personagens, Empresa ainda não registrada")
     void AdicionaEmpresa() throws IOException, ParseException {
-        ler = new FileReader("src/files/CatalogoJogos.Json");
+        ler = new FileReader("src/files/multiJson.json");
         String empresa = "Sega";
         String plataforma = "Mega Drive";
         String jogo = "Sonic the Hedgehog";
         String [] personagens = new String[]{"Sonic","Dr. Robotnik","Badniks"};
         lido = ((JSONObject) parser.parse(ler));
         ler.close();
-        SalvarArquivoJSON salvar = new SalvarArquivoJSON("src/files/CatalogoJogos.Json");
+        SalvarArquivoJSON salvar = new SalvarArquivoJSON("src/files/multiJson.json");
         salvar.salvarJogoePersonagemJSON(lido,empresa,plataforma,jogo,personagens);
-        ler = new FileReader("src/files/CatalogoJogos.Json");
+        ler = new FileReader("src/files/multiJson.json");
         lido = ((JSONObject) parser.parse(ler));
         ler.close();
         verificador = (JSONObject)lido.get("Empresa");

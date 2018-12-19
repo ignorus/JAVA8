@@ -96,7 +96,7 @@ public class TestarTest {
     @Test
     @DisplayName("Escreve um JSON MultiCamadas")
     void escreverMultiCamadas() throws IOException {
-        FileWriter escritor = new FileWriter("src/files/multiJson.json");
+        FileWriter escritor = new FileWriter("src/files/EscreverJson.json");
         objetoSalvar.putAll(singletonMap("Pessoa", singletonMap("Nome",singletonMap("Sobrenome","Debs"))));
         escritor.write(objetoSalvar.toJSONString());
         escritor.close();
@@ -105,28 +105,31 @@ public class TestarTest {
     @Test
     @DisplayName("Testar PutIfAbscent")
     void PutIfAbscenteTest() throws IOException, ParseException {
-        FileReader leitor = new FileReader("src/files/multiJson.json");
+        FileWriter escritor = new FileWriter("src/files/Test.json");
+        escritor.write("{\"Pessoa\":{\"Nome\":{}}}");
+        escritor.close();
+        FileReader leitor = new FileReader("src/files/Test.json");
         objetoSalvar = (JSONObject) parser.parse(leitor);
         leitor.close();
         objecttest = ((JSONObject)((JSONObject) objetoSalvar.get("Pessoa")).get("Nome"));
         objecttest.putIfAbsent("PrimeiroNome","Tiago");
-        FileWriter escritor = new FileWriter("src/files/multiJson.json");
+        escritor = new FileWriter("src/files/Test.json");
         escritor.write(objetoSalvar.toJSONString());
         escritor.close();
-        leitor = new FileReader("src/files/multiJson.json");
+        leitor = new FileReader("src/files/Test.json");
         objetoSalvar = (JSONObject) parser.parse(leitor);
         leitor.close();
         objecttest = ((JSONObject) objetoSalvar.get("Pessoa"));
         objecttest.putIfAbsent("Hobbies",singletonMap("Esporte","Corrida"));
-        escritor = new FileWriter("src/files/multiJson.json");
+        escritor = new FileWriter("src/files/Test.json");
         escritor.write(objetoSalvar.toJSONString());
         escritor.close();
-        leitor = new FileReader("src/files/multiJson.json");
+        leitor = new FileReader("src/files/Test.json");
         objetoSalvar = (JSONObject) parser.parse(leitor);
         leitor.close();
         objecttest = ((JSONObject)((JSONObject) objetoSalvar.get("Pessoa")).get("Hobbies"));
         objecttest.putIfAbsent("Dança","Tango");
-        escritor = new FileWriter("src/files/multiJson.json");
+        escritor = new FileWriter("src/files/Test.json");
         escritor.write(objetoSalvar.toJSONString());
         escritor.close();
         assertTrue(objecttest.containsKey("Dança"));
