@@ -1,8 +1,12 @@
 package Game_Catalog;
 
 import org.json.simple.JSONObject;
+import org.junit.Rule;
 import org.junit.jupiter.api.*;
+import org.junit.rules.TemporaryFolder;
 
+import java.io.File;
+import java.io.FileWriter;
 import java.io.IOException;
 
 import static java.lang.Boolean.FALSE;
@@ -20,6 +24,10 @@ public class AtualizarLeituraTest {
     String verificador;
     JSONObject objetoParametro;
     String[] mockParametro;
+    File arquivoTemp;
+    FileWriter escrver;
+
+    @Rule TemporaryFolder folder;
 
     @BeforeEach
     void iniciar() throws IOException {
@@ -28,6 +36,13 @@ public class AtualizarLeituraTest {
         objetoParametro = new JSONObject();
         mockParametro = new String[]{"oi","alo"};
         atualizador = new AtualizarLeitura();
+        folder = new TemporaryFolder();
+        folder.create();
+        arquivoTemp = folder.newFile("Temporario.Json");
+        escrver = new FileWriter(arquivoTemp);
+        escrver.write("{\"Nome\":\"Tiago\"}");
+        escrver.close();
+
     }
 
     @Test
@@ -71,5 +86,12 @@ public class AtualizarLeituraTest {
         when(salvar.salvarJogoePersonagemJSON(objetoParametro,"a","b","c",mockParametro)).thenReturn("Jogo já existe");
         verificador = salvar.salvarJogoePersonagemJSON(objetoParametro,"a","b","c",mockParametro);
         assertFalse(atualizador.LeituraAtualizada(verificador));
+    }
+
+    @Test
+    @DisplayName("Dado um arquivo temporario alterado, atualizar o Reader")
+    void ArquivoTemporarioAtualizar()
+    {
+
     }
 }
