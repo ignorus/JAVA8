@@ -1,5 +1,6 @@
 package Game_Catalog;
 
+import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
 import org.json.simple.parser.JSONParser;
 import org.json.simple.parser.ParseException;
@@ -11,6 +12,7 @@ import java.io.*;
 
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertTrue;
 import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.when;
 
@@ -21,6 +23,8 @@ public class SalvarArquivoJSONTest {
     SalvarArquivoJSON salvarMock;
     LerArquivoJSON arquivoMock;
     JSONObject verificador;
+    FileReader ler;
+    JSONArray testArray;
 
     @Rule TemporaryFolder folder;
 
@@ -31,8 +35,9 @@ public class SalvarArquivoJSONTest {
         lido = new JSONObject();
         verificador = new JSONObject();
         parser = new JSONParser();
-        salvarMock = mock(new SalvarArquivoJSON("src/files/CatalogoJogos.Json").getClass());
+        salvarMock = mock(new SalvarArquivoJSON("src/files/json.json").getClass());
         arquivoMock = mock(new LerArquivoJSON().getClass());
+        testArray = new JSONArray();
 
     }
 
@@ -50,19 +55,41 @@ public class SalvarArquivoJSONTest {
     @Test
     @DisplayName("Salvar um Jogo e seus Personagens, dado uma Empresa e Plataforma existentes")
     void SalvarPersonagensEJogo() throws IOException, ParseException {
+        ler = new FileReader("src/files/CatalogoJogos.Json");
         String empresa = "Sony";
         String plataforma = "PS2";
         String jogo = "Kingdom Hearts II";
         String [] personagens = new String[]{"Sora","Roxas","Axel","Donald","Goofy",
                 "Riku","Kairi","Xemnas","Mickey","Mulan"};
-        when(arquivoMock.SepararDadosDoArquivo(arquivoMock.getArquivo())).
-                thenReturn((JSONObject) parser.parse(new FileReader("src/files/CatalogoJogos.Json")));
-        lido = arquivoMock.SepararDadosDoArquivo(arquivoMock.getArquivo());
+        lido = ((JSONObject) parser.parse(ler));
+        ler.close();
         SalvarArquivoJSON salvar = new SalvarArquivoJSON("src/files/CatalogoJogos.Json");
         salvar.salvarJogoePersonagemJSON(lido,empresa,plataforma,jogo,personagens);
-        lido = arquivoMock.SepararDadosDoArquivo(arquivoMock.getArquivo());
-        verificador = (JSONObject)((JSONObject)((JSONObject)lido.get(empresa)).get(plataforma)).get(jogo);
+        ler = new FileReader("src/files/CatalogoJogos.Json");
+        lido = ((JSONObject) parser.parse(ler));
+        ler.close();
+        verificador = (JSONObject) ((JSONObject) ((JSONObject)lido.get("Empresa")).get(empresa)).get(plataforma);
         assertEquals("[\"Sora\",\"Roxas\",\"Axel\",\"Donald\",\"Goofy\"," +
-                " \"Riku\",\"Kairi\",\"Xemnas\",\"Mickey\",\"Mulan\"]",verificador.toString());
+                "\"Riku\",\"Kairi\",\"Xemnas\",\"Mickey\",\"Mulan\"]",verificador.get(jogo).toString());
+    }
+
+    @Test
+    @DisplayName("Adiciona Jogo com Personagens, plataforma ainda não registrada")
+    void AdicionaPlataforma() throws IOException, ParseException {
+        ler = new FileReader("src/files/CatalogoJogos.Json");
+        String empresa = "Nintendo";
+        String plataforma = "Wii";
+        String jogo = "Super Mario Galaxy";
+        String [] personagens = new String[]{"Mario","Bowser","Peach","Rosalina","Luigi",
+                "Lumas","Toads"};
+        lido = ((JSONObject) parser.parse(ler));
+        ler.close();
+        SalvarArquivoJSON salvar = new SalvarArquivoJSON("src/files/CatalogoJogos.Json");
+        salvar.salvarJogoePersonagemJSON(lido,empresa,plataforma,jogo,personagens);
+        ler = new FileReader("src/files/CatalogoJogos.Json");
+        lido = ((JSONObject) parser.parse(ler));
+        ler.close();
+        verificador = (JSONObject) ((JSONObject) ((JSONObject)lido.get("Empresa")).get(empresa));
+        assertTrue(verificador.containsKey("Wii"));
     }
 }

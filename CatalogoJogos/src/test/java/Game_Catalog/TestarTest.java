@@ -1,5 +1,7 @@
 package Game_Catalog;
 
+import org.json.JSONArray;
+import org.json.JSONString;
 import org.json.simple.JSONObject;
 import org.json.simple.parser.JSONParser;
 import org.json.simple.parser.ParseException;
@@ -11,8 +13,10 @@ import org.junit.jupiter.api.Test;
 import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
+import java.util.ArrayList;
 import java.util.Collection;
 import java.util.Collections;
+import java.util.List;
 
 
 import static java.util.Collections.singletonMap;
@@ -135,4 +139,25 @@ public class TestarTest {
         escritor.close();
         assertTrue(objecttest.containsKey("Dança"));
     }
+
+    @Test
+    @DisplayName("Salvar Array em arquivo JSON")
+    void SalvarArray() throws IOException, ParseException {
+        String[] conjunto = new String[] {"Tiago","Bugan","Debs"};
+        JSONArray teste = new JSONArray();
+        teste.put(conjunto[0]);
+        teste.put(conjunto[1]);
+        teste.put(conjunto[2]);
+        Assertions.assertEquals("Tiago",teste.get(0).toString());
+        JSONObject objetoTest = new JSONObject();
+        objetoTest.put("nome",teste);
+        FileWriter escritor = new FileWriter("src/files/json.json");
+        escritor.write(objetoTest.toJSONString());
+        escritor.close();
+        FileReader leitor = new FileReader("src/files/json.json");
+        objetoComparar = (JSONObject) parser.parse(leitor);
+        leitor.close();
+        assertEquals("[\"Tiago\",\"Bugan\",\"Debs\"]",objetoComparar.get("nome").toString());
+    }
+
 }

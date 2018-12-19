@@ -1,7 +1,1 @@
-{"Empresa":
-  { "Nintendo": {},
-    "Sony": {"PS1": {"Crash Bandicoot": ["Crash","Cortex","Coco","Pura"]},
-             "PS2": {},
-             "PS3": {},
-             "PS4": {}},
-    "Microsoft": {}}}
+{"Empresa":{"Sony":{"PS4":{},"PS3":{},"PS2":{"Kingdom Hearts II":["Sora","Roxas","Axel","Donald","Goofy","Riku","Kairi","Xemnas","Mickey","Mulan"]},"PS1":{"Crash Bandicoot":["Crash","Cortex","Coco","Pura"]}},"Nintendo":{},"Microsoft":{}}}
