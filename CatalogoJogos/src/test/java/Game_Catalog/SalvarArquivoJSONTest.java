@@ -89,7 +89,26 @@ public class SalvarArquivoJSONTest {
         ler = new FileReader("src/files/CatalogoJogos.Json");
         lido = ((JSONObject) parser.parse(ler));
         ler.close();
-        verificador = (JSONObject) ((JSONObject) ((JSONObject)lido.get("Empresa")).get(empresa));
+        verificador = (JSONObject) ((JSONObject)lido.get("Empresa")).get(empresa);
         assertTrue(verificador.containsKey("Wii"));
+    }
+
+    @Test
+    @DisplayName("Adiciona Jogo com Personagens, Empresa ainda não registrada")
+    void AdicionaEmpresa() throws IOException, ParseException {
+        ler = new FileReader("src/files/CatalogoJogos.Json");
+        String empresa = "Sega";
+        String plataforma = "Mega Drive";
+        String jogo = "Sonic the Hedgehog";
+        String [] personagens = new String[]{"Sonic","Dr. Robotnik","Badniks"};
+        lido = ((JSONObject) parser.parse(ler));
+        ler.close();
+        SalvarArquivoJSON salvar = new SalvarArquivoJSON("src/files/CatalogoJogos.Json");
+        salvar.salvarJogoePersonagemJSON(lido,empresa,plataforma,jogo,personagens);
+        ler = new FileReader("src/files/CatalogoJogos.Json");
+        lido = ((JSONObject) parser.parse(ler));
+        ler.close();
+        verificador = (JSONObject)lido.get("Empresa");
+        assertTrue(verificador.containsKey("Sega"));
     }
 }
