@@ -5,7 +5,9 @@ import org.junit.jupiter.api.*;
 
 import java.io.IOException;
 
+import static java.lang.Boolean.FALSE;
 import static java.lang.Boolean.TRUE;
+import static org.junit.jupiter.api.Assertions.assertFalse;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 import static org.mockito.ArgumentMatchers.anyObject;
 import static org.mockito.ArgumentMatchers.anyString;
@@ -42,5 +44,15 @@ public class AtualizarLeituraTest {
         verificador = salvar.salvarJogoePersonagemJSON(objetoParametro,"a","b","c",mockParametro);
         when(atualizador.LeituraAtualizada(verificador)).thenReturn(TRUE);
         assertTrue(atualizador.LeituraAtualizada(verificador));
+    }
+
+    @Test
+    @DisplayName("Dado um arquivo mock salvo sem alterações, não atualizar")
+    void SalvoNaoAtualizarMock() throws IOException {
+        String[] mockParametro = new String[]{"oi","alo"};
+        when(salvar.salvarJogoePersonagemJSON(objetoParametro,"a","b","c",mockParametro)).thenReturn("Jogo já existe");
+        verificador = salvar.salvarJogoePersonagemJSON(objetoParametro,"a","b","c",mockParametro);
+        when(atualizador.LeituraAtualizada(verificador)).thenReturn(FALSE);
+        assertFalse(atualizador.LeituraAtualizada(verificador));
     }
 }
