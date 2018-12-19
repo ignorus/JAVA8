@@ -8,8 +8,10 @@ import org.junit.jupiter.api.*;
 import org.junit.rules.TemporaryFolder;
 
 import java.io.*;
+import java.util.Collections;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertTrue;
 import static org.mockito.ArgumentMatchers.anyString;
 import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.when;
@@ -91,7 +93,7 @@ public class LerArquivoJSONTest {
         LerArquivoJSON lerArquivo = new LerArquivoJSON();
         lerArquivo.AbrirArquivoJSON("src/files/CatalogoJogos.Json");
         objetoSimples = lerArquivo.SepararDadosDoArquivo(lerArquivo.getArquivo());
-        assertEquals("[Sony, Nintendo, Microsoft]",((JSONObject) objetoSimples.get("Empresa")).keySet().toString());
+        assertTrue(((JSONObject) objetoSimples.get("Empresa")).keySet().contains("Sony"));
     }
 
     @Test
@@ -111,7 +113,7 @@ public class LerArquivoJSONTest {
         lerArquivo.AbrirArquivoJSON("src/files/CatalogoJogos.Json");
         objetoSimples = lerArquivo.SepararDadosDoArquivo(lerArquivo.getArquivo());
         objetoSimples = ((JSONObject)((JSONObject)((JSONObject) objetoSimples.get("Empresa")).get("Sony")).get("PS1"));
-        assertEquals("[Crash Bandicoot]",objetoSimples.keySet().toString());
+        assertTrue(objetoSimples.keySet().contains("Crash Bandicoot"));
     }
 
     @Test

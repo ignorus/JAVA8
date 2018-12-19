@@ -30,7 +30,7 @@ public class TestarTest {
     JSONObject objetoComparar = new JSONObject();
     JSONObject objecttest = new JSONObject();
 
-    @Test
+/*    @Test
     @DisplayName("Lê arquivo de teste JSON que cotém duas chaves e um valor")
     void LeUmJSON() throws IOException, ParseException {
         JSONParser parser = new JSONParser();
@@ -57,17 +57,9 @@ public class TestarTest {
         FileReader leitor = new FileReader("C:/Users/RosaMaria/IdeaProjects/CatalogoJogos/src/files/multiJson.json");
         JSONObject arquivo = (JSONObject) parser.parse(leitor);
         assertEquals("Tiago",((JSONObject) ((JSONObject) arquivo.get("pessoa")).get("nome")).get("primeironome"));
-    }
+    }*/
 
-    @Test
-    @DisplayName("Lê arquivo JSON com varios objetos JSON e recupera o valor de uma das chaves filho")
-    void LeUMJSONComVariosObjetosGaranteTamanho() throws IOException, ParseException {
-        JSONParser parser = new JSONParser();
-        FileReader leitor = new FileReader("C:/Users/RosaMaria/IdeaProjects/CatalogoJogos/src/files/multiJson.json");
-        JSONObject arquivo = (JSONObject) parser.parse(leitor);
-        Collection ordenada = ((JSONObject) ((JSONObject) arquivo.get("pessoa")).get("nome")).values();
-        assertEquals(6,ordenada.size());
-    }
+
 
     @Test
     @DisplayName("Salvar Objetos em arquivo")
