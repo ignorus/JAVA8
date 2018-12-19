@@ -1,14 +1,46 @@
 package Game_Catalog;
 
-import org.junit.jupiter.api.DisplayName;
-import org.junit.jupiter.api.Test;
+import org.json.simple.JSONObject;
+import org.junit.jupiter.api.*;
+
+import java.io.IOException;
+
+import static java.lang.Boolean.TRUE;
+import static org.junit.jupiter.api.Assertions.assertTrue;
+import static org.mockito.ArgumentMatchers.anyObject;
+import static org.mockito.ArgumentMatchers.anyString;
+import static org.mockito.Mockito.mock;
+import static org.mockito.Mockito.when;
 
 public class AtualizarLeituraTest {
+
+    AtualizarLeitura atualizador;
+    SalvarArquivoJSON salvar;
+    String verificador;
+    JSONObject objetoParametro;
+
+    @BeforeEach
+    void iniciar() throws IOException {
+        atualizador = mock(new AtualizarLeitura().getClass());
+        salvar = mock(new SalvarArquivoJSON("test").getClass());
+        objetoParametro = new JSONObject();
+    }
 
     @Test
     @DisplayName("Atualiza a leitura de um mock, após algo ser escrito nele")
     void AtualizaMock()
     {
+        when(atualizador.LeituraAtualizada(verificador)).thenReturn(TRUE);
+        assertTrue(atualizador.LeituraAtualizada(verificador));
+    }
 
+    @Test
+    @DisplayName("Dado um arquivo mock salvo, atualizar")
+    void SalvoAtualizarMock() throws IOException {
+        String[] mockParametro = new String[]{"oi","alo"};
+        when(salvar.salvarJogoePersonagemJSON(objetoParametro,"a","b","c",mockParametro)).thenReturn("Jogo Salvo");
+        verificador = salvar.salvarJogoePersonagemJSON(objetoParametro,"a","b","c",mockParametro);
+        when(atualizador.LeituraAtualizada(verificador)).thenReturn(TRUE);
+        assertTrue(atualizador.LeituraAtualizada(verificador));
     }
 }
