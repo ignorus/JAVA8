@@ -10,6 +10,7 @@ public class LerArquivoJSON {
 
     private FileReader arquivo;
     private JSONParser estruturador = new JSONParser();
+    private JSONObject objetoSeparado = new JSONObject();
 
     public String AbrirArquivoJSON(String path) {
         try {
@@ -23,7 +24,9 @@ public class LerArquivoJSON {
     }
 
     public JSONObject SepararDadosDoArquivo(Reader leitor) throws IOException, ParseException {
-        return (JSONObject) this.estruturador.parse(leitor);
+        this.objetoSeparado = (JSONObject) this.estruturador.parse(leitor);
+        leitor.close();
+        return this.objetoSeparado;
     }
 
     public FileReader getArquivo() {
