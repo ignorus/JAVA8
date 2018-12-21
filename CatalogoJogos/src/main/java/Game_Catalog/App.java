@@ -14,6 +14,7 @@ public class App {
         if (args[0].equalsIgnoreCase("ler"))
         {
              objetoCatalgo = new JSONObject();
+
         }
 
     }
