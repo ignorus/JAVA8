@@ -36,4 +36,9 @@ public class RecebeInput {
             return invalido;
         }
     }
+
+    public JSONObject LerPlataforma(JSONObject objetoParametro)
+    {
+        return new JSONObject();
+    }
 }

@@ -20,21 +20,23 @@ public class RecebeInputTest {
 
     RecebeInput inputMock;
     InputStream inputSimulator;
-    JSONObject objetoTest;
+    JSONObject objetoTestEmpresa;
+    JSONObject objetoTestPlataforma;
     JSONObject objetoParametro;
     JSONParser parser;
     FileWriter escritor;
     File arquivoTemp;
     FileReader leitor;
-    String empresa;
 
     @Rule TemporaryFolder folder;
 
     @BeforeEach
     void iniciar() throws IOException {
         inputMock = mock(new RecebeInput().getClass());
-        objetoTest = new JSONObject();
-        objetoTest.put( "Empresa","Nintendo");
+        objetoTestEmpresa = new JSONObject();
+        objetoTestEmpresa.put( "Empresa","Nintendo");
+        objetoTestPlataforma = new JSONObject();
+        objetoTestPlataforma.put("Nintendo","Wii");
         parser = new JSONParser();
         folder = new TemporaryFolder();
         folder.create();
@@ -95,8 +97,8 @@ public class RecebeInputTest {
     @DisplayName("Ler Empresa mock")
     void LerEmpresaMock()
     {
-        when(inputMock.LerEmpresa(objetoParametro)).thenReturn(objetoTest);
-        assertEquals("Nintendo",objetoTest.get("Empresa").toString());
+        when(inputMock.LerEmpresa(objetoParametro)).thenReturn(objetoTestEmpresa);
+        assertEquals("Nintendo",objetoTestEmpresa.get("Empresa").toString());
     }
 
     @Test
@@ -106,8 +108,8 @@ public class RecebeInputTest {
         inputSimulator = new ByteArrayInputStream("Sony".getBytes());
         System.setIn(inputSimulator);
         when(inputMock.LerEmpresa(objetoParametro)).thenCallRealMethod();
-        objetoTest = inputMock.LerEmpresa(objetoParametro);
-        assertTrue(objetoTest.containsKey("PS1"));
+        objetoTestEmpresa = inputMock.LerEmpresa(objetoParametro);
+        assertTrue(objetoTestEmpresa.containsKey("PS1"));
     }
 
     @Test
@@ -118,7 +120,27 @@ public class RecebeInputTest {
         inputMock.invalido = new JSONObject();
         System.setIn(inputSimulator);
         when(inputMock.LerEmpresa(objetoParametro)).thenCallRealMethod();
-        objetoTest = inputMock.LerEmpresa(objetoParametro);
-        assertTrue(objetoTest.containsKey("Invalido"));
+        objetoTestEmpresa = inputMock.LerEmpresa(objetoParametro);
+        assertTrue(objetoTestEmpresa.containsKey("Invalido"));
+    }
+
+    @Test
+    @DisplayName("Ler mock de plataforma")
+    void LerPlataformaMock()
+    {
+        when(inputMock.LerPlataforma(objetoParametro)).thenReturn(objetoTestPlataforma);
+        assertEquals("Wii",objetoTestPlataforma.get("Nintendo").toString());
+    }
+
+    @Test
+    @DisplayName("Ler plataforma existente")
+    void LerPlataformaExistente() throws IOException, ParseException {
+        objetoParametro = (JSONObject)parser.parse(leitor);
+        objetoParametro = (JSONObject) ((JSONObject)objetoParametro.get("Empresa")).get("Sony");
+        inputSimulator = new ByteArrayInputStream("PS1".getBytes());
+        System.setIn(inputSimulator);
+        when(inputMock.LerPlataforma(objetoParametro)).thenCallRealMethod();
+        objetoTestPlataforma = inputMock.LerPlataforma(objetoParametro);
+        assertTrue(objetoTestPlataforma.containsKey("Crash Bandicoot"));
     }
 }
