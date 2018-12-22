@@ -6,6 +6,7 @@ import java.util.Scanner;
 
 public class RecebeInput {
     Scanner scanner;
+    JSONObject invalido = new JSONObject();
 
 
     String LerOuSalvar()
@@ -24,6 +25,15 @@ public class RecebeInput {
     }
 
     public JSONObject LerEmpresa(JSONObject objetoParametro) {
-        return new JSONObject();
+        objetoParametro = (JSONObject) objetoParametro.get("Empresa");
+        scanner = new Scanner(System.in);
+        String input = scanner.next();
+        if (objetoParametro.get(input) != null) {
+            return (JSONObject) objetoParametro.get(input);
+        }
+        else {
+            invalido.put("Invalido","invalido");
+            return invalido;
+        }
     }
 }

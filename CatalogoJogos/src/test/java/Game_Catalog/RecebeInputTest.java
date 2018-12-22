@@ -102,9 +102,23 @@ public class RecebeInputTest {
     @Test
     @DisplayName("Ler Empresa existente")
     void LerEmpresaExistente() throws IOException, ParseException {
-        when(inputMock.LerEmpresa(objetoParametro)).thenCallRealMethod();
         objetoParametro = (JSONObject) parser.parse(leitor);
+        inputSimulator = new ByteArrayInputStream("Sony".getBytes());
+        System.setIn(inputSimulator);
+        when(inputMock.LerEmpresa(objetoParametro)).thenCallRealMethod();
         objetoTest = inputMock.LerEmpresa(objetoParametro);
         assertTrue(objetoTest.containsKey("PS1"));
+    }
+
+    @Test
+    @DisplayName("Ler Empresa não existente")
+    void LerEmpresaNaoExistente() throws IOException, ParseException {
+        objetoParametro = (JSONObject) parser.parse(leitor);
+        inputSimulator = new ByteArrayInputStream("Seny".getBytes());
+        inputMock.invalido = new JSONObject();
+        System.setIn(inputSimulator);
+        when(inputMock.LerEmpresa(objetoParametro)).thenCallRealMethod();
+        objetoTest = inputMock.LerEmpresa(objetoParametro);
+        assertTrue(objetoTest.containsKey("Invalido"));
     }
 }
