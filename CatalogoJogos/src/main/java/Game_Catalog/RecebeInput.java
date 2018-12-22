@@ -39,6 +39,14 @@ public class RecebeInput {
 
     public JSONObject LerPlataforma(JSONObject objetoParametro)
     {
-        return new JSONObject();
+        scanner = new Scanner(System.in);
+        String input = scanner.next();
+        if (objetoParametro.get(input) != null) {
+            return (JSONObject) objetoParametro.get(input);
+        }
+        else {
+            invalido.put("Invalido","invalido");
+            return invalido;
+        }
     }
 }

@@ -143,4 +143,22 @@ public class RecebeInputTest {
         objetoTestPlataforma = inputMock.LerPlataforma(objetoParametro);
         assertTrue(objetoTestPlataforma.containsKey("Crash Bandicoot"));
     }
+
+    @Test
+    @DisplayName("Ler Plataforma não existente")
+    void LerPlataformaNaoExistente() throws IOException, ParseException {
+        objetoParametro = (JSONObject) parser.parse(leitor);
+        objetoParametro = (JSONObject)((JSONObject)objetoParametro.get("Empresa")).get("Sony");
+        inputSimulator = new ByteArrayInputStream("PolyStation1".getBytes());
+        inputMock.invalido = new JSONObject();
+        System.setIn(inputSimulator);
+        when(inputMock.LerPlataforma(objetoParametro)).thenCallRealMethod();
+        objetoTestEmpresa = inputMock.LerPlataforma(objetoParametro);
+        assertTrue(objetoTestEmpresa.containsKey("Invalido"));
+    }
+
+    @Test
+    @DisplayName("Teste mock ler Jogo")
+    void LerJogoMock()
+    {}
 }
