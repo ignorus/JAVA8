@@ -5,10 +5,10 @@ import static java.lang.Boolean.TRUE;
 
 public class AtualizarLeitura {
 
-    public boolean LeituraAtualizada(String verificador,String path, LerArquivoJSON lerJsonMock)
+    public boolean LeituraAtualizada(String verificador,String path, LerArquivoJSON lerJson)
     {
         if (verificador.equals("Jogo Salvo")) {
-            lerJsonMock.AbrirArquivoJSON(path);
+            lerJson.AbrirArquivoJSON(path);
             return TRUE;
         }
         else

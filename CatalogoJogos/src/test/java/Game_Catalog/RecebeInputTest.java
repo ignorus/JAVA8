@@ -1,13 +1,16 @@
 package Game_Catalog;
 
+import org.json.simple.JSONObject;
+import org.junit.Rule;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
+import org.junit.rules.TemporaryFolder;
 
-import java.io.ByteArrayInputStream;
-import java.io.InputStream;
+import java.io.*;
 
+import static java.util.Collections.singletonMap;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 import static org.mockito.Mockito.mock;
@@ -17,11 +20,24 @@ public class RecebeInputTest {
 
     RecebeInput inputMock;
     InputStream inputSimulator;
+    JSONObject objetoTest;
+    FileWriter escritor;
+    File arquivoTemp;
+    FileReader leitor;
+
+    @Rule TemporaryFolder folder;
 
     @BeforeEach
-    void iniciar()
-    {
+    void iniciar() throws IOException {
         inputMock = mock(new RecebeInput().getClass());
+        objetoTest = new JSONObject();
+        objetoTest.put( "Empresa","Nintendo");
+        folder.create();
+        arquivoTemp = folder.newFile("CatalogoTemporario");
+        escritor = new FileWriter(arquivoTemp);
+        escritor.write("{\"Empresa\":{\"Sony\":{\"PS4\":{},\"PS3\":{},\"PS2\":{},\"PS1\":{\"Crash Bandicoot\":[\"Crash\",\"Cortex\",\"Coco\",\"Pura\"]}},\"Nintendo\":{},\"Microsoft\":{}}}");
+        escritor.close();
+        leitor = new FileReader(arquivoTemp);
     }
 
     @Test
@@ -68,5 +84,19 @@ public class RecebeInputTest {
         inputSimulator = new ByteArrayInputStream("Editar".getBytes());
         System.setIn(inputSimulator);
         assertEquals("Comando Invalido",inputMock.LerOuSalvar());
+    }
+
+    @Test
+    @DisplayName("Ler Empresa mock")
+    void LerEmpresaMock()
+    {
+        when(inputMock.LerEmpresa()).thenReturn(objetoTest);
+        assertEquals("Nintendo",objetoTest.get("Empresa").toString());
+    }
+
+    @Test
+    @DisplayName("Ler Empresa existente")
+    void LerEmpresaExistente()
+    {
     }
 }

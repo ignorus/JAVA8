@@ -1,5 +1,7 @@
 package Game_Catalog;
 
+import org.json.simple.JSONObject;
+
 import java.nio.Buffer;
 import java.util.Scanner;
 
@@ -20,5 +22,9 @@ public class RecebeInput {
             return "Comando Invalido";
         }
 
+    }
+
+    public JSONObject LerEmpresa() {
+        return new JSONObject();
     }
 }
