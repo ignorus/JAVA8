@@ -8,6 +8,7 @@ import org.junit.jupiter.api.Test;
 import java.io.ByteArrayInputStream;
 import java.io.InputStream;
 
+import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.when;
@@ -44,7 +45,7 @@ public class RecebeInputTest {
     void ComandoLer()
     {
         when(inputMock.LerOuSalvar()).thenCallRealMethod();
-        inputSimulator = new ByteArrayInputStream("ler\r\n".getBytes());
+        inputSimulator = new ByteArrayInputStream("ler".getBytes());
         System.setIn(inputSimulator);
         assertTrue("ler".equalsIgnoreCase(inputMock.LerOuSalvar()));
     }
@@ -54,8 +55,18 @@ public class RecebeInputTest {
     void ComandoSalvar()
     {
         when(inputMock.LerOuSalvar()).thenCallRealMethod();
-        inputSimulator = new ByteArrayInputStream("salvar\r\n".getBytes());
+        inputSimulator = new ByteArrayInputStream("salvar".getBytes());
         System.setIn(inputSimulator);
         assertTrue("salvar".equalsIgnoreCase(inputMock.LerOuSalvar()));
+    }
+
+    @Test
+    @DisplayName("Recebe um comando invalido")
+    void ComandoInvalido()
+    {
+        when(inputMock.LerOuSalvar()).thenCallRealMethod();
+        inputSimulator = new ByteArrayInputStream("Editar".getBytes());
+        System.setIn(inputSimulator);
+        assertEquals("Comando Invalido",inputMock.LerOuSalvar());
     }
 }

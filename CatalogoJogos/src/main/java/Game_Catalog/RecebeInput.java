@@ -10,7 +10,15 @@ public class RecebeInput {
     String LerOuSalvar()
     {
         scanner = new Scanner(System.in);
-        return scanner.next();
+        String input = scanner.next();
+        if("ler".equalsIgnoreCase(input) || "salvar".equalsIgnoreCase(input))
+        {
+            return input;
+        }
+        else
+        {
+            return "Comando Invalido";
+        }
 
     }
 }
