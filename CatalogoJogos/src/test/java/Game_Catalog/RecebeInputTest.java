@@ -1,8 +1,9 @@
 package Game_Catalog;
 
 import org.json.simple.JSONObject;
+import org.json.simple.parser.JSONParser;
+import org.json.simple.parser.ParseException;
 import org.junit.Rule;
-import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
@@ -10,7 +11,6 @@ import org.junit.rules.TemporaryFolder;
 
 import java.io.*;
 
-import static java.util.Collections.singletonMap;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 import static org.mockito.Mockito.mock;
@@ -21,9 +21,12 @@ public class RecebeInputTest {
     RecebeInput inputMock;
     InputStream inputSimulator;
     JSONObject objetoTest;
+    JSONObject objetoParametro;
+    JSONParser parser;
     FileWriter escritor;
     File arquivoTemp;
     FileReader leitor;
+    String empresa;
 
     @Rule TemporaryFolder folder;
 
@@ -32,6 +35,8 @@ public class RecebeInputTest {
         inputMock = mock(new RecebeInput().getClass());
         objetoTest = new JSONObject();
         objetoTest.put( "Empresa","Nintendo");
+        parser = new JSONParser();
+        folder = new TemporaryFolder();
         folder.create();
         arquivoTemp = folder.newFile("CatalogoTemporario");
         escritor = new FileWriter(arquivoTemp);
@@ -90,13 +95,16 @@ public class RecebeInputTest {
     @DisplayName("Ler Empresa mock")
     void LerEmpresaMock()
     {
-        when(inputMock.LerEmpresa()).thenReturn(objetoTest);
+        when(inputMock.LerEmpresa(objetoParametro)).thenReturn(objetoTest);
         assertEquals("Nintendo",objetoTest.get("Empresa").toString());
     }
 
     @Test
     @DisplayName("Ler Empresa existente")
-    void LerEmpresaExistente()
-    {
+    void LerEmpresaExistente() throws IOException, ParseException {
+        when(inputMock.LerEmpresa(objetoParametro)).thenCallRealMethod();
+        objetoParametro = (JSONObject) parser.parse(leitor);
+        objetoTest = inputMock.LerEmpresa(objetoParametro);
+        assertTrue(objetoTest.containsKey("PS1"));
     }
 }

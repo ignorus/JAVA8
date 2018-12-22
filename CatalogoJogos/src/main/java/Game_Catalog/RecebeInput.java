@@ -2,7 +2,6 @@ package Game_Catalog;
 
 import org.json.simple.JSONObject;
 
-import java.nio.Buffer;
 import java.util.Scanner;
 
 public class RecebeInput {
@@ -24,7 +23,7 @@ public class RecebeInput {
 
     }
 
-    public JSONObject LerEmpresa() {
+    public JSONObject LerEmpresa(JSONObject objetoParametro) {
         return new JSONObject();
     }
 }
