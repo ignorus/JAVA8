@@ -49,4 +49,8 @@ public class RecebeInput {
             return invalido;
         }
     }
+
+    public Object LerJogo(JSONObject objetoParametro) {
+        return objetoParametro;
+    }
 }

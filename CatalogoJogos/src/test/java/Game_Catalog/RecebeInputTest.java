@@ -1,5 +1,6 @@
 package Game_Catalog;
 
+import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
 import org.json.simple.parser.JSONParser;
 import org.json.simple.parser.ParseException;
@@ -10,6 +11,7 @@ import org.junit.jupiter.api.Test;
 import org.junit.rules.TemporaryFolder;
 
 import java.io.*;
+import java.util.Collections;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertTrue;
@@ -22,6 +24,7 @@ public class RecebeInputTest {
     InputStream inputSimulator;
     JSONObject objetoTestEmpresa;
     JSONObject objetoTestPlataforma;
+    JSONObject objetoTestJogo;
     JSONObject objetoParametro;
     JSONParser parser;
     FileWriter escritor;
@@ -37,6 +40,8 @@ public class RecebeInputTest {
         objetoTestEmpresa.put( "Empresa","Nintendo");
         objetoTestPlataforma = new JSONObject();
         objetoTestPlataforma.put("Nintendo","Wii");
+        objetoTestJogo = new JSONObject();
+        objetoTestJogo.putAll(Collections.singletonMap("Crash Bandicoot","[\"Crash\",\"Cortex\",\"Coco\"]"));
         parser = new JSONParser();
         folder = new TemporaryFolder();
         folder.create();
@@ -160,5 +165,15 @@ public class RecebeInputTest {
     @Test
     @DisplayName("Teste mock ler Jogo")
     void LerJogoMock()
-    {}
+    {
+        when(inputMock.LerJogo(objetoParametro)).thenReturn(objetoTestJogo);
+        assertTrue(objetoTestJogo.containsKey("Crash Bandicoot"));
+    }
+
+    @Test
+    @DisplayName("Teste ler Jogo")
+    void LerJogo()
+    {
+
+    }
 }
