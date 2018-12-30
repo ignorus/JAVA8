@@ -50,7 +50,14 @@ public class RecebeInput {
         }
     }
 
-    public Object LerJogo(JSONObject objetoParametro) {
-        return objetoParametro;
+    public String LerJogo(JSONObject objetoParametro) {
+        scanner = new Scanner(System.in).useDelimiter(",");
+        String input = scanner.next();
+        if (objetoParametro.get(input) != null) {
+            return objetoParametro.get(input).toString();
+        }
+        else {
+            return "Invalido";
+        }
     }
 }

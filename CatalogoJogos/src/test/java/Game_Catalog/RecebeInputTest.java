@@ -24,7 +24,7 @@ public class RecebeInputTest {
     InputStream inputSimulator;
     JSONObject objetoTestEmpresa;
     JSONObject objetoTestPlataforma;
-    JSONObject objetoTestJogo;
+    String TestJogo;
     JSONObject objetoParametro;
     JSONParser parser;
     FileWriter escritor;
@@ -40,8 +40,6 @@ public class RecebeInputTest {
         objetoTestEmpresa.put( "Empresa","Nintendo");
         objetoTestPlataforma = new JSONObject();
         objetoTestPlataforma.put("Nintendo","Wii");
-        objetoTestJogo = new JSONObject();
-        objetoTestJogo.putAll(Collections.singletonMap("Crash Bandicoot","[\"Crash\",\"Cortex\",\"Coco\"]"));
         parser = new JSONParser();
         folder = new TemporaryFolder();
         folder.create();
@@ -166,14 +164,31 @@ public class RecebeInputTest {
     @DisplayName("Teste mock ler Jogo")
     void LerJogoMock()
     {
-        when(inputMock.LerJogo(objetoParametro)).thenReturn(objetoTestJogo);
-        assertTrue(objetoTestJogo.containsKey("Crash Bandicoot"));
+        when(inputMock.LerJogo(objetoParametro)).thenReturn("Crash Bandicoot");
+        assertTrue(inputMock.LerJogo(objetoParametro).equals("Crash Bandicoot"));
     }
 
     @Test
     @DisplayName("Teste ler Jogo")
-    void LerJogo()
-    {
+    void LerJogo() throws IOException, ParseException {
+        objetoParametro = (JSONObject) parser.parse(leitor);
+        objetoParametro = (JSONObject)((JSONObject)((JSONObject)objetoParametro.get("Empresa")).get("Sony")).get("PS1");
+        inputSimulator = new ByteArrayInputStream("Crash Bandicoot".getBytes());
+        System.setIn(inputSimulator);
+        when(inputMock.LerJogo(objetoParametro)).thenCallRealMethod();
+        TestJogo = inputMock.LerJogo(objetoParametro);
+        assertEquals("[\"Crash\",\"Cortex\",\"Coco\",\"Pura\"]",TestJogo);
+    }
 
+    @Test
+    @DisplayName("Teste ler Jogo Inexistente")
+    void LerJogoInexistente() throws IOException, ParseException {
+        objetoParametro = (JSONObject) parser.parse(leitor);
+        objetoParametro = (JSONObject)((JSONObject)((JSONObject)objetoParametro.get("Empresa")).get("Sony")).get("PS1");
+        inputSimulator = new ByteArrayInputStream("Crash".getBytes());
+        System.setIn(inputSimulator);
+        when(inputMock.LerJogo(objetoParametro)).thenCallRealMethod();
+        TestJogo = inputMock.LerJogo(objetoParametro);
+        assertEquals("Invalido",TestJogo);
     }
 }
