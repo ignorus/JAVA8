@@ -191,4 +191,22 @@ public class RecebeInputTest {
         TestJogo = inputMock.LerJogo(objetoParametro);
         assertEquals("Invalido",TestJogo);
     }
+
+    @Test
+    @DisplayName("Teste mock salvar Empresa")
+    void SalvarEmpresaMock()
+    {
+        when(inputMock.SalvarEmpresa()).thenReturn("Sega");
+        assertEquals("Sega",inputMock.SalvarEmpresa());
+    }
+
+    @Test
+    @DisplayName("Teste salvar Empresa")
+    void SalvarEmpresa()
+    {
+        inputSimulator = new ByteArrayInputStream("Sega".getBytes());
+        System.setIn(inputSimulator);
+        when(inputMock.SalvarEmpresa()).thenCallRealMethod();
+        assertTrue("Sega".equals(inputMock.SalvarEmpresa()));
+    }
 }

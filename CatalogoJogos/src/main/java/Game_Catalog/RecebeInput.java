@@ -60,4 +60,8 @@ public class RecebeInput {
             return "Invalido";
         }
     }
+
+    public String SalvarEmpresa() {
+        return "";
+    }
 }
