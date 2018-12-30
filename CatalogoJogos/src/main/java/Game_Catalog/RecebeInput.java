@@ -72,4 +72,10 @@ public class RecebeInput {
         String input = scanner.next();
         return input;
     }
+
+    public String SalvarJogo() {
+        scanner = new Scanner(System.in).useDelimiter(",");
+        String input = scanner.next();
+        return input;
+    }
 }

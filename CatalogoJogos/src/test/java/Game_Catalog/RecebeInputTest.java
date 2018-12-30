@@ -232,6 +232,22 @@ public class RecebeInputTest {
     @DisplayName("Teste mock salvar Jogo")
     void SalvarJogoMock()
     {
-
+        when(inputMock.SalvarJogo()).thenReturn("Sonic Adventures");
+        assertTrue("Sonic Adventures".equals(inputMock.SalvarJogo()));
     }
+
+    @Test
+    @DisplayName("Teste salvar Jogo")
+    void SalvarJogo()
+    {
+        inputSimulator = new ByteArrayInputStream("Sonic Adventures".getBytes());
+        System.setIn(inputSimulator);
+        when(inputMock.SalvarPlataforma()).thenCallRealMethod();
+        assertTrue("Sonic Adventures".equals(inputMock.SalvarPlataforma()));
+    }
+
+    @Test
+    @DisplayName("Teste mock salvar Personagens")
+    void SalvarPersonagensMock()
+    {}
 }
