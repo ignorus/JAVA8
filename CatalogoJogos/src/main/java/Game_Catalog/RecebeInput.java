@@ -62,6 +62,14 @@ public class RecebeInput {
     }
 
     public String SalvarEmpresa() {
-        return "";
+        scanner = new Scanner(System.in).useDelimiter(",");
+        String input = scanner.next();
+        return input;
+    }
+
+    public String SalvarPlataforma() {
+        scanner = new Scanner(System.in).useDelimiter(",");
+        String input = scanner.next();
+        return input;
     }
 }

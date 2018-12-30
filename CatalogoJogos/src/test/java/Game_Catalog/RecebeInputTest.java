@@ -209,4 +209,29 @@ public class RecebeInputTest {
         when(inputMock.SalvarEmpresa()).thenCallRealMethod();
         assertTrue("Sega".equals(inputMock.SalvarEmpresa()));
     }
+
+    @Test
+    @DisplayName("Teste mock salvar Plataforma")
+    void SalvarPlataformaMock()
+    {
+        when(inputMock.SalvarPlataforma()).thenReturn("Mega Drive");
+        assertTrue("Mega Drive".equals(inputMock.SalvarPlataforma()));
+    }
+
+    @Test
+    @DisplayName("Teste salvar Plataforma")
+    void SalvarPlatforma()
+    {
+        inputSimulator = new ByteArrayInputStream("Mega Drive".getBytes());
+        System.setIn(inputSimulator);
+        when(inputMock.SalvarPlataforma()).thenCallRealMethod();
+        assertTrue("Mega Drive".equals(inputMock.SalvarPlataforma()));
+    }
+
+    @Test
+    @DisplayName("Teste mock salvar Jogo")
+    void SalvarJogoMock()
+    {
+
+    }
 }
