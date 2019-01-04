@@ -78,4 +78,9 @@ public class RecebeInput {
         String input = scanner.next();
         return input;
     }
+
+    public String[] SalvarPersonagens() {
+
+        return new String[]{"oi"};
+    }
 }

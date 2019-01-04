@@ -30,6 +30,8 @@ public class RecebeInputTest {
     FileWriter escritor;
     File arquivoTemp;
     FileReader leitor;
+    String[] arrayPersonagensMock = new String[]{"Sonic","Knuckles","Mr.Robotnik"};
+    String[] verificadorPersonagens;
 
     @Rule TemporaryFolder folder;
 
@@ -48,6 +50,7 @@ public class RecebeInputTest {
         escritor.write("{\"Empresa\":{\"Sony\":{\"PS4\":{},\"PS3\":{},\"PS2\":{},\"PS1\":{\"Crash Bandicoot\":[\"Crash\",\"Cortex\",\"Coco\",\"Pura\"]}},\"Nintendo\":{},\"Microsoft\":{}}}");
         escritor.close();
         leitor = new FileReader(arquivoTemp);
+        verificadorPersonagens = new String[]{};
     }
 
     @Test
@@ -249,5 +252,19 @@ public class RecebeInputTest {
     @Test
     @DisplayName("Teste mock salvar Personagens")
     void SalvarPersonagensMock()
-    {}
+    {
+        when(inputMock.SalvarPersonagens()).thenReturn(arrayPersonagensMock);
+        assertEquals(3,arrayPersonagensMock.length);
+    }
+
+    @Test
+    @DisplayName("Teste salvar Personagens")
+    void  SalvarPersonagens()
+    {
+        inputSimulator = new ByteArrayInputStream("Mario,Wario,Luigi,Waluigi".getBytes());
+        System.setIn(inputSimulator);
+        when(inputMock.SalvarPersonagens()).thenCallRealMethod();
+        verificadorPersonagens = inputMock.SalvarPersonagens();
+        assertEquals(4,verificadorPersonagens.length);
+    }
 }
