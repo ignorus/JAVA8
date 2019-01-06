@@ -13,10 +13,7 @@ import org.junit.jupiter.api.Test;
 import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
-import java.util.ArrayList;
-import java.util.Collection;
-import java.util.Collections;
-import java.util.List;
+import java.util.*;
 
 
 import static java.util.Collections.singletonMap;
@@ -29,6 +26,8 @@ public class TestarTest {
     JSONParser parser = new JSONParser();
     JSONObject objetoComparar = new JSONObject();
     JSONObject objecttest = new JSONObject();
+    List testar = new ArrayList();
+    org.json.simple.JSONArray arrayJ = new org.json.simple.JSONArray();
 
 /*    @Test
     @DisplayName("Lê arquivo de teste JSON que cotém duas chaves e um valor")
@@ -153,6 +152,28 @@ public class TestarTest {
         objetoComparar = (JSONObject) parser.parse(leitor);
         leitor.close();
         assertEquals("[\"Tiago\",\"Bugan\",\"Debs\"]",objetoComparar.get("nome").toString());
+    }
+
+    @Test
+    @DisplayName("Teste retorno values")
+    void valuesReturn() throws IOException, ParseException {
+        FileReader leitor = new FileReader("src/files/json.json");
+        objecttest = (JSONObject) parser.parse(leitor);
+        arrayJ = (org.json.simple.JSONArray)(objecttest.get("nome"));
+        testar.addAll(arrayJ);
+        Collections.sort(testar);
+        assertEquals("Bugan",testar.get(0));
+    }
+
+    @Test
+    @DisplayName("Teste KeySet retorno")
+    void keySetReturn() throws IOException, ParseException {
+        FileReader leitor = new FileReader("src/files/multiJson.json");
+        objecttest = (JSONObject) parser.parse(leitor);
+        objecttest = (JSONObject) objecttest.get("Empresa");
+        testar.addAll(objecttest.keySet());
+        Collections.sort(testar);
+        assertEquals("Sony",testar.get(2));
     }
 
 }
