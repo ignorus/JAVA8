@@ -11,9 +11,7 @@ import org.junit.jupiter.api.Test;
 import org.junit.rules.TemporaryFolder;
 
 import java.io.*;
-import java.util.ArrayList;
 import java.util.Collections;
-import java.util.List;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertTrue;
@@ -32,8 +30,8 @@ public class RecebeInputTest {
     FileWriter escritor;
     File arquivoTemp;
     FileReader leitor;
-    List<String> personagensMock = new ArrayList<>();
-    List<String> verificadorPersonagens = new ArrayList<>();
+    String[] arrayPersonagensMock = new String[]{"Sonic","Knuckles","Mr.Robotnik"};
+    String[] verificadorPersonagens;
 
     @Rule TemporaryFolder folder;
 
@@ -52,9 +50,7 @@ public class RecebeInputTest {
         escritor.write("{\"Empresa\":{\"Sony\":{\"PS4\":{},\"PS3\":{},\"PS2\":{},\"PS1\":{\"Crash Bandicoot\":[\"Crash\",\"Cortex\",\"Coco\",\"Pura\"]}},\"Nintendo\":{},\"Microsoft\":{}}}");
         escritor.close();
         leitor = new FileReader(arquivoTemp);
-        personagensMock.add("Sora");
-        personagensMock.add("Donald");
-        personagensMock.add("Goofy");
+        verificadorPersonagens = new String[]{};
     }
 
     @Test
@@ -249,16 +245,16 @@ public class RecebeInputTest {
     {
         inputSimulator = new ByteArrayInputStream("Sonic Adventures".getBytes());
         System.setIn(inputSimulator);
-        when(inputMock.SalvarPlataforma()).thenCallRealMethod();
-        assertTrue("Sonic Adventures".equals(inputMock.SalvarPlataforma()));
+        when(inputMock.SalvarJogo()).thenCallRealMethod();
+        assertTrue("Sonic Adventures".equals(inputMock.SalvarJogo()));
     }
 
     @Test
     @DisplayName("Teste mock salvar Personagens")
     void SalvarPersonagensMock()
     {
-        when(inputMock.SalvarPersonagens()).thenReturn(personagensMock);
-        assertEquals(3,personagensMock.size());
+        when(inputMock.SalvarPersonagens()).thenReturn(arrayPersonagensMock);
+        assertEquals(3,arrayPersonagensMock.length);
     }
 
     @Test
@@ -269,6 +265,6 @@ public class RecebeInputTest {
         System.setIn(inputSimulator);
         when(inputMock.SalvarPersonagens()).thenCallRealMethod();
         verificadorPersonagens = inputMock.SalvarPersonagens();
-        assertEquals(4,verificadorPersonagens.size());
+        assertEquals(4,verificadorPersonagens.length);
     }
 }

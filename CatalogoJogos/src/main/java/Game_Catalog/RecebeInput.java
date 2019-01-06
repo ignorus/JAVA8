@@ -81,13 +81,17 @@ public class RecebeInput {
         return input;
     }
 
-    public List<String> SalvarPersonagens() {
+    public String[] SalvarPersonagens() {
         scanner = new Scanner(System.in).useDelimiter(",");
         List<String> inputList = new ArrayList<>();
         while (scanner.hasNext())
         {
             inputList.add(scanner.next());
         }
-        return inputList;
+        String[] inputArray = new String[inputList.size()];
+        for (int i = 0; i <inputList.size() ; i++) {
+            inputArray[i] = inputList.get(i);
+        }
+        return inputArray;
     }
 }
