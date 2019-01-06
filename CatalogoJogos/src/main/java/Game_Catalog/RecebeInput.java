@@ -2,6 +2,8 @@ package Game_Catalog;
 
 import org.json.simple.JSONObject;
 
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Scanner;
 
 public class RecebeInput {
@@ -79,8 +81,13 @@ public class RecebeInput {
         return input;
     }
 
-    public String[] SalvarPersonagens() {
-
-        return new String[]{"oi"};
+    public List<String> SalvarPersonagens() {
+        scanner = new Scanner(System.in).useDelimiter(",");
+        List<String> inputList = new ArrayList<>();
+        while (scanner.hasNext())
+        {
+            inputList.add(scanner.next());
+        }
+        return inputList;
     }
 }
