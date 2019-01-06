@@ -174,6 +174,7 @@ public class TestarTest {
         testar.addAll(objecttest.keySet());
         Collections.sort(testar);
         assertEquals("Sony",testar.get(2));
+        System.out.println(testar);
     }
 
 }
