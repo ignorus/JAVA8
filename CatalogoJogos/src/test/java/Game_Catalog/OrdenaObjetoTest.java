@@ -57,6 +57,24 @@ public class OrdenaObjetoTest {
     {
         objetoParametro = (JSONObject) objetoParametro.get("Empresa");
         when(ordenaObjetoMock.ordenar(objetoParametro)).thenCallRealMethod();
-        assertEquals("Sony",ordenaObjetoMock.ordenar(objetoParametro).get(3));
+        assertEquals("Sony",ordenaObjetoMock.ordenar(objetoParametro).get(2));
+    }
+
+    @Test
+    @DisplayName("Teste Ordenar Plataformas")
+    void testeOrdenarPlataforma()
+    {
+        objetoParametro = (JSONObject)((JSONObject)objetoParametro.get("Empresa")).get("Sony");
+        when(ordenaObjetoMock.ordenar(objetoParametro)).thenCallRealMethod();
+        assertEquals("PS4",ordenaObjetoMock.ordenar(objetoParametro).get(3));
+    }
+
+    @Test
+    @DisplayName("Teste Ordenar Jogos")
+    void testeOrdenarJogos()
+    {
+        objetoParametro = (JSONObject)((JSONObject)((JSONObject)objetoParametro.get("Empresa")).get("Sony")).get("PS1");
+        when(ordenaObjetoMock.ordenar(objetoParametro)).thenCallRealMethod();
+        assertEquals("Crash Bandicoot",ordenaObjetoMock.ordenar(objetoParametro).get(0));
     }
 }
