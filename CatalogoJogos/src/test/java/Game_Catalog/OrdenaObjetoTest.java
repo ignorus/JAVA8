@@ -3,6 +3,7 @@ package Game_Catalog;
 import org.json.simple.JSONObject;
 import org.json.simple.parser.JSONParser;
 import org.json.simple.parser.ParseException;
+import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
@@ -14,6 +15,7 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
+import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.when;
 
@@ -29,6 +31,7 @@ public class OrdenaObjetoTest {
     @BeforeEach
     void iniciar() throws IOException, ParseException {
         objetoParametro = new JSONObject();
+        parser = new JSONParser();
         reader = new FileReader("src/files/multiJson.json");
         objetoParametro = (JSONObject) parser.parse(reader);
         ordenaObjetoMock = mock(new OrdenaObjeto().getClass());
@@ -37,15 +40,23 @@ public class OrdenaObjetoTest {
     }
 
     @Test
-    @DisplayName("Ordena Empresas")
-    void testeOrdenarEmpresaMock()
+    @DisplayName("Teste de retorno do metodo")
+    void testeRetornoMetodoMock()
     {
-        objetoParametro = (JSONObject) objetoParametro.get("Empresa");
         listaMock.add("Sony");
         listaMock.add("Microsoft");
         listaMock.add("Nintendo");
         listaMock.add("Sega");
         when(ordenaObjetoMock.ordenar(objetoParametro)).thenReturn(listaMock);
+        assertEquals(4,ordenaObjetoMock.ordenar(objetoParametro).size());
+    }
 
+    @Test
+    @DisplayName("Teste Ordenar Empresas")
+    void testeOrdenarEmpresas()
+    {
+        objetoParametro = (JSONObject) objetoParametro.get("Empresa");
+        when(ordenaObjetoMock.ordenar(objetoParametro)).thenCallRealMethod();
+        assertEquals("Sony",ordenaObjetoMock.ordenar(objetoParametro).get(3));
     }
 }
