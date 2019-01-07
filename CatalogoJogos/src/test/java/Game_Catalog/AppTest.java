@@ -13,7 +13,7 @@ import static org.mockito.Mockito.when;
 
 public class AppTest {
 
-    App IHM;
+   /* App IHM;
     String[] parametroLer;
 
     @BeforeEach
@@ -28,5 +28,5 @@ public class AppTest {
     {
         IHM.main(parametroLer);
         assertNotNull(IHM.objetoCatalgo);
-    }
+    }*/
 }

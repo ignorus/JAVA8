@@ -17,7 +17,7 @@ public class RecebeInput {
         String input = scanner.next();
         if("ler".equalsIgnoreCase(input) || "salvar".equalsIgnoreCase(input))
         {
-            return input;
+            return input.toLowerCase();
         }
         else
         {
