@@ -113,6 +113,7 @@ public class RecebeInputTest {
         objetoParametro = (JSONObject) parser.parse(leitor);
         inputSimulator = new ByteArrayInputStream("Sony".getBytes());
         System.setIn(inputSimulator);
+        inputMock.ordenador = new OrdenaObjeto();
         when(inputMock.LerEmpresa(objetoParametro)).thenCallRealMethod();
         objetoTestEmpresa = inputMock.LerEmpresa(objetoParametro);
         assertTrue(objetoTestEmpresa.containsKey("PS1"));
@@ -125,8 +126,10 @@ public class RecebeInputTest {
         inputSimulator = new ByteArrayInputStream("Seny".getBytes());
         inputMock.invalido = new JSONObject();
         System.setIn(inputSimulator);
+        inputMock.ordenador = new OrdenaObjeto();
         when(inputMock.LerEmpresa(objetoParametro)).thenCallRealMethod();
         objetoTestEmpresa = inputMock.LerEmpresa(objetoParametro);
+        inputMock.ordenador = new OrdenaObjeto();
         assertTrue(objetoTestEmpresa.containsKey("Invalido"));
     }
 
@@ -145,6 +148,7 @@ public class RecebeInputTest {
         objetoParametro = (JSONObject) ((JSONObject)objetoParametro.get("Empresa")).get("Sony");
         inputSimulator = new ByteArrayInputStream("PS1".getBytes());
         System.setIn(inputSimulator);
+        inputMock.ordenador = new OrdenaObjeto();
         when(inputMock.LerPlataforma(objetoParametro)).thenCallRealMethod();
         objetoTestPlataforma = inputMock.LerPlataforma(objetoParametro);
         assertTrue(objetoTestPlataforma.containsKey("Crash Bandicoot"));
@@ -158,6 +162,7 @@ public class RecebeInputTest {
         inputSimulator = new ByteArrayInputStream("PolyStation1".getBytes());
         inputMock.invalido = new JSONObject();
         System.setIn(inputSimulator);
+        inputMock.ordenador = new OrdenaObjeto();
         when(inputMock.LerPlataforma(objetoParametro)).thenCallRealMethod();
         objetoTestEmpresa = inputMock.LerPlataforma(objetoParametro);
         assertTrue(objetoTestEmpresa.containsKey("Invalido"));
@@ -178,6 +183,7 @@ public class RecebeInputTest {
         objetoParametro = (JSONObject)((JSONObject)((JSONObject)objetoParametro.get("Empresa")).get("Sony")).get("PS1");
         inputSimulator = new ByteArrayInputStream("Crash Bandicoot".getBytes());
         System.setIn(inputSimulator);
+        inputMock.ordenador = new OrdenaObjeto();
         when(inputMock.LerJogo(objetoParametro)).thenCallRealMethod();
         TestJogo = inputMock.LerJogo(objetoParametro);
         assertEquals("[\"Crash\",\"Cortex\",\"Coco\",\"Pura\"]",TestJogo);
@@ -190,6 +196,7 @@ public class RecebeInputTest {
         objetoParametro = (JSONObject)((JSONObject)((JSONObject)objetoParametro.get("Empresa")).get("Sony")).get("PS1");
         inputSimulator = new ByteArrayInputStream("Crash".getBytes());
         System.setIn(inputSimulator);
+        inputMock.ordenador = new OrdenaObjeto();
         when(inputMock.LerJogo(objetoParametro)).thenCallRealMethod();
         TestJogo = inputMock.LerJogo(objetoParametro);
         assertEquals("Invalido",TestJogo);

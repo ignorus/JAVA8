@@ -47,10 +47,15 @@ public class Main {
         }
         if (resposta.equals("salvar"))
         {
+            System.out.println("Qual empresa do jogo?");
             Empresa = inputUsuario.SalvarEmpresa();
+            System.out.println("Qual a plataforma do jogo?");
             Plataforma = inputUsuario.SalvarPlataforma();
+            System.out.println("Qual o nome do jogo?");
             Jogo = inputUsuario.SalvarJogo();
+            System.out.println("Quais os personagens do jogo?");
             Personagens = inputUsuario.SalvarPersonagens();
+            System.out.println("Jogo Salvo");
             SalvarArquivoJSON sobreEscrever = new SalvarArquivoJSON(caminho);
             sobreEscrever.salvarJogoePersonagemJSON(objetoCatalgo,Empresa,Plataforma,Jogo,Personagens);
         }

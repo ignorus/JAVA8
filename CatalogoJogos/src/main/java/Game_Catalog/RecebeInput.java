@@ -2,15 +2,18 @@ package Game_Catalog;
 
 import org.json.simple.JSONObject;
 
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Scanner;
+import java.io.BufferedInputStream;
+import java.io.IOException;
+import java.io.InputStream;
+import java.util.*;
 
 public class RecebeInput {
     Scanner scanner;
     JSONObject invalido = new JSONObject();
     OrdenaObjeto ordenador = new OrdenaObjeto();
     List mostrar = new ArrayList();
+    List<String> inputList;
+
 
 
     String LerOuSalvar()
@@ -97,15 +100,12 @@ public class RecebeInput {
 
     public String[] SalvarPersonagens() {
         scanner = new Scanner(System.in).useDelimiter("\n");
-        List<String> inputList = new ArrayList<>();
-        while (scanner.hasNext())
-        {
-            inputList.add(scanner.next());
-        }
-        String[] inputArray = new String[inputList.size()];
-        for (int i = 0; i <inputList.size() ; i++) {
-            inputArray[i] = inputList.get(i);
-        }
+        String[] inputArray;
+        inputList = new ArrayList<>();
+        inputArray=(scanner.next().split(","));
+        inputList.addAll(Arrays.asList(inputArray));
+        Collections.sort(inputList);
+        inputList.toArray(inputArray);
         return inputArray;
     }
 }
