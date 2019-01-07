@@ -54,7 +54,7 @@ public class RecebeInput {
         for (int i = 0; i <mostrar.size() ; i++) {
             System.out.println(mostrar.get(i));
         }
-        scanner = new Scanner(System.in);
+        scanner = new Scanner(System.in).useDelimiter("\n");
         String input = scanner.next();
         if (objetoParametro.get(input) != null) {
             return (JSONObject) objetoParametro.get(input);
