@@ -155,7 +155,7 @@ public class testarTest {
             connection = DriverManager.getConnection("jdbc:hsqldb:hsql://localhost/testdb","SA","");
             statement = connection.createStatement();
             result = statement.executeQuery("SELECT NOME, plataforma FROM EMPRESAS INNER JOIN PLATAFORMAS "+
-                    "ON EMPRESAS.NOME = PLATAFORMAS.NOME_EMPRESA WHERE Nome  = 'Sega'");
+                    "ON EMPRESAS.NOME = PLATAFORMAS.NOME_EMPRESA WHERE Nome  = 'Nintendo'");
             while(result.next()){
                 System.out.println(result.getString("nome")+" | "+
                         result.getString("plataforma"));
