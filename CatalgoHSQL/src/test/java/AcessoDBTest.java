@@ -10,11 +10,9 @@ import java.sql.SQLException;
 public class AcessoDBTest {
 
     @Test
-    @DisplayName(" estabelecer conexão DB")
+    @DisplayName("Estabelecer conexão DB")
     void connectDB() throws ClassNotFoundException, SQLException {
-        Connection con = null;
-        Class.forName("org.hsqldb.jdbc.JDBCDriver");
-        con = DriverManager.getConnection("jdbc:hsqldb:hsql://localhost/catalogojogos;ifexists = true", "ignorus", "maketime");
-        Assertions.assertNotNull(con);
+        AcessoDB acessar = new AcessoDB();
+        Assertions.assertNotNull(acessar.conectar());
     }
 }
