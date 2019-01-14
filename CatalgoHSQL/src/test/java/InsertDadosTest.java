@@ -19,4 +19,12 @@ public class InsertDadosTest {
         assertEquals(1,adicionar.empresa("Nintendo"));
         con.rollback();
     }
+
+    @Test
+    @DisplayName("Adicionar empresa ao DB")
+    void addPlataformaTest() throws SQLException {
+        con.setAutoCommit(false);
+        assertEquals(1,adicionar.plataforma("Nintendo","wii"));
+        con.rollback();
+    }
 }

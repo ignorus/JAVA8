@@ -20,4 +20,8 @@ public class InsertDados {
         }
         return resultado;
     }
+
+    public int plataforma(String empresa, String nomePlataforma) {
+        return 0;
+    }
 }
