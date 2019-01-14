@@ -16,12 +16,22 @@ public class InsertDados {
             Statement stm =  this.DB.createStatement();
             resultado = stm.executeUpdate("INSERT INTO empresas (NOME_EMPRESA) VALUES('"+ nomeEmpresa +"')");
         } catch (SQLException e) {
-            e.printStackTrace();
+            System.out.println("Instrução invalida");
         }
+        System.out.println("Empresa adicionada");
         return resultado;
     }
 
     public int plataforma(String empresa, String nomePlataforma) {
-        return 0;
+
+        int resultado = 0;
+        try {
+            Statement stm =  this.DB.createStatement();
+            resultado = stm.executeUpdate("INSERT INTO plataformas (EMPRESA,NOME_PLATAFORMA) VALUES('"+ empresa +"','"+ nomePlataforma +"')");
+        } catch (SQLException e) {
+            System.out.println("Instrução invalida");
+        }
+        System.out.println("Plataforma adicionada");
+        return resultado;
     }
 }
