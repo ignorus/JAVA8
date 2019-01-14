@@ -1,4 +1,7 @@
 import java.sql.Connection;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.sql.Statement;
 
 public class SelectDB {
 
@@ -8,7 +11,14 @@ public class SelectDB {
         this.link = DB;
     }
 
-    public int empresa(String Nome_empresa) {
-        return 0;
+    public ResultSet empresa(String Nome_empresa) {
+        ResultSet resultado = null;
+        try {
+            Statement stmt = this.link.createStatement();
+            resultado = stmt.executeQuery("SELECT * FROM  empresas WHERE nome_empresa = " + Nome_empresa +"");
+        } catch (SQLException e) {
+            System.out.println("Nenhum resultado encontrado para sua busca");
+        }
+        return resultado;
     }
 }
