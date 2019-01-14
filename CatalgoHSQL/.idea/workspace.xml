@@ -60,8 +60,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/SelectDBTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="164">
-              <caret line="33" column="33" selection-start-line="33" selection-start-column="33" selection-end-line="33" selection-end-column="33" />
+            <state relative-caret-position="233">
+              <caret line="45" column="30" selection-start-line="45" selection-start-column="30" selection-end-line="45" selection-end-column="30" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -72,8 +72,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/SelectDB.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="301">
-              <caret line="35" lean-forward="true" selection-start-line="35" selection-end-line="35" />
+            <state relative-caret-position="233">
+              <caret line="39" column="108" selection-start-line="39" selection-start-column="108" selection-end-line="39" selection-end-column="108" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#115#116#0" expanded="true" />
@@ -408,16 +408,24 @@
       <option name="project" value="LOCAL" />
       <updated>1547488071168</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="Teste Select plataforma sem alterar tabela">
+      <created>1547488403530</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1547488403530</updated>
+    </task>
+    <task id="LOCAL-00018" summary="Teste Select Jogo">
+      <created>1547489334076</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1547489334076</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="SelectDBTest_selectTest - 2019.01.14 at 14h 40m 33s.xml">
-      <configuration name="SelectDBTest.selectTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="SelectDBTest_selectTest - 2019.01.14 at 14h 41m 43s.xml">
-      <configuration name="SelectDBTest.selectTest" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="SelectDBTest_selectTest - 2019.01.14 at 14h 42m 41s.xml">
       <configuration name="SelectDBTest.selectTest" configurationId="JUnit" />
     </history-entry>
@@ -442,6 +450,12 @@
     <history-entry file="SelectDBTest_selectplataformaTest - 2019.01.14 at 15h 49m 02s.xml">
       <configuration name="SelectDBTest.selectplataformaTest" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="SelectDBTest_selectplataformaTest - 2019.01.14 at 15h 50m 36s.xml">
+      <configuration name="SelectDBTest.selectplataformaTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="SelectDBTest_selectplataformaTest - 2019.01.14 at 15h 51m 09s.xml">
+      <configuration name="SelectDBTest.selectplataformaTest" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -455,13 +469,13 @@
       <window_info id="Favorites" order="5" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49546143" visible="true" weight="0.3289689" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.494705" visible="true" weight="0.3289689" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39934534" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Terminal" order="7" />
-      <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.5045386" side_tool="true" weight="0.3289689" />
+      <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.505295" side_tool="true" weight="0.3289689" />
       <window_info anchor="bottom" id="Version Control" order="9" />
       <window_info anchor="bottom" id="Messages" order="10" sideWeight="0.4969743" weight="0.3289689" />
       <window_info anchor="right" id="Palette" order="0" />
@@ -490,7 +504,9 @@
     <MESSAGE value="Teste Select empresa WIP" />
     <MESSAGE value="Teste Select empresa sem alterar tabela real" />
     <MESSAGE value="Teste Select plataforma" />
-    <option name="LAST_COMMIT_MESSAGE" value="Teste Select plataforma" />
+    <MESSAGE value="Teste Select plataforma sem alterar tabela" />
+    <MESSAGE value="Teste Select Jogo" />
+    <option name="LAST_COMMIT_MESSAGE" value="Teste Select Jogo" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -582,8 +598,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/SelectDBTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="164">
-          <caret line="33" column="33" selection-start-line="33" selection-start-column="33" selection-end-line="33" selection-end-column="33" />
+        <state relative-caret-position="233">
+          <caret line="45" column="30" selection-start-line="45" selection-start-column="30" selection-end-line="45" selection-end-column="30" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -592,8 +608,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/SelectDB.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="301">
-          <caret line="35" lean-forward="true" selection-start-line="35" selection-end-line="35" />
+        <state relative-caret-position="233">
+          <caret line="39" column="108" selection-start-line="39" selection-start-column="108" selection-end-line="39" selection-end-column="108" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#115#116#0" expanded="true" />

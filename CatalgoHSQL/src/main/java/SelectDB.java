@@ -32,4 +32,15 @@ public class SelectDB {
         }
         return resultado;
     }
+
+    public ResultSet jogo(String Nome_jogo) {
+        ResultSet resultado = null;
+        try {
+            Statement stmt = this.link.createStatement();
+            resultado = stmt.executeQuery("SELECT * FROM  plataformas WHERE NOME_PLATAFORMA = '" + Nome_jogo +"'");
+        } catch (SQLException e) {
+            System.out.println("Nenhum resultado encontrado para sua busca");
+        }
+        return resultado;
+    }
 }
