@@ -18,10 +18,10 @@ public class SelectDBTest {
     @DisplayName("Select empresa test")
     void selectTest() throws SQLException {
         con.setAutoCommit(false);
-        inserir.empresa("Nintendo");
+        inserir.plataforma("Nintendo","wii");
         avaliador = select.empresa("Nintendo");
         avaliador.next();
-        assertEquals("Nintendo",avaliador.getString("nome_empresa"));
+        assertEquals("wii",avaliador.getString("nome_plataforma"));
         con.rollback();
     }
 
@@ -29,8 +29,8 @@ public class SelectDBTest {
     @DisplayName("Select plataforma test")
     void selectplataformaTest() throws SQLException {
         con.setAutoCommit(false);
-        inserir.plataforma("Nintendo","switch");
-        inserir.plataforma("Nintendo","wii");
+        inserir.jogo("wii","Mario Party 8");
+        inserir.jogo("wii","");
         avaliador = select.plataforma("wii");
         avaliador.next();
         assertEquals("wii",avaliador.getString("nome_plataforma"));

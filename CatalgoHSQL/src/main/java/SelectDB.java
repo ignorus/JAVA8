@@ -15,7 +15,7 @@ public class SelectDB {
         ResultSet resultado = null;
         try {
             Statement stmt = this.link.createStatement();
-            resultado = stmt.executeQuery("SELECT * FROM  empresas WHERE NOME_EMPRESA = '" + Nome_empresa +"'");
+            resultado = stmt.executeQuery("SELECT * FROM  plataformas WHERE EMPRESA = '" + Nome_empresa +"'");
         } catch (SQLException e) {
             System.out.println("Nenhum resultado encontrado para sua busca");
         }
@@ -26,7 +26,7 @@ public class SelectDB {
         ResultSet resultado = null;
         try {
             Statement stmt = this.link.createStatement();
-            resultado = stmt.executeQuery("SELECT * FROM  plataformas WHERE NOME_PLATAFORMA = '" + Nome_plataforma +"'");
+            resultado = stmt.executeQuery("SELECT * FROM  jogos WHERE PLATAFORMA = '" + Nome_plataforma +"'");
         } catch (SQLException e) {
             System.out.println("Nenhum resultado encontrado para sua busca");
         }
@@ -37,7 +37,7 @@ public class SelectDB {
         ResultSet resultado = null;
         try {
             Statement stmt = this.link.createStatement();
-            resultado = stmt.executeQuery("SELECT * FROM  plataformas WHERE NOME_PLATAFORMA = '" + Nome_jogo +"'");
+            resultado = stmt.executeQuery("SELECT * FROM  personagens WHERE Jogo = '" + Nome_jogo +"'");
         } catch (SQLException e) {
             System.out.println("Nenhum resultado encontrado para sua busca");
         }
