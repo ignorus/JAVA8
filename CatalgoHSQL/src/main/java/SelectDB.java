@@ -21,4 +21,15 @@ public class SelectDB {
         }
         return resultado;
     }
+
+    public ResultSet plataforma(String Nome_plataforma) {
+        ResultSet resultado = null;
+        try {
+            Statement stmt = this.link.createStatement();
+            resultado = stmt.executeQuery("SELECT * FROM  plataformas WHERE NOME_PLATAFORMA = '" + Nome_plataforma +"'");
+        } catch (SQLException e) {
+            System.out.println("Nenhum resultado encontrado para sua busca");
+        }
+        return resultado;
+    }
 }

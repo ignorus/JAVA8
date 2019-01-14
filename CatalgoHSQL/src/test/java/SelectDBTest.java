@@ -29,8 +29,8 @@ public class SelectDBTest {
     @DisplayName("Select plataforma test")
     void selectplataformaTest() throws SQLException {
         con.setAutoCommit(false);
-        inserir.plataforma("Nintendo","wii");
         inserir.plataforma("Nintendo","switch");
+        inserir.plataforma("Nintendo","wii");
         avaliador = select.plataforma("wii");
         avaliador.next();
         assertEquals("wii",avaliador.getString("nome_plataforma"));
