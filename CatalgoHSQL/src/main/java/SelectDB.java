@@ -7,4 +7,8 @@ public class SelectDB {
     {
         this.link = DB;
     }
+
+    public int empresa(String Nome_empresa) {
+        return 0;
+    }
 }

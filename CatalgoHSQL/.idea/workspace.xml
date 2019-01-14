@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="eb27e1a0-e7b4-4658-a98f-25c13d21818d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/SelectDB.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/SelectDBTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/SelectDB.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/SelectDB.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/SelectDBTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/SelectDBTest.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -61,8 +61,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/SelectDBTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="114">
-              <caret line="8" column="33" lean-forward="true" selection-start-line="8" selection-start-column="33" selection-end-line="8" selection-end-column="33" />
+            <state relative-caret-position="250">
+              <caret line="17" column="43" selection-start-line="17" selection-start-column="43" selection-end-line="17" selection-end-column="43" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -73,8 +73,14 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/SelectDB.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="2" column="12" selection-start-line="2" selection-start-column="12" selection-end-line="2" selection-end-column="12" />
+            <state relative-caret-position="187">
+              <caret line="11" column="17" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="17" />
+              <folding>
+                <element signature="e#115#116#0" expanded="true" />
+                <element signature="e#144#145#0" expanded="true" />
+                <element signature="e#192#193#0" expanded="true" />
+                <element signature="e#218#219#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -366,7 +372,14 @@
       <option name="project" value="LOCAL" />
       <updated>1547459444263</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="SELECT iniciando">
+      <created>1547470517209</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1547470517209</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -443,7 +456,8 @@
     <MESSAGE value="INSERT plataforma test WIP" />
     <MESSAGE value="INSERT plataforma test sem alterar tabela orinal" />
     <MESSAGE value="INSERT jogo test sem alterar tabela orinal" />
-    <option name="LAST_COMMIT_MESSAGE" value="INSERT jogo test sem alterar tabela orinal" />
+    <MESSAGE value="SELECT iniciando" />
+    <option name="LAST_COMMIT_MESSAGE" value="SELECT iniciando" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -535,8 +549,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/SelectDBTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="8" column="33" lean-forward="true" selection-start-line="8" selection-start-column="33" selection-end-line="8" selection-end-column="33" />
+        <state relative-caret-position="250">
+          <caret line="17" column="43" selection-start-line="17" selection-start-column="43" selection-end-line="17" selection-end-column="43" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -545,8 +559,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/SelectDB.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="12" selection-start-line="2" selection-start-column="12" selection-end-line="2" selection-end-column="12" />
+        <state relative-caret-position="187">
+          <caret line="11" column="17" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="17" />
+          <folding>
+            <element signature="e#115#116#0" expanded="true" />
+            <element signature="e#144#145#0" expanded="true" />
+            <element signature="e#192#193#0" expanded="true" />
+            <element signature="e#218#219#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
