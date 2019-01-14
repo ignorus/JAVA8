@@ -21,10 +21,18 @@ public class InsertDadosTest {
     }
 
     @Test
-    @DisplayName("Adicionar empresa ao DB")
+    @DisplayName("Adicionar plataforma ao DB")
     void addPlataformaTest() throws SQLException {
         con.setAutoCommit(false);
         assertEquals(1,adicionar.plataforma("Nintendo","wii"));
+        con.rollback();
+    }
+
+    @Test
+    @DisplayName("Adicionar jogo ao DB")
+    void addJogoTest() throws SQLException {
+        con.setAutoCommit(false);
+        assertEquals(1,adicionar.jogo("wii","Mario Kart 7"));
         con.rollback();
     }
 }

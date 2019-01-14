@@ -34,4 +34,17 @@ public class InsertDados {
         System.out.println("Plataforma adicionada");
         return resultado;
     }
+
+    public int jogo(String plataforma, String nomeJogo) {
+
+        int resultado = 0;
+        try {
+            Statement stm =  this.DB.createStatement();
+            resultado = stm.executeUpdate("INSERT INTO jogos (PLATAFORMA,NOME_JOGO) VALUES('"+ plataforma +"','"+ nomeJogo +"')");
+        } catch (SQLException e) {
+            System.out.println("Instrução invalida");
+        }
+        System.out.println("Jogo adicionado");
+        return resultado;
+    }
 }
