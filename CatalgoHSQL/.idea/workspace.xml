@@ -230,12 +230,22 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.SelectDBTest.selectJogoTest">
+  <component name="RunManager" selected="JUnit.RecebeInputTest.inputEmpresaTest">
     <configuration name="InsertDadosTest.addPersonagemTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="CatalgoHSQL" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="InsertDadosTest" />
       <option name="METHOD_NAME" value="addPersonagemTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RecebeInputTest.inputEmpresaTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="CatalgoHSQL" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="RecebeInputTest" />
+      <option name="METHOD_NAME" value="inputEmpresaTest" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -271,23 +281,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SelectDBTest.selectplataformaTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="CatalgoHSQL" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="SelectDBTest" />
-      <option name="METHOD_NAME" value="selectplataformaTest" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.RecebeInputTest.inputEmpresaTest" />
         <item itemvalue="JUnit.SelectDBTest.selectJogoTest" />
         <item itemvalue="JUnit.InsertDadosTest.addPersonagemTest" />
         <item itemvalue="JUnit.SelectDBTest.selectTest" />
         <item itemvalue="JUnit.RecebeInputTest.salvarTest" />
-        <item itemvalue="JUnit.SelectDBTest.selectplataformaTest" />
       </list>
     </recent_temporary>
   </component>

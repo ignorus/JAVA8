@@ -16,6 +16,12 @@ public class RecebeInput {
     }
 
     public String  Empresa() {
-        return "false";
+        Scanner input = new Scanner(System.in).useDelimiter("\n");
+        resultado = input.next();
+        if (!resultado.equals(null))
+        {
+            return resultado;
+        }
+        return "Invalido";
     }
 }
