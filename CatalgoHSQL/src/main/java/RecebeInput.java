@@ -14,4 +14,8 @@ public class RecebeInput {
         }
         return "Invalido";
     }
+
+    public String  Empresa() {
+        return "false";
+    }
 }

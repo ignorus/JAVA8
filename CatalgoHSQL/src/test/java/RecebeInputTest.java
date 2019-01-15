@@ -53,7 +53,12 @@ public class RecebeInputTest {
     }
 
     @Test
-    @DisplayName("Recebe input para ler plataformas de detrminada empresa")
+    @DisplayName("Recebe input para ler plataformas de determinada empresa")
     void inputEmpresaTest()
-    {}
+    {
+        simulaUsuario = new ByteArrayInputStream("Nintendo\n".getBytes());
+        System.setIn(simulaUsuario);
+        when(inputMock.Empresa()).thenCallRealMethod();
+        assertEquals("Nintendo",inputMock.Empresa());
+    }
 }

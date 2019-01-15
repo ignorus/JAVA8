@@ -40,13 +40,17 @@ public class SelectDBTest {
     @Test
     @DisplayName("Select jogo test")
     void selectJogoTest() throws SQLException {
+        int personagens = 0;
         con.setAutoCommit(false);
         inserir.personagem("Mario Party 8","Mario");
         inserir.personagem("Mario Party 8","Luigi");
-        inserir.personagem("Mario Party 8","Boo");
+        inserir.personagem("Mario Party 9","Boo");
         avaliador = select.jogo("Mario Party 8");
-        avaliador.next();
-        assertEquals("Boo", avaliador.getString("nome_personagem"));
+        while (avaliador.next())
+        {
+            personagens++;
+        }
+        assertEquals(2, personagens);
         con.rollback();
     }
 }
