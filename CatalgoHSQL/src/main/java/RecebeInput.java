@@ -34,4 +34,8 @@ public class RecebeInput {
         }
         return "Invalido";
     }
+
+    public String Jogo() {
+        return null;
+    }
 }

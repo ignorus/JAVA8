@@ -91,4 +91,14 @@ public class RecebeInputTest {
         when(inputMock.Plataforma()).thenCallRealMethod();
         assertEquals("Invalido", inputMock.Plataforma());
     }
+
+    @Test
+    @DisplayName("Recebe input para ler ou salvar determinado jogo")
+    void inputJogoTest()
+    {
+        simulaUsuario = new ByteArrayInputStream("Mario Party\n".getBytes());
+        System.setIn(simulaUsuario);
+        when(inputMock.Jogo()).thenCallRealMethod();
+        assertEquals("Mario Party",inputMock.Jogo());
+    }
 }
