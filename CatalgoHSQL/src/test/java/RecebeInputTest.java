@@ -71,4 +71,14 @@ public class RecebeInputTest {
         when(inputMock.Empresa()).thenCallRealMethod();
         assertEquals("Invalido", inputMock.Empresa());
     }
+
+    @Test
+    @DisplayName("Recebe input para ler ou salvar determinada empresa")
+    void inputPlataformaTest()
+    {
+        simulaUsuario = new ByteArrayInputStream("wii\n".getBytes());
+        System.setIn(simulaUsuario);
+        when(inputMock.Plataforma()).thenCallRealMethod();
+        assertEquals("wii",inputMock.Plataforma());
+    }
 }

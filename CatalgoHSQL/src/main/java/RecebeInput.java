@@ -24,4 +24,14 @@ public class RecebeInput {
         }
         return "Invalido";
     }
+
+    public String Plataforma() {
+        Scanner input = new Scanner(System.in).useDelimiter("\n");
+        resultado = input.next();
+        if (!resultado.equals(null) && !resultado.equals(" "))
+        {
+            return resultado;
+        }
+        return "Invalido";
+    }
 }
