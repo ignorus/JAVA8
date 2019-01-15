@@ -31,4 +31,25 @@ public class RecebeInputTest {
         when(inputMock.LerouSalvar()).thenCallRealMethod();
         assertEquals("ler",inputMock.LerouSalvar());
     }
+
+    @Test
+    @DisplayName("Recebe input salvar")
+    void salvarTest()
+    {
+        simulaUsuario = new ByteArrayInputStream("salvar\n".getBytes());
+        System.setIn(simulaUsuario);
+        when(inputMock.LerouSalvar()).thenCallRealMethod();
+        assertEquals("salvar",inputMock.LerouSalvar());
+    }
+
+    @Test
+    @DisplayName("Recebe input invalido")
+    void inputErrorTest()
+    {
+        simulaUsuario = new ByteArrayInputStream("adicionar\n".getBytes());
+        System.setIn(simulaUsuario);
+        when(inputMock.LerouSalvar()).thenCallRealMethod();
+        assertEquals("invalido",inputMock.LerouSalvar());
+    }
+
 }
