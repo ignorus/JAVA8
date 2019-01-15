@@ -16,7 +16,7 @@ public class InsertDadosTest {
     @DisplayName("Adicionar empresa ao DB")
     void addEmpresaTest() throws SQLException {
         con.setAutoCommit(false);
-        assertEquals(1,adicionar.empresa("Nintendo"));
+        assertEquals(1,adicionar.empresa("Inexistente"));
         con.rollback();
     }
 
@@ -41,11 +41,11 @@ public class InsertDadosTest {
     void addPersonagemTest() throws SQLException {
         int total = 0;
         con.setAutoCommit(false);
-        total += adicionar.personagem("Mario Kart 7", "Mario");
-        total += adicionar.personagem("Mario Kart 7", "Luigi");
-        total += adicionar.personagem("Mario Kart 7", "Bowser");
-        total += adicionar.personagem("Mario Kart 7", "Wario");
-        total += adicionar.personagem("Mario Kart 7", "Boo");
+        total += adicionar.personagem("Mario Kart 7", "mario");
+        total += adicionar.personagem("Mario Kart 7", "luigi");
+        total += adicionar.personagem("Mario Kart 7", "bowser");
+        total += adicionar.personagem("Mario Kart 7", "wario");
+        total += adicionar.personagem("Mario Kart 7", "boo");
         assertEquals(5,total);
         con.rollback();
     }

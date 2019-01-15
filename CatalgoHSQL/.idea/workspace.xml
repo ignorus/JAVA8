@@ -1,16 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="eb27e1a0-e7b4-4658-a98f-25c13d21818d" name="Default Changelist" comment="">
+    <list default="true" id="eb27e1a0-e7b4-4658-a98f-25c13d21818d" name="Default Changelist" comment="MELHORAR COBERTURA">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/App.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CatalogoJogos/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../CatalogoJogos/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CatalogoJogos/target/classes/Game_Catalog/AtualizarLeitura.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CatalogoJogos/target/classes/Game_Catalog/LerArquivoJSON.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CatalogoJogos/target/classes/Game_Catalog/Main.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CatalogoJogos/target/classes/Game_Catalog/OrdenaObjeto.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CatalogoJogos/target/classes/Game_Catalog/RecebeInput.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CatalogoJogos/target/classes/Game_Catalog/SalvarArquivoJSON.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/InsertDadosTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/InsertDadosTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/SelectDBTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/SelectDBTest.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -20,13 +14,20 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="CoverageDataManager">
+    <SUITE FILE_PATH="coverage/CatalgoHSQL$SelectDBTest_selectJogoTest.ic" NAME="SelectDBTest.selectJogoTest Coverage Results" MODIFIED="1547581187280" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/CatalgoHSQL$All_in_CatalgoHSQL.ic" NAME="All in CatalgoHSQL Coverage Results" MODIFIED="1547581212015" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+  </component>
+  <component name="CoverageViewManager">
+    <option name="myElementSize" value="185" />
+  </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/InsertDadosTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="155">
-              <caret line="17" column="33" selection-start-line="17" selection-start-column="33" selection-end-line="17" selection-end-column="33" />
+            <state relative-caret-position="259">
+              <caret line="47" column="56" selection-start-line="47" selection-start-column="56" selection-end-line="47" selection-end-column="56" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -49,8 +50,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/SelectDBTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="291">
-              <caret line="46" column="41" selection-start-line="46" selection-start-column="41" selection-end-line="46" selection-end-column="41" />
+            <state relative-caret-position="879">
+              <caret line="53" column="23" lean-forward="true" selection-start-line="53" selection-start-column="23" selection-end-line="53" selection-end-column="23" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -79,7 +80,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/SelectDB.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="357">
@@ -91,11 +92,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/RecebeInput.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="174">
-              <caret line="49" column="66" selection-start-line="49" selection-start-column="66" selection-end-line="49" selection-end-column="66" />
+            <state relative-caret-position="327">
+              <caret line="58" column="5" selection-start-line="58" selection-start-column="5" selection-end-line="58" selection-end-column="5" />
             </state>
           </provider>
         </entry>
@@ -154,14 +155,14 @@
         <option value="$PROJECT_DIR$/src/main/java/AcessoDB.java" />
         <option value="$PROJECT_DIR$/src/test/java/AcessoDBTest.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/src/test/java/SelectDBTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/RecebeInputTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/SelectDB.java" />
         <option value="$PROJECT_DIR$/src/test/java/testarTest.java" />
-        <option value="$PROJECT_DIR$/src/test/java/InsertDadosTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/InsertDados.java" />
         <option value="$PROJECT_DIR$/src/main/java/App.java" />
         <option value="$PROJECT_DIR$/src/main/java/RecebeInput.java" />
+        <option value="$PROJECT_DIR$/src/test/java/InsertDadosTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/SelectDBTest.java" />
       </list>
     </option>
   </component>
@@ -249,10 +250,14 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.App">
-    <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="App" />
+  <component name="RunManager" selected="JUnit.All in CatalgoHSQL">
+    <configuration name="All in CatalgoHSQL" type="JUnit" factoryName="JUnit" nameIsGenerated="true">
       <module name="CatalgoHSQL" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="TEST_OBJECT" value="package" />
+      <option name="PARAMETERS" value="" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -267,43 +272,61 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="RecebeInputTest.salvarPersonagensNullTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="InsertDadosTest.addPersonagemTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="CatalgoHSQL" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="RecebeInputTest" />
-      <option name="METHOD_NAME" value="salvarPersonagensNullTest" />
+      <option name="MAIN_CLASS_NAME" value="InsertDadosTest" />
+      <option name="METHOD_NAME" value="addPersonagemTest" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="RecebeInputTest.salvarPersonagensTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="SelectDBTest.selectJogoTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="CatalgoHSQL" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="RecebeInputTest" />
-      <option name="METHOD_NAME" value="salvarPersonagensTest" />
+      <option name="MAIN_CLASS_NAME" value="SelectDBTest" />
+      <option name="METHOD_NAME" value="selectJogoTest" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="testarTest.criarTabelaemHSQL" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="SelectDBTest.selectTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="CatalgoHSQL" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="testarTest" />
-      <option name="METHOD_NAME" value="criarTabelaemHSQL" />
+      <option name="MAIN_CLASS_NAME" value="SelectDBTest" />
+      <option name="METHOD_NAME" value="selectTest" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="SelectDBTest.selectplataformaTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="CatalgoHSQL" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="SelectDBTest" />
+      <option name="METHOD_NAME" value="selectplataformaTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="JUnit.All in CatalgoHSQL" />
+      <item itemvalue="JUnit.InsertDadosTest.addEmpresaTest" />
+      <item itemvalue="JUnit.InsertDadosTest.addPersonagemTest" />
+      <item itemvalue="JUnit.SelectDBTest.selectplataformaTest" />
+      <item itemvalue="JUnit.SelectDBTest.selectTest" />
+      <item itemvalue="JUnit.SelectDBTest.selectJogoTest" />
+    </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.App" />
+        <item itemvalue="JUnit.SelectDBTest.selectJogoTest" />
+        <item itemvalue="JUnit.SelectDBTest.selectplataformaTest" />
+        <item itemvalue="JUnit.SelectDBTest.selectTest" />
+        <item itemvalue="JUnit.InsertDadosTest.addPersonagemTest" />
         <item itemvalue="JUnit.InsertDadosTest.addEmpresaTest" />
-        <item itemvalue="JUnit.testarTest.criarTabelaemHSQL" />
-        <item itemvalue="JUnit.RecebeInputTest.salvarPersonagensTest" />
-        <item itemvalue="JUnit.RecebeInputTest.salvarPersonagensNullTest" />
       </list>
     </recent_temporary>
   </component>
@@ -567,43 +590,51 @@
       <option name="project" value="LOCAL" />
       <updated>1547576819903</updated>
     </task>
-    <option name="localTasksCounter" value="37" />
+    <task id="LOCAL-00037" summary="APP funcionando">
+      <created>1547580330403</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1547580330403</updated>
+    </task>
+    <option name="localTasksCounter" value="38" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="RecebeInputTest_salvarPersonagensTest - 2019.01.15 at 15h 12m 25s.xml">
-      <configuration name="RecebeInputTest.salvarPersonagensTest" configurationId="JUnit" />
+    <history-entry file="SelectDBTest_selectplataformaTest - 2019.01.15 at 17h 33m 54s.xml">
+      <configuration name="SelectDBTest.selectplataformaTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="testarTest_criarTabelaemHSQL - 2019.01.15 at 16h 06m 14s.xml">
-      <configuration name="testarTest.criarTabelaemHSQL" configurationId="JUnit" />
+    <history-entry file="SelectDBTest_selectTest - 2019.01.15 at 17h 34m 14s.xml">
+      <configuration name="SelectDBTest.selectTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="testarTest_criarTabelaemHSQL - 2019.01.15 at 16h 07m 54s.xml">
-      <configuration name="testarTest.criarTabelaemHSQL" configurationId="JUnit" />
+    <history-entry file="SelectDBTest_selectTest - 2019.01.15 at 17h 34m 49s.xml">
+      <configuration name="SelectDBTest.selectTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="testarTest_criarTabelaemHSQL - 2019.01.15 at 16h 08m 26s.xml">
-      <configuration name="testarTest.criarTabelaemHSQL" configurationId="JUnit" />
+    <history-entry file="SelectDBTest_selectTest - 2019.01.15 at 17h 35m 53s.xml">
+      <configuration name="SelectDBTest.selectTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="testarTest_criarTabelaemHSQL - 2019.01.15 at 16h 08m 52s.xml">
-      <configuration name="testarTest.criarTabelaemHSQL" configurationId="JUnit" />
+    <history-entry file="SelectDBTest_selectplataformaTest - 2019.01.15 at 17h 36m 31s.xml">
+      <configuration name="SelectDBTest.selectplataformaTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="testarTest_criarTabelaemHSQL - 2019.01.15 at 16h 09m 06s.xml">
-      <configuration name="testarTest.criarTabelaemHSQL" configurationId="JUnit" />
+    <history-entry file="SelectDBTest_selectplataformaTest - 2019.01.15 at 17h 37m 03s.xml">
+      <configuration name="SelectDBTest.selectplataformaTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="testarTest_criarTabelaemHSQL - 2019.01.15 at 16h 10m 20s.xml">
-      <configuration name="testarTest.criarTabelaemHSQL" configurationId="JUnit" />
+    <history-entry file="SelectDBTest_selectplataformaTest - 2019.01.15 at 17h 38m 27s.xml">
+      <configuration name="SelectDBTest.selectplataformaTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="testarTest_criarTabelaemHSQL - 2019.01.15 at 16h 11m 19s.xml">
-      <configuration name="testarTest.criarTabelaemHSQL" configurationId="JUnit" />
+    <history-entry file="SelectDBTest_selectJogoTest - 2019.01.15 at 17h 39m 39s.xml">
+      <configuration name="SelectDBTest.selectJogoTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="InsertDadosTest_addEmpresaTest - 2019.01.15 at 16h 12m 29s.xml">
-      <configuration name="InsertDadosTest.addEmpresaTest" configurationId="JUnit" />
+    <history-entry file="SelectDBTest_selectJogoTest - 2019.01.15 at 17h 40m 01s.xml">
+      <configuration name="SelectDBTest.selectJogoTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="InsertDadosTest_addEmpresaTest - 2019.01.15 at 16h 13m 06s.xml">
-      <configuration name="InsertDadosTest.addEmpresaTest" configurationId="JUnit" />
+    <history-entry file="All_in_CatalgoHSQL - 2019.01.15 at 17h 40m 29s.xml">
+      <configuration name="All in CatalgoHSQL" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.13464448" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -613,7 +644,7 @@
       <window_info id="Favorites" order="5" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.494705" visible="true" weight="0.3289689" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.494705" visible="true" weight="0.3289689" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39934534" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -622,6 +653,7 @@
       <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.505295" side_tool="true" weight="0.3289689" />
       <window_info anchor="bottom" id="Version Control" order="9" weight="0.3289689" />
       <window_info anchor="bottom" id="Messages" order="10" sideWeight="0.4969743" weight="0.3289689" />
+      <window_info active="true" anchor="right" id="Coverage" side_tool="true" visible="true" weight="0.32980332" />
       <window_info anchor="right" id="Palette" order="0" />
       <window_info anchor="right" id="Maven" order="1" />
       <window_info anchor="right" id="Palette&#9;" order="2" />
@@ -630,8 +662,33 @@
       <window_info anchor="right" id="Ant Build" order="5" weight="0.24962178" />
     </layout>
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="RECENTLY_FILTERED_USER_GROUPS">
+                <collection />
+              </option>
+              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+                <collection />
+              </option>
+              <option name="COLUMN_ORDER">
+                <list>
+                  <option value="0" />
+                  <option value="1" />
+                  <option value="2" />
+                  <option value="3" />
+                </list>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="SELECT iniciando" />
     <MESSAGE value="Teste Select empresa" />
     <MESSAGE value="Teste Select empresa WIP" />
     <MESSAGE value="Teste Select empresa sem alterar tabela real" />
@@ -656,7 +713,8 @@
     <MESSAGE value="app WIP" />
     <MESSAGE value="inicio fluxo salvar em DB" />
     <MESSAGE value="MVP para testear" />
-    <option name="LAST_COMMIT_MESSAGE" value="MVP para testear" />
+    <MESSAGE value="APP funcionando" />
+    <option name="LAST_COMMIT_MESSAGE" value="APP funcionando" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -718,60 +776,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/SelectDBTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="291">
-          <caret line="46" column="41" selection-start-line="46" selection-start-column="41" selection-end-line="46" selection-end-column="41" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/SelectDB.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="21" column="25" selection-start-line="21" selection-start-column="25" selection-end-line="21" selection-end-column="25" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/AcessoDB.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="14" column="129" selection-start-line="14" selection-start-column="47" selection-end-line="14" selection-end-column="129" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/testarTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="174">
           <caret line="46" column="49" selection-start-line="46" selection-start-column="49" selection-end-line="46" selection-end-column="49" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/InsertDadosTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="155">
-          <caret line="17" column="33" selection-start-line="17" selection-start-column="33" selection-end-line="17" selection-end-column="33" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/InsertDados.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="277">
-          <caret line="54" column="9" selection-start-line="54" selection-start-column="9" selection-end-line="54" selection-end-column="9" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -790,8 +798,58 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/RecebeInput.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="174">
-          <caret line="49" column="66" selection-start-line="49" selection-start-column="66" selection-end-line="49" selection-end-column="66" />
+        <state relative-caret-position="327">
+          <caret line="58" column="5" selection-start-line="58" selection-start-column="5" selection-end-line="58" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/InsertDadosTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="259">
+          <caret line="47" column="56" selection-start-line="47" selection-start-column="56" selection-end-line="47" selection-end-column="56" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/SelectDBTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="879">
+          <caret line="53" column="23" lean-forward="true" selection-start-line="53" selection-start-column="23" selection-end-line="53" selection-end-column="23" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/InsertDados.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="277">
+          <caret line="54" column="9" selection-start-line="54" selection-start-column="9" selection-end-line="54" selection-end-column="9" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/AcessoDB.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="14" column="129" selection-start-line="14" selection-start-column="47" selection-end-line="14" selection-end-column="129" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/SelectDB.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="21" column="25" selection-start-line="21" selection-start-column="25" selection-end-line="21" selection-end-column="25" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

@@ -18,10 +18,10 @@ public class SelectDBTest {
     @DisplayName("Select empresa test")
     void selectTest() throws SQLException {
         con.setAutoCommit(false);
-        inserir.plataforma("Nintendo","wii");
+        inserir.plataforma("Nintendo","GC");
         avaliador = select.empresa("Nintendo");
         avaliador.next();
-        assertEquals("wii",avaliador.getString("nome_plataforma"));
+        assertEquals("GC",avaliador.getString("nome_plataforma"));
         con.rollback();
     }
 
@@ -29,11 +29,11 @@ public class SelectDBTest {
     @DisplayName("Select plataforma test")
     void selectplataformaTest() throws SQLException {
         con.setAutoCommit(false);
-        inserir.jogo("wii","Mario Party 8");
-        inserir.jogo("wii","");
+        inserir.jogo("wii","MARIO PARTY 8");
+        inserir.jogo("wii","zz");
         avaliador = select.plataforma("wii");
         avaliador.next();
-        assertEquals("wii",avaliador.getString("nome_plataforma"));
+        assertEquals("MARIO PARTY 8",avaliador.getString("nome_jogo"));
         con.rollback();
     }
 
@@ -42,9 +42,9 @@ public class SelectDBTest {
     void selectJogoTest() throws SQLException {
         int personagens = 0;
         con.setAutoCommit(false);
-        inserir.personagem("Mario Party 8","Mario");
-        inserir.personagem("Mario Party 8","Luigi");
-        inserir.personagem("Mario Party 9","Boo");
+        inserir.personagem("Mario Party 8","MARIO");
+        inserir.personagem("Mario Party 8","LUIGI");
+        inserir.personagem("Mario Party 9","BOO");
         avaliador = select.jogo("Mario Party 8");
         while (avaliador.next())
         {
