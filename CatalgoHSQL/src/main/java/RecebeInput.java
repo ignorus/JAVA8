@@ -48,10 +48,10 @@ public class RecebeInput {
 
     public String[] Personagens() {
         Scanner input = new Scanner(System.in).useDelimiter("\n");
-        resultado = input.next();
-        personagens = resultado.split(",");
-        if(personagens.length > 0)
+        if(input.hasNext())
         {
+            resultado = input.next();
+            personagens = resultado.split(",");
             return personagens;
         }
         personagens = new String[]{"Invalido"};

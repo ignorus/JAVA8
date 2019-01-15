@@ -128,7 +128,7 @@ public class RecebeInputTest {
     @DisplayName("Recebe input null personagens para salvar")
     void salvarPersonagensNullTest()
     {
-        simulaUsuario = new ByteArrayInputStream(" \n".getBytes());
+        simulaUsuario = new ByteArrayInputStream("\n".getBytes());
         System.setIn(simulaUsuario);
         when(inputMock.Personagens()).thenCallRealMethod();
         verificar = inputMock.Personagens();
