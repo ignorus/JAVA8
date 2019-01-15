@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="eb27e1a0-e7b4-4658-a98f-25c13d21818d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/RecebeInput.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/RecebeInputTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/RecebeInputTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/RecebeInput.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/RecebeInput.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -73,10 +72,10 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/RecebeInputTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="328">
+            <state relative-caret-position="209">
               <caret line="31" column="52" lean-forward="true" selection-start-line="31" selection-start-column="52" selection-end-line="31" selection-end-column="52" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -85,15 +84,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/RecebeInput.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="4" column="20" selection-start-line="4" selection-start-column="20" selection-end-line="4" selection-end-column="20" />
-              <folding>
-                <element signature="e#68#69#0" expanded="true" />
-                <element signature="e#92#93#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="238">
+              <caret line="14" column="24" selection-start-line="14" selection-start-column="24" selection-end-line="14" selection-end-column="24" />
             </state>
           </provider>
         </entry>
@@ -158,8 +153,8 @@
         <option value="$PROJECT_DIR$/src/main/java/InsertDados.java" />
         <option value="$PROJECT_DIR$/src/test/java/SelectDBTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/SelectDB.java" />
-        <option value="$PROJECT_DIR$/src/main/java/RecebeInput.java" />
         <option value="$PROJECT_DIR$/src/test/java/RecebeInputTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/RecebeInput.java" />
       </list>
     </option>
   </component>
@@ -447,13 +442,17 @@
       <option name="project" value="LOCAL" />
       <updated>1547501332630</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="Começando a integração com usuario, LER ou SALVAR">
+      <created>1547544773523</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1547544773523</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="SelectDBTest_selectTest - 2019.01.14 at 14h 46m 42s.xml">
-      <configuration name="SelectDBTest.selectTest" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="SelectDBTest_selectTest - 2019.01.14 at 14h 49m 26s.xml">
       <configuration name="SelectDBTest.selectTest" configurationId="JUnit" />
     </history-entry>
@@ -481,12 +480,15 @@
     <history-entry file="RecebeInputTest_lerTestMock - 2019.01.15 at 07h 26m 37s.xml">
       <configuration name="RecebeInputTest.lerTestMock" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="RecebeInputTest_lerTest - 2019.01.15 at 07h 32m 20s.xml">
+      <configuration name="RecebeInputTest.lerTest" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.13464448" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.13464448" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Learn" order="3" />
@@ -496,7 +498,7 @@
       <window_info id="Capture Tool" order="7" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.494705" visible="true" weight="0.3289689" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.494705" visible="true" weight="0.3289689" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39934534" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -536,7 +538,8 @@
     <MESSAGE value="Teste Select plataforma sem alterar tabela" />
     <MESSAGE value="Teste Select Jogo" />
     <MESSAGE value="Começando a integração com usuario" />
-    <option name="LAST_COMMIT_MESSAGE" value="Começando a integração com usuario" />
+    <MESSAGE value="Começando a integração com usuario, LER ou SALVAR" />
+    <option name="LAST_COMMIT_MESSAGE" value="Começando a integração com usuario, LER ou SALVAR" />
   </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
@@ -634,24 +637,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/RecebeInput.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="20" selection-start-line="4" selection-start-column="20" selection-end-line="4" selection-end-column="20" />
-          <folding>
-            <element signature="e#68#69#0" expanded="true" />
-            <element signature="e#92#93#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/RecebeInputTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="328">
+        <state relative-caret-position="209">
           <caret line="31" column="52" lean-forward="true" selection-start-line="31" selection-start-column="52" selection-end-line="31" selection-end-column="52" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/RecebeInput.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="24" selection-start-line="14" selection-start-column="24" selection-end-line="14" selection-end-column="24" />
         </state>
       </provider>
     </entry>
