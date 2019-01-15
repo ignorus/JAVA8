@@ -3,6 +3,7 @@ import java.util.Scanner;
 public class RecebeInput {
 
     String resultado;
+    String[] personagens;
 
     public String LerouSalvar()
     {
@@ -46,6 +47,14 @@ public class RecebeInput {
     }
 
     public String[] Personagens() {
-        return new String[0];
+        Scanner input = new Scanner(System.in).useDelimiter("\n");
+        resultado = input.next();
+        personagens = resultado.split(",");
+        if(personagens.length > 0)
+        {
+            return personagens;
+        }
+        personagens = new String[]{"Invalido"};
+        return personagens;
     }
 }

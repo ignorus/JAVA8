@@ -123,4 +123,15 @@ public class RecebeInputTest {
         verificar = inputMock.Personagens();
         assertEquals(5,verificar.length);
     }
+
+    @Test
+    @DisplayName("Recebe input null personagens para salvar")
+    void salvarPersonagensNullTest()
+    {
+        simulaUsuario = new ByteArrayInputStream(" \n".getBytes());
+        System.setIn(simulaUsuario);
+        when(inputMock.Personagens()).thenCallRealMethod();
+        verificar = inputMock.Personagens();
+        assertEquals("Invalido",verificar[0]);
+    }
 }

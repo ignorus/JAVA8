@@ -52,11 +52,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/RecebeInputTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="209">
-              <caret line="111" column="49" selection-start-line="111" selection-start-column="49" selection-end-line="111" selection-end-column="49" />
+            <state relative-caret-position="141">
+              <caret line="130" column="51" selection-start-line="130" selection-start-column="51" selection-end-line="130" selection-end-column="51" />
             </state>
           </provider>
         </entry>
@@ -73,11 +73,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/RecebeInput.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="260">
-              <caret line="44" column="26" selection-start-line="44" selection-start-column="26" selection-end-line="44" selection-end-column="26" />
+            <state relative-caret-position="124">
+              <caret line="52" column="33" selection-start-line="52" selection-start-column="33" selection-end-line="52" selection-end-column="33" />
             </state>
           </provider>
         </entry>
@@ -231,7 +231,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.RecebeInputTest.inputTest">
+  <component name="RunManager" selected="JUnit.RecebeInputTest.salvarPersonagensNullTest">
     <configuration name="RecebeInputTest.inputIndiferenteTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="CatalgoHSQL" />
       <option name="PACKAGE_NAME" value="" />
@@ -252,26 +252,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="RecebeInputTest.inputNullTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="CatalgoHSQL" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="RecebeInputTest" />
-      <option name="METHOD_NAME" value="inputNullTest" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="RecebeInputTest.inputPlataformaTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="CatalgoHSQL" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="RecebeInputTest" />
-      <option name="METHOD_NAME" value="inputPlataformaTest" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="RecebeInputTest.inputTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="CatalgoHSQL" />
       <option name="PACKAGE_NAME" value="" />
@@ -282,13 +262,33 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="RecebeInputTest.salvarPersonagensNullTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="CatalgoHSQL" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="RecebeInputTest" />
+      <option name="METHOD_NAME" value="salvarPersonagensNullTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RecebeInputTest.salvarPersonagensTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="CatalgoHSQL" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="RecebeInputTest" />
+      <option name="METHOD_NAME" value="salvarPersonagensTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.RecebeInputTest.salvarPersonagensNullTest" />
+        <item itemvalue="JUnit.RecebeInputTest.salvarPersonagensTest" />
         <item itemvalue="JUnit.RecebeInputTest.inputTest" />
         <item itemvalue="JUnit.RecebeInputTest.inputJogoTest" />
         <item itemvalue="JUnit.RecebeInputTest.inputIndiferenteTest" />
-        <item itemvalue="JUnit.RecebeInputTest.inputPlataformaTest" />
-        <item itemvalue="JUnit.RecebeInputTest.inputNullTest" />
       </list>
     </recent_temporary>
   </component>
@@ -503,22 +503,24 @@
       <option name="project" value="LOCAL" />
       <updated>1547570577325</updated>
     </task>
-    <option name="localTasksCounter" value="30" />
+    <task id="LOCAL-00030" summary="Começando a receber input Jogo DONE">
+      <created>1547570771075</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1547570771075</updated>
+    </task>
+    <task id="LOCAL-00031" summary="Começando a receber input Personagens">
+      <created>1547571131850</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1547571131850</updated>
+    </task>
+    <option name="localTasksCounter" value="32" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="RecebeInputTest_inputNullTest - 2019.01.15 at 13h 58m 40s.xml">
-      <configuration name="RecebeInputTest.inputNullTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="RecebeInputTest_inputNullTest - 2019.01.15 at 13h 59m 27s.xml">
-      <configuration name="RecebeInputTest.inputNullTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="RecebeInputTest_inputNullTest - 2019.01.15 at 13h 59m 58s.xml">
-      <configuration name="RecebeInputTest.inputNullTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="RecebeInputTest_inputNullTest - 2019.01.15 at 14h 00m 26s.xml">
-      <configuration name="RecebeInputTest.inputNullTest" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="RecebeInputTest_inputNullTest - 2019.01.15 at 14h 34m 50s.xml">
       <configuration name="RecebeInputTest.inputNullTest" configurationId="JUnit" />
     </history-entry>
@@ -536,6 +538,18 @@
     </history-entry>
     <history-entry file="RecebeInputTest_inputTest - 2019.01.15 at 14h 45m 48s.xml">
       <configuration name="RecebeInputTest.inputTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="RecebeInputTest_salvarPersonagensTest - 2019.01.15 at 14h 52m 54s.xml">
+      <configuration name="RecebeInputTest.salvarPersonagensTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="RecebeInputTest_salvarPersonagensTest - 2019.01.15 at 14h 57m 36s.xml">
+      <configuration name="RecebeInputTest.salvarPersonagensTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="RecebeInputTest_salvarPersonagensNullTest - 2019.01.15 at 14h 59m 49s.xml">
+      <configuration name="RecebeInputTest.salvarPersonagensNullTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="RecebeInputTest_salvarPersonagensNullTest - 2019.01.15 at 15h 00m 04s.xml">
+      <configuration name="RecebeInputTest.salvarPersonagensNullTest" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
@@ -568,8 +582,6 @@
     </layout>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Começando a adicionar objetos em tabelas" />
-    <MESSAGE value="INSERT empresa" />
     <MESSAGE value="INSERT empresa test sem alterar a tabela ao fim" />
     <MESSAGE value="INSERT empresa test WIP" />
     <MESSAGE value="INSERT plataforma test WIP" />
@@ -593,7 +605,9 @@
     <MESSAGE value="Ler ou salvar Plataforma WIP" />
     <MESSAGE value="Ler ou salvar Plataforma Done" />
     <MESSAGE value="Começando a receber input Jogo" />
-    <option name="LAST_COMMIT_MESSAGE" value="Começando a receber input Jogo" />
+    <MESSAGE value="Começando a receber input Jogo DONE" />
+    <MESSAGE value="Começando a receber input Personagens" />
+    <option name="LAST_COMMIT_MESSAGE" value="Começando a receber input Personagens" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -703,17 +717,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/RecebeInput.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/RecebeInputTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="260">
-          <caret line="44" column="26" selection-start-line="44" selection-start-column="26" selection-end-line="44" selection-end-column="26" />
+        <state relative-caret-position="141">
+          <caret line="130" column="51" selection-start-line="130" selection-start-column="51" selection-end-line="130" selection-end-column="51" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/RecebeInputTest.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/RecebeInput.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="111" column="49" selection-start-line="111" selection-start-column="49" selection-end-line="111" selection-end-column="49" />
+        <state relative-caret-position="124">
+          <caret line="52" column="33" selection-start-line="52" selection-start-column="33" selection-end-line="52" selection-end-column="33" />
         </state>
       </provider>
     </entry>
