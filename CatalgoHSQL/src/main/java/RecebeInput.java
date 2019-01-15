@@ -18,7 +18,7 @@ public class RecebeInput {
     public String  Empresa() {
         Scanner input = new Scanner(System.in).useDelimiter("\n");
         resultado = input.next();
-        if (!resultado.equals(null))
+        if (!resultado.equals(null) && !resultado.equals(" "))
         {
             return resultado;
         }

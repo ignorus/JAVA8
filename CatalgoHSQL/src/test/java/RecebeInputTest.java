@@ -49,16 +49,26 @@ public class RecebeInputTest {
         simulaUsuario = new ByteArrayInputStream("adicionar\n".getBytes());
         System.setIn(simulaUsuario);
         when(inputMock.LerouSalvar()).thenCallRealMethod();
-        assertEquals("invalido",inputMock.LerouSalvar());
+        assertEquals("Invalido",inputMock.LerouSalvar());
     }
 
     @Test
-    @DisplayName("Recebe input para ler plataformas de determinada empresa")
+    @DisplayName("Recebe input para ler ou salvar determinada empresa")
     void inputEmpresaTest()
     {
         simulaUsuario = new ByteArrayInputStream("Nintendo\n".getBytes());
         System.setIn(simulaUsuario);
         when(inputMock.Empresa()).thenCallRealMethod();
         assertEquals("Nintendo",inputMock.Empresa());
+    }
+
+    @Test
+    @DisplayName("Recebe input insignificativo para ler ou salvar determinada empresa")
+    void inputNullTest()
+    {
+        simulaUsuario = new ByteArrayInputStream(" \n".getBytes());
+        System.setIn(simulaUsuario);
+        when(inputMock.Empresa()).thenCallRealMethod();
+        assertEquals("Invalido", inputMock.Empresa());
     }
 }

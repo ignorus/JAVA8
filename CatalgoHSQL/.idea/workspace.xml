@@ -3,8 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="eb27e1a0-e7b4-4658-a98f-25c13d21818d" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/RecebeInput.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/RecebeInput.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/RecebeInputTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/RecebeInputTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/SelectDBTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/SelectDBTest.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -19,7 +19,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/InsertDadosTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="212">
+            <state relative-caret-position="595">
               <caret line="43" column="35" selection-start-line="43" selection-start-column="35" selection-end-line="43" selection-end-column="35" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -31,7 +31,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/InsertDados.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="269">
+            <state relative-caret-position="901">
               <caret line="58" column="38" selection-start-line="58" selection-start-column="38" selection-end-line="58" selection-end-column="38" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -43,7 +43,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/SelectDBTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="291">
+            <state relative-caret-position="646">
               <caret line="46" column="41" selection-start-line="46" selection-start-column="41" selection-end-line="46" selection-end-column="41" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -55,8 +55,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/RecebeInputTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="328">
-              <caret line="61" column="53" selection-start-line="61" selection-start-column="53" selection-end-line="61" selection-end-column="53" />
+            <state relative-caret-position="359">
+              <caret line="68" column="51" selection-start-line="68" selection-start-column="51" selection-end-line="68" selection-end-column="51" />
             </state>
           </provider>
         </entry>
@@ -64,8 +64,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/SelectDB.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="731">
-              <caret line="46" lean-forward="true" selection-start-line="46" selection-end-line="46" />
+            <state relative-caret-position="680">
+              <caret line="46" selection-start-line="46" selection-end-line="46" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -76,8 +76,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/RecebeInput.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
+            <state relative-caret-position="340">
+              <caret line="20" column="59" selection-start-line="20" selection-start-column="59" selection-end-line="20" selection-end-column="59" />
             </state>
           </provider>
         </entry>
@@ -85,7 +85,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/AcessoDBTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
+            <state relative-caret-position="136">
               <caret line="11" column="21" selection-start-line="11" selection-start-column="21" selection-end-line="11" selection-end-column="21" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -109,7 +109,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/testarTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="182">
+            <state relative-caret-position="1921">
               <caret line="117" column="33" selection-start-line="117" selection-start-column="33" selection-end-line="117" selection-end-column="33" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -143,6 +143,7 @@
         <option value="$PROJECT_DIR$/src/main/java/SelectDB.java" />
         <option value="$PROJECT_DIR$/src/test/java/SelectDBTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/RecebeInputTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/RecebeInput.java" />
       </list>
     </option>
   </component>
@@ -230,13 +231,12 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.RecebeInputTest.inputEmpresaTest">
-    <configuration name="InsertDadosTest.addPersonagemTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.RecebeInputTest">
+    <configuration name="RecebeInputTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="CatalgoHSQL" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="InsertDadosTest" />
-      <option name="METHOD_NAME" value="addPersonagemTest" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="MAIN_CLASS_NAME" value="RecebeInputTest" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -251,11 +251,21 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="RecebeInputTest.salvarTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="RecebeInputTest.inputErrorTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="CatalgoHSQL" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="RecebeInputTest" />
-      <option name="METHOD_NAME" value="salvarTest" />
+      <option name="METHOD_NAME" value="inputErrorTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RecebeInputTest.inputNullTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="CatalgoHSQL" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="RecebeInputTest" />
+      <option name="METHOD_NAME" value="inputNullTest" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -271,23 +281,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SelectDBTest.selectTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="CatalgoHSQL" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="SelectDBTest" />
-      <option name="METHOD_NAME" value="selectTest" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.RecebeInputTest" />
+        <item itemvalue="JUnit.RecebeInputTest.inputErrorTest" />
+        <item itemvalue="JUnit.RecebeInputTest.inputNullTest" />
         <item itemvalue="JUnit.RecebeInputTest.inputEmpresaTest" />
         <item itemvalue="JUnit.SelectDBTest.selectJogoTest" />
-        <item itemvalue="JUnit.InsertDadosTest.addPersonagemTest" />
-        <item itemvalue="JUnit.SelectDBTest.selectTest" />
-        <item itemvalue="JUnit.RecebeInputTest.salvarTest" />
       </list>
     </recent_temporary>
   </component>
@@ -460,28 +460,24 @@
       <option name="project" value="LOCAL" />
       <updated>1547560455846</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="Ler ou salvar Empresa WIP">
+      <created>1547567569243</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1547567569243</updated>
+    </task>
+    <task id="LOCAL-00025" summary="Ler ou salvar Empresa Done">
+      <created>1547567673593</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1547567673593</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="SelectDBTest_selectJogoTest - 2019.01.15 at 11h 42m 57s.xml">
-      <configuration name="SelectDBTest.selectJogoTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="SelectDBTest_selectJogoTest - 2019.01.15 at 11h 44m 20s.xml">
-      <configuration name="SelectDBTest.selectJogoTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="SelectDBTest_selectJogoTest - 2019.01.15 at 11h 46m 38s.xml">
-      <configuration name="SelectDBTest.selectJogoTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="SelectDBTest_selectJogoTest - 2019.01.15 at 11h 47m 17s.xml">
-      <configuration name="SelectDBTest.selectJogoTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="SelectDBTest_selectJogoTest - 2019.01.15 at 11h 47m 49s.xml">
-      <configuration name="SelectDBTest.selectJogoTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="SelectDBTest_selectJogoTest - 2019.01.15 at 11h 48m 07s.xml">
-      <configuration name="SelectDBTest.selectJogoTest" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="SelectDBTest_selectJogoTest - 2019.01.15 at 11h 48m 44s.xml">
       <configuration name="SelectDBTest.selectJogoTest" configurationId="JUnit" />
     </history-entry>
@@ -494,12 +490,30 @@
     <history-entry file="SelectDBTest_selectJogoTest - 2019.01.15 at 13h 43m 47s.xml">
       <configuration name="SelectDBTest.selectJogoTest" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="RecebeInputTest_inputEmpresaTest - 2019.01.15 at 13h 54m 03s.xml">
+      <configuration name="RecebeInputTest.inputEmpresaTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="RecebeInputTest_inputNullTest - 2019.01.15 at 13h 56m 50s.xml">
+      <configuration name="RecebeInputTest.inputNullTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="RecebeInputTest_inputNullTest - 2019.01.15 at 13h 58m 40s.xml">
+      <configuration name="RecebeInputTest.inputNullTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="RecebeInputTest_inputNullTest - 2019.01.15 at 13h 59m 27s.xml">
+      <configuration name="RecebeInputTest.inputNullTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="RecebeInputTest_inputNullTest - 2019.01.15 at 13h 59m 58s.xml">
+      <configuration name="RecebeInputTest.inputNullTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="RecebeInputTest_inputNullTest - 2019.01.15 at 14h 00m 26s.xml">
+      <configuration name="RecebeInputTest.inputNullTest" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.13313162" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.13464448" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Learn" order="3" />
@@ -525,7 +539,6 @@
     </layout>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Iniciando programa com HSQL" />
     <MESSAGE value="Manipulação com HSQL" />
     <MESSAGE value="Começo integração com DB" />
     <MESSAGE value="acesso a um DB existente" />
@@ -549,7 +562,9 @@
     <MESSAGE value="Test ler ou salvar DONE" />
     <MESSAGE value="Teste insert personagem WIP" />
     <MESSAGE value="SELECT com order" />
-    <option name="LAST_COMMIT_MESSAGE" value="SELECT com order" />
+    <MESSAGE value="Ler ou salvar Empresa WIP" />
+    <MESSAGE value="Ler ou salvar Empresa Done" />
+    <option name="LAST_COMMIT_MESSAGE" value="Ler ou salvar Empresa Done" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -639,10 +654,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/RecebeInput.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/SelectDBTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
+        <state relative-caret-position="291">
+          <caret line="46" column="41" selection-start-line="46" selection-start-column="41" selection-end-line="46" selection-end-column="41" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -656,20 +674,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/SelectDBTest.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/RecebeInput.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="291">
-          <caret line="46" column="41" selection-start-line="46" selection-start-column="41" selection-end-line="46" selection-end-column="41" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="300">
+          <caret line="20" column="59" selection-start-line="20" selection-start-column="59" selection-end-line="20" selection-end-column="59" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/RecebeInputTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="328">
-          <caret line="61" column="53" selection-start-line="61" selection-start-column="53" selection-end-line="61" selection-end-column="53" />
+        <state relative-caret-position="311">
+          <caret line="68" column="51" selection-start-line="68" selection-start-column="51" selection-end-line="68" selection-end-column="51" />
         </state>
       </provider>
     </entry>
