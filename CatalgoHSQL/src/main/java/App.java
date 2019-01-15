@@ -56,13 +56,20 @@ public class App {
             {
                 System.out.println("Qual o nome da empresa você gostaria de adicionar?");
                 empresa = usuario.Empresa();
+                salvar.empresa(empresa);
                 System.out.println("Qual o nome da plataforma que você gostaria de adicionar?");
                 plataforma = usuario.Plataforma();
+                salvar.plataforma(empresa,plataforma);
                 System.out.println("Qual o nome do jogo que você gostaria de adicionar?");
                 jogo = usuario.Jogo();
+                salvar.jogo(plataforma,jogo);
                 System.out.println("Quais os personagens deste jogo, por favor informe-os separando por ','");
                 personagem = usuario.personagens;
-
+                for (int i = 0;i<personagem.length;i++)
+                {
+                    salvar.personagem(jogo,personagem[i]);
+                }
+                System.out.println("Registros salvos com sucesso");
             }
             System.out.println("Deseja continuar a utilizar a plataforma? [Sim/Nao]");
             continuar = usuario.continuar();

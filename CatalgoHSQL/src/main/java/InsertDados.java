@@ -16,9 +16,8 @@ public class InsertDados {
             Statement stm =  this.DB.createStatement();
             resultado = stm.executeUpdate("INSERT INTO empresas (NOME_EMPRESA) VALUES('"+ nomeEmpresa +"')");
         } catch (SQLException e) {
-            System.out.println("Instrução invalida");
+            System.out.println("Instrução invalida ou registro já existe");
         }
-        System.out.println("Empresa adicionada");
         return resultado;
     }
 
@@ -29,9 +28,8 @@ public class InsertDados {
             Statement stm =  this.DB.createStatement();
             resultado = stm.executeUpdate("INSERT INTO plataformas (EMPRESA,NOME_PLATAFORMA) VALUES('"+ empresa +"','"+ nomePlataforma +"')");
         } catch (SQLException e) {
-            System.out.println("Instrução invalida");
+            System.out.println("Instrução invalida ou registro já existe");
         }
-        System.out.println("Plataforma adicionada");
         return resultado;
     }
 
@@ -42,9 +40,8 @@ public class InsertDados {
             Statement stm =  this.DB.createStatement();
             resultado = stm.executeUpdate("INSERT INTO jogos (PLATAFORMA,NOME_JOGO) VALUES('"+ plataforma +"','"+ nomeJogo +"')");
         } catch (SQLException e) {
-            System.out.println("Instrução invalida");
+            System.out.println("Instrução invalida ou registro já existe");
         }
-        System.out.println("Jogo adicionado");
         return resultado;
     }
 
@@ -54,9 +51,8 @@ public class InsertDados {
             Statement stm =  this.DB.createStatement();
             resultado = stm.executeUpdate("INSERT INTO personagens (JOGO,NOME_PERSONAGEM) VALUES('"+ jogo +"','"+ nomePersonagem +"')");
         } catch (SQLException e) {
-            System.out.println("Instrução invalida");
+            System.out.println("Instrução invalida ou registro já existe");
         }
-        System.out.println("Personagem adicionado");
         return resultado;
     }
 }
