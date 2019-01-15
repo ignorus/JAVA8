@@ -35,4 +35,18 @@ public class InsertDadosTest {
         assertEquals(1,adicionar.jogo("wii","Mario Kart 7"));
         con.rollback();
     }
+
+    @Test
+    @DisplayName("Adicionar peronagens ao DB")
+    void addPersonagemTest() throws SQLException {
+        int total = 0;
+        con.setAutoCommit(false);
+        total += adicionar.personagem("Mario Kart 7", "Mario");
+        total += adicionar.personagem("Mario Kart 7", "Luigi");
+        total += adicionar.personagem("Mario Kart 7", "Bowser");
+        total += adicionar.personagem("Mario Kart 7", "Wario");
+        total += adicionar.personagem("Mario Kart 7", "Boo");
+        assertEquals(5,total);
+        con.rollback();
+    }
 }

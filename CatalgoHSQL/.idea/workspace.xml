@@ -2,7 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="eb27e1a0-e7b4-4658-a98f-25c13d21818d" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/InsertDados.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/InsertDados.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/InsertDadosTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/InsertDadosTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/RecebeInputTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/RecebeInputTest.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -36,32 +39,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/InsertDadosTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="18" selection-start-line="18" selection-end-line="18" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/InsertDados.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="19" column="9" selection-start-line="19" selection-start-column="9" selection-end-line="19" selection-end-column="9" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/SelectDBTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="283">
-              <caret line="35" column="40" selection-start-line="35" selection-start-column="40" selection-end-line="35" selection-end-column="40" />
+            <state relative-caret-position="427">
+              <caret line="43" column="35" selection-start-line="43" selection-start-column="35" selection-end-line="43" selection-end-column="35" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -70,10 +49,36 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/InsertDados.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="226">
+              <caret line="52" column="5" selection-start-line="52" selection-start-column="5" selection-end-line="52" selection-end-column="5" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#1675#1676#0" expanded="true" />
+                <element signature="e#1699#1700#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/SelectDBTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="595">
+              <caret line="43" column="20" selection-start-line="43" selection-start-column="20" selection-end-line="43" selection-end-column="20" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/RecebeInputTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="502">
-              <caret line="53" column="4" selection-start-line="53" selection-start-column="4" selection-end-line="53" selection-end-column="4" />
+            <state relative-caret-position="485">
+              <caret line="57" column="5" selection-start-line="57" selection-start-column="5" selection-end-line="57" selection-end-column="5" />
             </state>
           </provider>
         </entry>
@@ -146,11 +151,11 @@
         <option value="$PROJECT_DIR$/src/test/java/AcessoDBTest.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/App.java" />
+        <option value="$PROJECT_DIR$/src/main/java/SelectDB.java" />
+        <option value="$PROJECT_DIR$/src/test/java/RecebeInputTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/SelectDBTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/InsertDadosTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/InsertDados.java" />
-        <option value="$PROJECT_DIR$/src/main/java/SelectDB.java" />
-        <option value="$PROJECT_DIR$/src/test/java/SelectDBTest.java" />
-        <option value="$PROJECT_DIR$/src/test/java/RecebeInputTest.java" />
       </list>
     </option>
   </component>
@@ -222,7 +227,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="project.structure.last.edited" value="Project" />
-    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.0" />
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.CommitDialog" />
   </component>
@@ -238,7 +243,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.RecebeInputTest.salvarTest">
+  <component name="RunManager" selected="JUnit.InsertDadosTest.addPersonagemTest">
     <configuration name="InsertDadosTest.addEmpresaTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="CatalgoHSQL" />
       <option name="PACKAGE_NAME" value="" />
@@ -249,11 +254,11 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="InsertDadosTest.addJogoTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="InsertDadosTest.addPersonagemTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="CatalgoHSQL" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="InsertDadosTest" />
-      <option name="METHOD_NAME" value="addJogoTest" />
+      <option name="METHOD_NAME" value="addPersonagemTest" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -291,11 +296,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.RecebeInputTest.salvarTest" />
+        <item itemvalue="JUnit.InsertDadosTest.addPersonagemTest" />
         <item itemvalue="JUnit.SelectDBTest.selectTest" />
+        <item itemvalue="JUnit.RecebeInputTest.salvarTest" />
         <item itemvalue="JUnit.SelectDBTest.selectplataformaTest" />
         <item itemvalue="JUnit.InsertDadosTest.addEmpresaTest" />
-        <item itemvalue="JUnit.InsertDadosTest.addJogoTest" />
       </list>
     </recent_temporary>
   </component>
@@ -447,13 +452,17 @@
       <option name="project" value="LOCAL" />
       <updated>1547492466949</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="Test ler ou salvar DONE">
+      <created>1547555206283</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1547555206283</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="SelectDBTest_selectTest - 2019.01.14 at 14h 46m 42s.xml">
-      <configuration name="SelectDBTest.selectTest" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="SelectDBTest_selectTest - 2019.01.14 at 14h 49m 26s.xml">
       <configuration name="SelectDBTest.selectTest" configurationId="JUnit" />
     </history-entry>
@@ -481,12 +490,15 @@
     <history-entry file="SelectDBTest_selectTest - 2019.01.14 at 16h 50m 52s.xml">
       <configuration name="SelectDBTest.selectTest" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="InsertDadosTest_addPersonagemTest - 2019.01.15 at 10h 43m 14s.xml">
+      <configuration name="InsertDadosTest.addPersonagemTest" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.13313162" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.13313162" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Learn" order="3" />
@@ -494,7 +506,7 @@
       <window_info id="Favorites" order="5" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.494705" weight="0.3289689" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.494705" visible="true" weight="0.3289689" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39934534" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -533,7 +545,8 @@
     <MESSAGE value="Teste Select Jogo" />
     <MESSAGE value="Teste Select Jogo sem alterar tabela" />
     <MESSAGE value="corrigindo testes SELECT" />
-    <option name="LAST_COMMIT_MESSAGE" value="corrigindo testes SELECT" />
+    <MESSAGE value="Test ler ou salvar DONE" />
+    <option name="LAST_COMMIT_MESSAGE" value="Test ler ou salvar DONE" />
   </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
@@ -558,26 +571,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
           <caret line="7" column="29" selection-start-line="7" selection-start-column="29" selection-end-line="7" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/InsertDadosTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="18" selection-start-line="18" selection-end-line="18" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/InsertDados.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="19" column="9" selection-start-line="19" selection-start-column="9" selection-end-line="19" selection-end-column="9" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -621,20 +614,42 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/RecebeInputTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="485">
+          <caret line="57" column="5" selection-start-line="57" selection-start-column="5" selection-end-line="57" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/SelectDBTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="283">
-          <caret line="35" column="40" selection-start-line="35" selection-start-column="40" selection-end-line="35" selection-end-column="40" />
+        <state relative-caret-position="595">
+          <caret line="43" column="20" selection-start-line="43" selection-start-column="20" selection-end-line="43" selection-end-column="20" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/RecebeInputTest.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/InsertDadosTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="502">
-          <caret line="53" column="4" selection-start-line="53" selection-start-column="4" selection-end-line="53" selection-end-column="4" />
+        <state relative-caret-position="427">
+          <caret line="43" column="35" selection-start-line="43" selection-start-column="35" selection-end-line="43" selection-end-column="35" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/InsertDados.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="226">
+          <caret line="52" column="5" selection-start-line="52" selection-start-column="5" selection-end-line="52" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1675#1676#0" expanded="true" />
+            <element signature="e#1699#1700#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

@@ -52,4 +52,8 @@ public class RecebeInputTest {
         assertEquals("invalido",inputMock.LerouSalvar());
     }
 
+    @Test
+    @DisplayName("Recebe input para ler plataformas de detrminada empresa")
+    void inputEmpresaTest()
+    {}
 }

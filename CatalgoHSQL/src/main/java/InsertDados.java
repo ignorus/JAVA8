@@ -47,4 +47,8 @@ public class InsertDados {
         System.out.println("Jogo adicionado");
         return resultado;
     }
+
+    public int personagem(String jogo, String nomePersonagem) {
+        return 0;
+    }
 }
