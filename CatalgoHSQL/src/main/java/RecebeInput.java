@@ -44,4 +44,8 @@ public class RecebeInput {
         }
         return "Invalido";
     }
+
+    public String[] Personagens() {
+        return new String[0];
+    }
 }

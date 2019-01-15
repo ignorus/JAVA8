@@ -13,6 +13,7 @@ public class RecebeInputTest {
 
     RecebeInput inputMock = mock(new RecebeInput().getClass());
     InputStream simulaUsuario;
+    String[] verificar;
 
     @Test
     @DisplayName("Recebe input Ler mock")
@@ -110,5 +111,16 @@ public class RecebeInputTest {
         System.setIn(simulaUsuario);
         when(inputMock.Jogo()).thenCallRealMethod();
         assertEquals("Invalido", inputMock.Jogo());
+    }
+
+    @Test
+    @DisplayName("Recebe input de varios personagens para salvar")
+    void salvarPersonagensTest()
+    {
+        simulaUsuario = new ByteArrayInputStream("Mario,Luigi,Boo,Bowser,Toad\n".getBytes());
+        System.setIn(simulaUsuario);
+        when(inputMock.Personagens()).thenCallRealMethod();
+        verificar = inputMock.Personagens();
+        assertEquals(5,verificar.length);
     }
 }
