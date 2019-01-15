@@ -73,12 +73,22 @@ public class RecebeInputTest {
     }
 
     @Test
-    @DisplayName("Recebe input para ler ou salvar determinada empresa")
+    @DisplayName("Recebe input para ler ou salvar determinada plataforma")
     void inputPlataformaTest()
     {
         simulaUsuario = new ByteArrayInputStream("wii\n".getBytes());
         System.setIn(simulaUsuario);
         when(inputMock.Plataforma()).thenCallRealMethod();
         assertEquals("wii",inputMock.Plataforma());
+    }
+
+    @Test
+    @DisplayName("Recebe input insignificativo para ler ou salvar determinada plataforma")
+    void inputIndiferenteTest()
+    {
+        simulaUsuario = new ByteArrayInputStream(" \n".getBytes());
+        System.setIn(simulaUsuario);
+        when(inputMock.Plataforma()).thenCallRealMethod();
+        assertEquals("Invalido", inputMock.Plataforma());
     }
 }
