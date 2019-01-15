@@ -21,6 +21,7 @@ public class App {
             plataforma = "";
             jogo = "";
             resultado = "";
+            System.out.println("Voce gostaria de ler ou salvar no banco de dados?");
             resultado = usuario.LerouSalvar();
             if(resultado.equalsIgnoreCase("ler"))
             {
@@ -64,7 +65,7 @@ public class App {
                 jogo = usuario.Jogo();
                 salvar.jogo(plataforma,jogo);
                 System.out.println("Quais os personagens deste jogo, por favor informe-os separando por ','");
-                personagem = usuario.personagens;
+                personagem = usuario.Personagens();
                 for (int i = 0;i<personagem.length;i++)
                 {
                     salvar.personagem(jogo,personagem[i]);

@@ -4,7 +4,13 @@
     <list default="true" id="eb27e1a0-e7b4-4658-a98f-25c13d21818d" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/App.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/testarTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/testarTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CatalogoJogos/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../CatalogoJogos/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CatalogoJogos/target/classes/Game_Catalog/AtualizarLeitura.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CatalogoJogos/target/classes/Game_Catalog/LerArquivoJSON.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CatalogoJogos/target/classes/Game_Catalog/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CatalogoJogos/target/classes/Game_Catalog/OrdenaObjeto.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CatalogoJogos/target/classes/Game_Catalog/RecebeInput.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CatalogoJogos/target/classes/Game_Catalog/SalvarArquivoJSON.class" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -31,8 +37,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/InsertDados.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="935">
-              <caret line="58" column="38" selection-start-line="58" selection-start-column="38" selection-end-line="58" selection-end-column="38" />
+            <state relative-caret-position="277">
+              <caret line="54" column="9" selection-start-line="54" selection-start-column="9" selection-end-line="54" selection-end-column="9" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -61,11 +67,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/App.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="328">
-              <caret line="64" column="16" selection-start-line="64" selection-start-column="16" selection-end-line="64" selection-end-column="16" />
+            <state relative-caret-position="240">
+              <caret line="67" column="50" selection-start-line="67" selection-start-column="50" selection-end-line="67" selection-end-column="50" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -85,11 +91,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/RecebeInput.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1122">
-              <caret line="66" column="17" lean-forward="true" selection-start-line="66" selection-start-column="17" selection-end-line="66" selection-end-column="17" />
+            <state relative-caret-position="174">
+              <caret line="49" column="66" selection-start-line="49" selection-start-column="66" selection-end-line="49" selection-end-column="66" />
             </state>
           </provider>
         </entry>
@@ -148,14 +154,14 @@
         <option value="$PROJECT_DIR$/src/main/java/AcessoDB.java" />
         <option value="$PROJECT_DIR$/src/test/java/AcessoDBTest.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/InsertDados.java" />
         <option value="$PROJECT_DIR$/src/test/java/SelectDBTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/RecebeInputTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/RecebeInput.java" />
         <option value="$PROJECT_DIR$/src/main/java/SelectDB.java" />
         <option value="$PROJECT_DIR$/src/test/java/testarTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/InsertDadosTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/InsertDados.java" />
         <option value="$PROJECT_DIR$/src/main/java/App.java" />
+        <option value="$PROJECT_DIR$/src/main/java/RecebeInput.java" />
       </list>
     </option>
   </component>
@@ -243,22 +249,19 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.InsertDadosTest.addEmpresaTest">
+  <component name="RunManager" selected="Application.App">
+    <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="App" />
+      <module name="CatalgoHSQL" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="InsertDadosTest.addEmpresaTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="CatalgoHSQL" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="InsertDadosTest" />
       <option name="METHOD_NAME" value="addEmpresaTest" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="RecebeInputTest.inputTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="CatalgoHSQL" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="RecebeInputTest" />
-      <option name="METHOD_NAME" value="inputTest" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -296,11 +299,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.App" />
         <item itemvalue="JUnit.InsertDadosTest.addEmpresaTest" />
         <item itemvalue="JUnit.testarTest.criarTabelaemHSQL" />
         <item itemvalue="JUnit.RecebeInputTest.salvarPersonagensTest" />
         <item itemvalue="JUnit.RecebeInputTest.salvarPersonagensNullTest" />
-        <item itemvalue="JUnit.RecebeInputTest.inputTest" />
       </list>
     </recent_temporary>
   </component>
@@ -550,7 +553,21 @@
       <option name="project" value="LOCAL" />
       <updated>1547574384371</updated>
     </task>
-    <option name="localTasksCounter" value="35" />
+    <task id="LOCAL-00035" summary="inicio fluxo salvar em DB">
+      <created>1547576321162</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1547576321162</updated>
+    </task>
+    <task id="LOCAL-00036" summary="MVP para testear">
+      <created>1547576819903</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1547576819903</updated>
+    </task>
+    <option name="localTasksCounter" value="37" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -587,7 +604,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.13464448" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -615,8 +631,6 @@
     </layout>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="INSERT plataforma test sem alterar tabela orinal" />
-    <MESSAGE value="INSERT jogo test sem alterar tabela orinal" />
     <MESSAGE value="SELECT iniciando" />
     <MESSAGE value="Teste Select empresa" />
     <MESSAGE value="Teste Select empresa WIP" />
@@ -640,7 +654,9 @@
     <MESSAGE value="receber input Personagens" />
     <MESSAGE value="receber input Personagens DONE" />
     <MESSAGE value="app WIP" />
-    <option name="LAST_COMMIT_MESSAGE" value="app WIP" />
+    <MESSAGE value="inicio fluxo salvar em DB" />
+    <MESSAGE value="MVP para testear" />
+    <option name="LAST_COMMIT_MESSAGE" value="MVP para testear" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -650,6 +666,18 @@
           <line>47</line>
           <properties />
           <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/RecebeInput.java</url>
+          <line>49</line>
+          <properties />
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/App.java</url>
+          <line>65</line>
+          <properties />
+          <option name="timeStamp" value="6" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
@@ -687,23 +715,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="141">
           <caret line="130" column="52" selection-start-line="130" selection-start-column="52" selection-end-line="130" selection-end-column="52" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/RecebeInput.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1122">
-          <caret line="66" column="17" lean-forward="true" selection-start-line="66" selection-start-column="17" selection-end-line="66" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/InsertDados.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="935">
-          <caret line="58" column="38" selection-start-line="58" selection-start-column="38" selection-end-line="58" selection-end-column="38" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -757,13 +768,30 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/App.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/InsertDados.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="328">
-          <caret line="64" column="16" selection-start-line="64" selection-start-column="16" selection-end-line="64" selection-end-column="16" />
+        <state relative-caret-position="277">
+          <caret line="54" column="9" selection-start-line="54" selection-start-column="9" selection-end-line="54" selection-end-column="9" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/App.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="67" column="50" selection-start-line="67" selection-start-column="50" selection-end-line="67" selection-end-column="50" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/RecebeInput.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="174">
+          <caret line="49" column="66" selection-start-line="49" selection-start-column="66" selection-end-line="49" selection-end-column="66" />
         </state>
       </provider>
     </entry>
