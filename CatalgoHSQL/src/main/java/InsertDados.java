@@ -49,6 +49,14 @@ public class InsertDados {
     }
 
     public int personagem(String jogo, String nomePersonagem) {
-        return 0;
+        int resultado = 0;
+        try {
+            Statement stm =  this.DB.createStatement();
+            resultado = stm.executeUpdate("INSERT INTO personagens (JOGO,NOME_PERSONAGEM) VALUES('"+ jogo +"','"+ nomePersonagem +"')");
+        } catch (SQLException e) {
+            System.out.println("Instrução invalida");
+        }
+        System.out.println("Personagem adicionado");
+        return resultado;
     }
 }

@@ -41,11 +41,12 @@ public class SelectDBTest {
     @DisplayName("Select jogo test")
     void selectJogoTest() throws SQLException {
         con.setAutoCommit(false);
-        inserir.jogo("wii","Mario Party 8");
-        inserir.jogo("wii","Rayman");
+        inserir.personagem("Mario Party 8","Mario");
+        inserir.personagem("Mario Party 8","Luigi");
+        inserir.personagem("Mario Party 8","Boo");
         avaliador = select.jogo("Mario Party 8");
         avaliador.next();
-        assertEquals("Mario Party 8",avaliador.getString("nome_plataforma"));
+        assertEquals("Boo", avaliador.getString("nome_personagem"));
         con.rollback();
     }
 }
