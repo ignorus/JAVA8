@@ -39,13 +39,12 @@ public class testarTest {
 
         try {
             Class.forName("org.hsqldb.jdbc.JDBCDriver");
-            con = DriverManager.getConnection("jdbc:hsqldb:hsql://localhost/testdb", "SA", "");
+            con = DriverManager.getConnection("jdbc:hsqldb:hsql://localhost/catalogojogos;ifexists = true", "ignorus", "maketime");
             stmt = con.createStatement();
 
-            result = stmt.executeUpdate("CREATE TABLE tutorials_tbl ("+
-                    "id INT NOT NULL, title VARCHAR(50) NOT NULL,"+
-                    "author VARCHAR(20) NOT NULL, submission_date DATE,"+
-                    "PRIMARY KEY (id));"
+            result = stmt.executeUpdate("CREATE TABLE personagens ("+
+                    "jogo VARCHAR(100) NOT NULL, nome_personagem VARCHAR(200), "+
+                    "PRIMARY KEY (nome_personagem));"
             );
 
         }  catch (Exception e) {

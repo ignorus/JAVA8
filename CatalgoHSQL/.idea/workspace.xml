@@ -4,8 +4,7 @@
     <list default="true" id="eb27e1a0-e7b4-4658-a98f-25c13d21818d" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/App.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/RecebeInput.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/RecebeInput.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/SelectDB.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/SelectDB.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/testarTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/testarTest.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -20,8 +19,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/InsertDadosTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="595">
-              <caret line="43" column="35" selection-start-line="43" selection-start-column="35" selection-end-line="43" selection-end-column="35" />
+            <state relative-caret-position="155">
+              <caret line="17" column="33" selection-start-line="17" selection-start-column="33" selection-end-line="17" selection-end-column="33" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -65,8 +64,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/App.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="124">
-              <caret line="52" column="16" lean-forward="true" selection-start-line="52" selection-start-column="16" selection-end-line="52" selection-end-column="16" />
+            <state relative-caret-position="328">
+              <caret line="64" column="16" selection-start-line="64" selection-start-column="16" selection-end-line="64" selection-end-column="16" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -110,8 +109,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/AcessoDB.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="16" column="51" selection-start-line="16" selection-start-column="51" selection-end-line="16" selection-end-column="51" />
+            <state relative-caret-position="204">
+              <caret line="14" column="129" selection-start-line="14" selection-start-column="47" selection-end-line="14" selection-end-column="129" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -122,8 +121,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/testarTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1921">
-              <caret line="117" column="33" selection-start-line="117" selection-start-column="33" selection-end-line="117" selection-end-column="33" />
+            <state relative-caret-position="174">
+              <caret line="46" column="49" selection-start-line="46" selection-start-column="49" selection-end-line="46" selection-end-column="49" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -146,16 +145,16 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/test/java/testarTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/AcessoDB.java" />
         <option value="$PROJECT_DIR$/src/test/java/AcessoDBTest.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/src/test/java/InsertDadosTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/InsertDados.java" />
         <option value="$PROJECT_DIR$/src/test/java/SelectDBTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/RecebeInputTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/RecebeInput.java" />
         <option value="$PROJECT_DIR$/src/main/java/SelectDB.java" />
+        <option value="$PROJECT_DIR$/src/test/java/testarTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/InsertDadosTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/App.java" />
       </list>
     </option>
@@ -244,22 +243,12 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.RecebeInputTest.salvarPersonagensTest">
-    <configuration name="RecebeInputTest.inputIndiferenteTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.InsertDadosTest.addEmpresaTest">
+    <configuration name="InsertDadosTest.addEmpresaTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="CatalgoHSQL" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="RecebeInputTest" />
-      <option name="METHOD_NAME" value="inputIndiferenteTest" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="RecebeInputTest.inputJogoTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="CatalgoHSQL" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="RecebeInputTest" />
-      <option name="METHOD_NAME" value="inputJogoTest" />
+      <option name="MAIN_CLASS_NAME" value="InsertDadosTest" />
+      <option name="METHOD_NAME" value="addEmpresaTest" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -295,13 +284,23 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="testarTest.criarTabelaemHSQL" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="CatalgoHSQL" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="testarTest" />
+      <option name="METHOD_NAME" value="criarTabelaemHSQL" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.InsertDadosTest.addEmpresaTest" />
+        <item itemvalue="JUnit.testarTest.criarTabelaemHSQL" />
         <item itemvalue="JUnit.RecebeInputTest.salvarPersonagensTest" />
         <item itemvalue="JUnit.RecebeInputTest.salvarPersonagensNullTest" />
         <item itemvalue="JUnit.RecebeInputTest.inputTest" />
-        <item itemvalue="JUnit.RecebeInputTest.inputJogoTest" />
-        <item itemvalue="JUnit.RecebeInputTest.inputIndiferenteTest" />
       </list>
     </recent_temporary>
   </component>
@@ -544,46 +543,53 @@
       <option name="project" value="LOCAL" />
       <updated>1547572375775</updated>
     </task>
-    <option name="localTasksCounter" value="34" />
+    <task id="LOCAL-00034" summary="app WIP">
+      <created>1547574384371</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1547574384371</updated>
+    </task>
+    <option name="localTasksCounter" value="35" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="RecebeInputTest_inputJogoTest - 2019.01.15 at 14h 43m 31s.xml">
-      <configuration name="RecebeInputTest.inputJogoTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="RecebeInputTest_inputTest - 2019.01.15 at 14h 45m 48s.xml">
-      <configuration name="RecebeInputTest.inputTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="RecebeInputTest_salvarPersonagensTest - 2019.01.15 at 14h 52m 54s.xml">
-      <configuration name="RecebeInputTest.salvarPersonagensTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="RecebeInputTest_salvarPersonagensTest - 2019.01.15 at 14h 57m 36s.xml">
-      <configuration name="RecebeInputTest.salvarPersonagensTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="RecebeInputTest_salvarPersonagensNullTest - 2019.01.15 at 14h 59m 49s.xml">
-      <configuration name="RecebeInputTest.salvarPersonagensNullTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="RecebeInputTest_salvarPersonagensNullTest - 2019.01.15 at 15h 00m 04s.xml">
-      <configuration name="RecebeInputTest.salvarPersonagensNullTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="RecebeInputTest_salvarPersonagensNullTest - 2019.01.15 at 15h 08m 19s.xml">
-      <configuration name="RecebeInputTest.salvarPersonagensNullTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="RecebeInputTest_salvarPersonagensNullTest - 2019.01.15 at 15h 08m 44s.xml">
-      <configuration name="RecebeInputTest.salvarPersonagensNullTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="RecebeInputTest_salvarPersonagensNullTest - 2019.01.15 at 15h 11m 49s.xml">
-      <configuration name="RecebeInputTest.salvarPersonagensNullTest" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="RecebeInputTest_salvarPersonagensTest - 2019.01.15 at 15h 12m 25s.xml">
       <configuration name="RecebeInputTest.salvarPersonagensTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="testarTest_criarTabelaemHSQL - 2019.01.15 at 16h 06m 14s.xml">
+      <configuration name="testarTest.criarTabelaemHSQL" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="testarTest_criarTabelaemHSQL - 2019.01.15 at 16h 07m 54s.xml">
+      <configuration name="testarTest.criarTabelaemHSQL" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="testarTest_criarTabelaemHSQL - 2019.01.15 at 16h 08m 26s.xml">
+      <configuration name="testarTest.criarTabelaemHSQL" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="testarTest_criarTabelaemHSQL - 2019.01.15 at 16h 08m 52s.xml">
+      <configuration name="testarTest.criarTabelaemHSQL" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="testarTest_criarTabelaemHSQL - 2019.01.15 at 16h 09m 06s.xml">
+      <configuration name="testarTest.criarTabelaemHSQL" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="testarTest_criarTabelaemHSQL - 2019.01.15 at 16h 10m 20s.xml">
+      <configuration name="testarTest.criarTabelaemHSQL" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="testarTest_criarTabelaemHSQL - 2019.01.15 at 16h 11m 19s.xml">
+      <configuration name="testarTest.criarTabelaemHSQL" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="InsertDadosTest_addEmpresaTest - 2019.01.15 at 16h 12m 29s.xml">
+      <configuration name="InsertDadosTest.addEmpresaTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="InsertDadosTest_addEmpresaTest - 2019.01.15 at 16h 13m 06s.xml">
+      <configuration name="InsertDadosTest.addEmpresaTest" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.13464448" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.13464448" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Learn" order="3" />
@@ -591,7 +597,7 @@
       <window_info id="Favorites" order="5" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.494705" visible="true" weight="0.3289689" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.494705" visible="true" weight="0.3289689" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39934534" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -609,7 +615,6 @@
     </layout>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="INSERT plataforma test WIP" />
     <MESSAGE value="INSERT plataforma test sem alterar tabela orinal" />
     <MESSAGE value="INSERT jogo test sem alterar tabela orinal" />
     <MESSAGE value="SELECT iniciando" />
@@ -634,7 +639,8 @@
     <MESSAGE value="Começando a receber input Personagens" />
     <MESSAGE value="receber input Personagens" />
     <MESSAGE value="receber input Personagens DONE" />
-    <option name="LAST_COMMIT_MESSAGE" value="receber input Personagens DONE" />
+    <MESSAGE value="app WIP" />
+    <option name="LAST_COMMIT_MESSAGE" value="app WIP" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -664,36 +670,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
           <caret line="13" column="36" selection-start-line="13" selection-start-column="36" selection-end-line="13" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/InsertDadosTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="595">
-          <caret line="43" column="35" selection-start-line="43" selection-start-column="35" selection-end-line="43" selection-end-column="35" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/AcessoDB.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="16" column="51" selection-start-line="16" selection-start-column="51" selection-end-line="16" selection-end-column="51" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/testarTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1921">
-          <caret line="117" column="33" selection-start-line="117" selection-start-column="33" selection-end-line="117" selection-end-column="33" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -751,10 +727,40 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/AcessoDB.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="14" column="129" selection-start-line="14" selection-start-column="47" selection-end-line="14" selection-end-column="129" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/testarTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="174">
+          <caret line="46" column="49" selection-start-line="46" selection-start-column="49" selection-end-line="46" selection-end-column="49" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/InsertDadosTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="155">
+          <caret line="17" column="33" selection-start-line="17" selection-start-column="33" selection-end-line="17" selection-end-column="33" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/App.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="124">
-          <caret line="52" column="16" lean-forward="true" selection-start-line="52" selection-start-column="16" selection-end-line="52" selection-end-column="16" />
+        <state relative-caret-position="328">
+          <caret line="64" column="16" selection-start-line="64" selection-start-column="16" selection-end-line="64" selection-end-column="16" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
