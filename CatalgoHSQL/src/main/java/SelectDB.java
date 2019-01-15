@@ -9,6 +9,17 @@ public class SelectDB {
     SelectDB(Connection DB)
     {
         this.link = DB;
+
+    }
+    public ResultSet iniciar() {
+        ResultSet resultado = null;
+        try {
+            Statement stmt = this.link.createStatement();
+            resultado = stmt.executeQuery("SELECT * FROM empresas ORDER BY nome_empresa");
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        return resultado;
     }
 
     public ResultSet empresa(String Nome_empresa) {

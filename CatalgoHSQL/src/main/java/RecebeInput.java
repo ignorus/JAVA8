@@ -57,4 +57,13 @@ public class RecebeInput {
         personagens = new String[]{"Invalido"};
         return personagens;
     }
+
+    public int continuar() {
+        Scanner input = new Scanner(System.in).useDelimiter("\n");
+        if(input.next().equals("sim"))
+        {
+            return -1;
+        }
+        return 0;
+    }
 }
