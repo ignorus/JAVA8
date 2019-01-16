@@ -29,7 +29,7 @@ public class testarTest {
         }
     }
 
-    @Test
+ /*   @Test
     @DisplayName("Criar tabela X no DB")
     void criarTabelaemHSQL()
     {
@@ -43,8 +43,7 @@ public class testarTest {
             stmt = con.createStatement();
 
             result = stmt.executeUpdate("CREATE TABLE personagens ("+
-                    "jogo VARCHAR(100) NOT NULL, nome_personagem VARCHAR(200), "+
-                    "PRIMARY KEY (nome_personagem));"
+                    "jogo VARCHAR(100) NOT NULL, nome_personagem VARCHAR(200));"
             );
 
         }  catch (Exception e) {
@@ -73,7 +72,7 @@ public class testarTest {
         System.out.println(result+" rows effected");
         System.out.println("Rows inserted successfully");
     }
-
+*/
     @Test
     @DisplayName("Recuperar Informacion do DB")
     void selectHSQL()
