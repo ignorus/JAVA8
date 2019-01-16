@@ -49,4 +49,36 @@ public class InsertDadosTest {
         assertEquals(5,total);
         con.rollback();
     }
+
+    @Test
+    @DisplayName("adicionar empresa já existente")
+    void empresaExiste() throws SQLException {
+        con.setAutoCommit(false);
+        assertEquals(0,adicionar.empresa("Nintendo"));
+        con.rollback();
+    }
+
+    @Test
+    @DisplayName("adicionar plataforma já existente")
+    void plataformaExiste() throws SQLException {
+        con.setAutoCommit(false);
+        assertEquals(0,adicionar.plataforma("Nintendo","Wii"));
+        con.rollback();
+    }
+
+    @Test
+    @DisplayName("adicionar jogo já existente")
+    void jogoExiste() throws SQLException {
+        con.setAutoCommit(false);
+        assertEquals(0,adicionar.jogo("Wii","Mario Kart Wii"));
+        con.rollback();
+    }
+
+    @Test
+    @DisplayName("adicionar personagem já existente")
+    void personagemExiste() throws SQLException {
+        con.setAutoCommit(false);
+        assertEquals(0,adicionar.personagem("Mario Kart 7","Mario"));
+        con.rollback();
+    }
 }

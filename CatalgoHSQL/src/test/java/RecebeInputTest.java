@@ -134,4 +134,24 @@ public class RecebeInputTest {
         verificar = inputMock.Personagens();
         assertEquals("Invalido",verificar[0]);
     }
+
+    @Test
+    @DisplayName("Usuario deseja continuar")
+    void continuar()
+    {
+        simulaUsuario = new ByteArrayInputStream("sim".getBytes());
+        System.setIn(simulaUsuario);
+        when(inputMock.continuar()).thenCallRealMethod();
+        assertEquals(-1,inputMock.continuar());
+    }
+
+    @Test
+    @DisplayName("Usuario não deseja continuar")
+    void naoContinuar()
+    {
+        simulaUsuario = new ByteArrayInputStream("nao".getBytes());
+        System.setIn(simulaUsuario);
+        when(inputMock.continuar()).thenCallRealMethod();
+        assertEquals(0,inputMock.continuar());
+    }
 }

@@ -1,9 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="eb27e1a0-e7b4-4658-a98f-25c13d21818d" name="Default Changelist" comment="MELHORAR COBERTURA">
+    <list default="true" id="eb27e1a0-e7b4-4658-a98f-25c13d21818d" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/SelectDB.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/SelectDB.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/AcessoDBTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/AcessoDBTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/InsertDadosTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/InsertDadosTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/RecebeInputTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/RecebeInputTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/SelectDBTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/SelectDBTest.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -15,19 +18,30 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
+    <SUITE FILE_PATH="coverage/CatalgoHSQL$InsertDadosTest_plataformaExiste.ic" NAME="InsertDadosTest.plataformaExiste Coverage Results" MODIFIED="1547638997231" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/CatalgoHSQL$RecebeInputTest_continuar.ic" NAME="RecebeInputTest.continuar Coverage Results" MODIFIED="1547639291072" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/CatalgoHSQL$RecebeInputTest_naoContinuar.ic" NAME="RecebeInputTest.naoContinuar Coverage Results" MODIFIED="1547639335349" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/CatalgoHSQL$SelectDBTest_testIniciar.ic" NAME="SelectDBTest.testIniciar Coverage Results" MODIFIED="1547639566741" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/CatalgoHSQL$InsertDadosTest.ic" NAME="InsertDadosTest Coverage Results" MODIFIED="1547638724648" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
     <SUITE FILE_PATH="coverage/CatalgoHSQL$SelectDBTest_selectJogoTest.ic" NAME="SelectDBTest.selectJogoTest Coverage Results" MODIFIED="1547581187280" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
-    <SUITE FILE_PATH="coverage/CatalgoHSQL$All_in_CatalgoHSQL.ic" NAME="All in CatalgoHSQL Coverage Results" MODIFIED="1547581212015" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/CatalgoHSQL$InsertDadosTest_addJogoTest.ic" NAME="InsertDadosTest.addJogoTest Coverage Results" MODIFIED="1547638907077" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/CatalgoHSQL$InsertDadosTest_empresaExiste.ic" NAME="InsertDadosTest.empresaExiste Coverage Results" MODIFIED="1547638963119" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/CatalgoHSQL$InsertDadosTest_personagemExiste.ic" NAME="InsertDadosTest.personagemExiste Coverage Results" MODIFIED="1547639036392" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/CatalgoHSQL$All_in_CatalgoHSQL.ic" NAME="All in CatalgoHSQL Coverage Results" MODIFIED="1547639875020" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <EXCLUDED_FILTER>App</EXCLUDED_FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/CatalgoHSQL$InsertDadosTest_jogoExiste.ic" NAME="InsertDadosTest.jogoExiste Coverage Results" MODIFIED="1547638861358" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
   <component name="CoverageViewManager">
-    <option name="myElementSize" value="185" />
+    <option name="myElementSize" value="171" />
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/InsertDadosTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="259">
-              <caret line="47" column="56" selection-start-line="47" selection-start-column="56" selection-end-line="47" selection-end-column="56" />
+            <state relative-caret-position="42">
+              <caret line="72" column="59" selection-start-line="72" selection-start-column="59" selection-end-line="72" selection-end-column="59" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -38,7 +52,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/InsertDados.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="277">
+            <state relative-caret-position="202">
               <caret line="54" column="9" selection-start-line="54" selection-start-column="9" selection-end-line="54" selection-end-column="9" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -50,8 +64,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/SelectDBTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="879">
-              <caret line="53" column="23" lean-forward="true" selection-start-line="53" selection-start-column="23" selection-end-line="53" selection-end-column="23" />
+            <state relative-caret-position="195">
+              <caret line="62" column="37" lean-forward="true" selection-start-line="62" selection-start-column="37" selection-end-line="62" selection-end-column="37" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -62,17 +76,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/RecebeInputTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="141">
-              <caret line="130" column="52" selection-start-line="130" selection-start-column="52" selection-end-line="130" selection-end-column="52" />
+            <state relative-caret-position="33">
+              <caret line="144" column="23" selection-start-line="144" selection-start-column="23" selection-end-line="144" selection-end-column="23" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/App.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="67" column="50" selection-start-line="67" selection-start-column="50" selection-end-line="67" selection-end-column="50" />
+            <state relative-caret-position="221">
+              <caret line="13" column="42" lean-forward="true" selection-start-line="13" selection-start-column="42" selection-end-line="13" selection-end-column="42" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -80,11 +94,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/SelectDB.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
-              <caret line="21" column="25" selection-start-line="21" selection-start-column="25" selection-end-line="21" selection-end-column="25" />
+            <state relative-caret-position="79">
+              <caret line="19" column="77" selection-start-line="19" selection-start-column="77" selection-end-line="19" selection-end-column="77" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -95,7 +109,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/RecebeInput.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="327">
+            <state relative-caret-position="73">
               <caret line="58" column="5" selection-start-line="58" selection-start-column="5" selection-end-line="58" selection-end-column="5" />
             </state>
           </provider>
@@ -104,8 +118,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/AcessoDBTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="11" column="21" selection-start-line="11" selection-start-column="21" selection-end-line="11" selection-end-column="21" />
+            <state relative-caret-position="221">
+              <caret line="13" selection-start-line="13" selection-end-line="13" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -118,18 +132,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="204">
               <caret line="14" column="129" selection-start-line="14" selection-start-column="47" selection-end-line="14" selection-end-column="129" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/testarTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="174">
-              <caret line="46" column="49" selection-start-line="46" selection-start-column="49" selection-end-line="46" selection-end-column="49" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -153,16 +155,17 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/src/main/java/AcessoDB.java" />
-        <option value="$PROJECT_DIR$/src/test/java/AcessoDBTest.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/src/test/java/RecebeInputTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/SelectDB.java" />
         <option value="$PROJECT_DIR$/src/test/java/testarTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/InsertDados.java" />
         <option value="$PROJECT_DIR$/src/main/java/App.java" />
         <option value="$PROJECT_DIR$/src/main/java/RecebeInput.java" />
+        <option value="$PROJECT_DIR$/src/test/java/AcessoDBTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/InsertDadosTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/RecebeInputTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/SelectDBTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/SelectDB.java" />
+        <option value="$PROJECT_DIR$/src/test/java/AppTest.java" />
       </list>
     </option>
   </component>
@@ -253,6 +256,13 @@
   <component name="RunManager" selected="JUnit.All in CatalgoHSQL">
     <configuration name="All in CatalgoHSQL" type="JUnit" factoryName="JUnit" nameIsGenerated="true">
       <module name="CatalgoHSQL" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="App" />
+          <option name="ENABLED" value="true" />
+          <option name="INCLUDE" value="false" />
+        </pattern>
+      </extension>
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="" />
       <option name="METHOD_NAME" value="" />
@@ -262,51 +272,51 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="InsertDadosTest.addEmpresaTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="InsertDadosTest.personagemExiste" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="CatalgoHSQL" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="InsertDadosTest" />
-      <option name="METHOD_NAME" value="addEmpresaTest" />
+      <option name="METHOD_NAME" value="personagemExiste" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="InsertDadosTest.addPersonagemTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="InsertDadosTest.plataformaExiste" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="CatalgoHSQL" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="InsertDadosTest" />
-      <option name="METHOD_NAME" value="addPersonagemTest" />
+      <option name="METHOD_NAME" value="plataformaExiste" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SelectDBTest.selectJogoTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="RecebeInputTest.continuar" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="CatalgoHSQL" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="SelectDBTest" />
-      <option name="METHOD_NAME" value="selectJogoTest" />
+      <option name="MAIN_CLASS_NAME" value="RecebeInputTest" />
+      <option name="METHOD_NAME" value="continuar" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SelectDBTest.selectTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="RecebeInputTest.naoContinuar" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="CatalgoHSQL" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="SelectDBTest" />
-      <option name="METHOD_NAME" value="selectTest" />
+      <option name="MAIN_CLASS_NAME" value="RecebeInputTest" />
+      <option name="METHOD_NAME" value="naoContinuar" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SelectDBTest.selectplataformaTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="SelectDBTest.testIniciar" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="CatalgoHSQL" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="SelectDBTest" />
-      <option name="METHOD_NAME" value="selectplataformaTest" />
+      <option name="METHOD_NAME" value="testIniciar" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -314,19 +324,19 @@
     </configuration>
     <list>
       <item itemvalue="JUnit.All in CatalgoHSQL" />
-      <item itemvalue="JUnit.InsertDadosTest.addEmpresaTest" />
-      <item itemvalue="JUnit.InsertDadosTest.addPersonagemTest" />
-      <item itemvalue="JUnit.SelectDBTest.selectplataformaTest" />
-      <item itemvalue="JUnit.SelectDBTest.selectTest" />
-      <item itemvalue="JUnit.SelectDBTest.selectJogoTest" />
+      <item itemvalue="JUnit.InsertDadosTest.plataformaExiste" />
+      <item itemvalue="JUnit.InsertDadosTest.personagemExiste" />
+      <item itemvalue="JUnit.RecebeInputTest.continuar" />
+      <item itemvalue="JUnit.RecebeInputTest.naoContinuar" />
+      <item itemvalue="JUnit.SelectDBTest.testIniciar" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.SelectDBTest.selectJogoTest" />
-        <item itemvalue="JUnit.SelectDBTest.selectplataformaTest" />
-        <item itemvalue="JUnit.SelectDBTest.selectTest" />
-        <item itemvalue="JUnit.InsertDadosTest.addPersonagemTest" />
-        <item itemvalue="JUnit.InsertDadosTest.addEmpresaTest" />
+        <item itemvalue="JUnit.SelectDBTest.testIniciar" />
+        <item itemvalue="JUnit.RecebeInputTest.naoContinuar" />
+        <item itemvalue="JUnit.RecebeInputTest.continuar" />
+        <item itemvalue="JUnit.InsertDadosTest.personagemExiste" />
+        <item itemvalue="JUnit.InsertDadosTest.plataformaExiste" />
       </list>
     </recent_temporary>
   </component>
@@ -597,46 +607,52 @@
       <option name="project" value="LOCAL" />
       <updated>1547580330403</updated>
     </task>
-    <option name="localTasksCounter" value="38" />
+    <task id="LOCAL-00038" summary="MELHORAR COBERTURA baixar hsqlDB">
+      <created>1547581533360</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1547581533360</updated>
+    </task>
+    <option name="localTasksCounter" value="39" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="SelectDBTest_selectplataformaTest - 2019.01.15 at 17h 33m 54s.xml">
-      <configuration name="SelectDBTest.selectplataformaTest" configurationId="JUnit" />
+    <history-entry file="InsertDadosTest_jogoExiste - 2019.01.16 at 09h 41m 20s.xml">
+      <configuration name="InsertDadosTest.jogoExiste" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="SelectDBTest_selectTest - 2019.01.15 at 17h 34m 14s.xml">
-      <configuration name="SelectDBTest.selectTest" configurationId="JUnit" />
+    <history-entry file="InsertDadosTest_addJogoTest - 2019.01.16 at 09h 41m 43s.xml">
+      <configuration name="InsertDadosTest.addJogoTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="SelectDBTest_selectTest - 2019.01.15 at 17h 34m 49s.xml">
-      <configuration name="SelectDBTest.selectTest" configurationId="JUnit" />
+    <history-entry file="InsertDadosTest_addJogoTest - 2019.01.16 at 09h 42m 05s.xml">
+      <configuration name="InsertDadosTest.addJogoTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="SelectDBTest_selectTest - 2019.01.15 at 17h 35m 53s.xml">
-      <configuration name="SelectDBTest.selectTest" configurationId="JUnit" />
+    <history-entry file="InsertDadosTest_empresaExiste - 2019.01.16 at 09h 42m 59s.xml">
+      <configuration name="InsertDadosTest.empresaExiste" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="SelectDBTest_selectplataformaTest - 2019.01.15 at 17h 36m 31s.xml">
-      <configuration name="SelectDBTest.selectplataformaTest" configurationId="JUnit" />
+    <history-entry file="InsertDadosTest_plataformaExiste - 2019.01.16 at 09h 43m 34s.xml">
+      <configuration name="InsertDadosTest.plataformaExiste" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="SelectDBTest_selectplataformaTest - 2019.01.15 at 17h 37m 03s.xml">
-      <configuration name="SelectDBTest.selectplataformaTest" configurationId="JUnit" />
+    <history-entry file="InsertDadosTest_personagemExiste - 2019.01.16 at 09h 44m 17s.xml">
+      <configuration name="InsertDadosTest.personagemExiste" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="SelectDBTest_selectplataformaTest - 2019.01.15 at 17h 38m 27s.xml">
-      <configuration name="SelectDBTest.selectplataformaTest" configurationId="JUnit" />
+    <history-entry file="RecebeInputTest_continuar - 2019.01.16 at 09h 48m 36s.xml">
+      <configuration name="RecebeInputTest.continuar" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="SelectDBTest_selectJogoTest - 2019.01.15 at 17h 39m 39s.xml">
-      <configuration name="SelectDBTest.selectJogoTest" configurationId="JUnit" />
+    <history-entry file="RecebeInputTest_naoContinuar - 2019.01.16 at 09h 49m 18s.xml">
+      <configuration name="RecebeInputTest.naoContinuar" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="SelectDBTest_selectJogoTest - 2019.01.15 at 17h 40m 01s.xml">
-      <configuration name="SelectDBTest.selectJogoTest" configurationId="JUnit" />
+    <history-entry file="SelectDBTest_testIniciar - 2019.01.16 at 09h 52m 40s.xml">
+      <configuration name="SelectDBTest.testIniciar" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="All_in_CatalgoHSQL - 2019.01.15 at 17h 40m 29s.xml">
-      <configuration name="All in CatalgoHSQL" configurationId="JUnit" />
+    <history-entry file="SelectDBTest_testIniciar - 2019.01.16 at 09h 53m 06s.xml">
+      <configuration name="SelectDBTest.testIniciar" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.13464448" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.13615733" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Learn" order="3" />
@@ -653,13 +669,13 @@
       <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.505295" side_tool="true" weight="0.3289689" />
       <window_info anchor="bottom" id="Version Control" order="9" weight="0.3289689" />
       <window_info anchor="bottom" id="Messages" order="10" sideWeight="0.4969743" weight="0.3289689" />
-      <window_info active="true" anchor="right" id="Coverage" side_tool="true" visible="true" weight="0.32980332" />
       <window_info anchor="right" id="Palette" order="0" />
       <window_info anchor="right" id="Maven" order="1" />
       <window_info anchor="right" id="Palette&#9;" order="2" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="3" type="SLIDING" weight="0.4" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="4" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="5" weight="0.24962178" />
+      <window_info active="true" anchor="right" id="Coverage" order="6" side_tool="true" visible="true" weight="0.32980332" />
     </layout>
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -687,9 +703,22 @@
         </entry>
       </map>
     </option>
+    <option name="RECENT_FILTERS">
+      <map>
+        <entry key="Branch">
+          <value>
+            <list />
+          </value>
+        </entry>
+        <entry key="User">
+          <value>
+            <list />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Teste Select empresa" />
     <MESSAGE value="Teste Select empresa WIP" />
     <MESSAGE value="Teste Select empresa sem alterar tabela real" />
     <MESSAGE value="Teste Select plataforma" />
@@ -714,14 +743,15 @@
     <MESSAGE value="inicio fluxo salvar em DB" />
     <MESSAGE value="MVP para testear" />
     <MESSAGE value="APP funcionando" />
-    <option name="LAST_COMMIT_MESSAGE" value="APP funcionando" />
+    <MESSAGE value="MELHORAR COBERTURA baixar hsqlDB" />
+    <option name="LAST_COMMIT_MESSAGE" value="MELHORAR COBERTURA baixar hsqlDB" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/SelectDBTest.java</url>
-          <line>47</line>
+          <line>48</line>
           <properties />
           <option name="timeStamp" value="2" />
         </line-breakpoint>
@@ -759,74 +789,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/AcessoDBTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="21" selection-start-line="11" selection-start-column="21" selection-end-line="11" selection-end-column="21" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/RecebeInputTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="141">
-          <caret line="130" column="52" selection-start-line="130" selection-start-column="52" selection-end-line="130" selection-end-column="52" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/testarTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="174">
+        <state relative-caret-position="714">
           <caret line="46" column="49" selection-start-line="46" selection-start-column="49" selection-end-line="46" selection-end-column="49" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/App.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="67" column="50" selection-start-line="67" selection-start-column="50" selection-end-line="67" selection-end-column="50" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/RecebeInput.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="327">
-          <caret line="58" column="5" selection-start-line="58" selection-start-column="5" selection-end-line="58" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/InsertDadosTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="259">
-          <caret line="47" column="56" selection-start-line="47" selection-start-column="56" selection-end-line="47" selection-end-column="56" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/SelectDBTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="879">
-          <caret line="53" column="23" lean-forward="true" selection-start-line="53" selection-start-column="23" selection-end-line="53" selection-end-column="23" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/InsertDados.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="277">
-          <caret line="54" column="9" selection-start-line="54" selection-start-column="9" selection-end-line="54" selection-end-column="9" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -843,10 +809,81 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/AcessoDBTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" selection-start-line="13" selection-end-line="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/InsertDados.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="202">
+          <caret line="54" column="9" selection-start-line="54" selection-start-column="9" selection-end-line="54" selection-end-column="9" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/InsertDadosTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="42">
+          <caret line="72" column="59" selection-start-line="72" selection-start-column="59" selection-end-line="72" selection-end-column="59" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/RecebeInput.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="73">
+          <caret line="58" column="5" selection-start-line="58" selection-start-column="5" selection-end-line="58" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/RecebeInputTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="33">
+          <caret line="144" column="23" selection-start-line="144" selection-start-column="23" selection-end-line="144" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/SelectDBTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="62" column="37" lean-forward="true" selection-start-line="62" selection-start-column="37" selection-end-line="62" selection-end-column="37" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/SelectDB.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="21" column="25" selection-start-line="21" selection-start-column="25" selection-end-line="21" selection-end-column="25" />
+        <state relative-caret-position="79">
+          <caret line="19" column="77" selection-start-line="19" selection-start-column="77" selection-end-line="19" selection-end-column="77" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/AppTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret lean-forward="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/App.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" column="42" lean-forward="true" selection-start-line="13" selection-start-column="42" selection-end-line="13" selection-end-column="42" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

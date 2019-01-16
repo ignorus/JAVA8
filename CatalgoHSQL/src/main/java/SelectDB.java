@@ -17,7 +17,7 @@ public class SelectDB {
             Statement stmt = this.link.createStatement();
             resultado = stmt.executeQuery("SELECT * FROM empresas ORDER BY nome_empresa");
         } catch (SQLException e) {
-            e.printStackTrace();
+            System.out.println("Nenhum resultado encontrado para sua busca");
         }
         return resultado;
     }

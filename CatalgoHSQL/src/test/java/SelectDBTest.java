@@ -7,6 +7,7 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertTrue;
 
 public class SelectDBTest {
 
@@ -52,5 +53,13 @@ public class SelectDBTest {
         }
         assertEquals(2, personagens);
         con.rollback();
+    }
+
+    @Test
+    @DisplayName("iniciar test")
+    void testIniciar() throws SQLException {
+        con.setAutoCommit(false);
+        avaliador = select.iniciar();
+        assertTrue(avaliador.next());
     }
 }
